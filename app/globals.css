@@ -165,10 +165,6 @@
   margin-bottom: var(--paragraph-spacing-desktop);
 }
 
-.font-montserrat {
-  font-family: var(--font-montserrat), sans-serif;
-}
-
 .font-open-sans {
   font-family: var(--font-open-sans), sans-serif;
 }

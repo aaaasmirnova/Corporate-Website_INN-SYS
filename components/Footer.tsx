@@ -4,20 +4,28 @@ export const Footer = () => {
   return (
     <footer className="bg-primary-1 text-white">
       <div className="px-4 py-8 xl:py-[49px] xl:px-5">
-        <div className="xl:max-w-[1440px] xl:mx-auto">
+        <div className="flex xl:max-w-[1440px] xl:mx-auto">
           <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start">
             <div>
               <div className="font-logo text-accent-2">ИННОВАТИКА</div>
               <div className="font-logo text-accent-3">SYSTEMS</div>
-            </div>
-
-            <div className="">
-              <div className="font-open-sans text-body-mobile xl:text-body-desktop">
-                +7 999 666-00-58
-              </div>
-              <div className="font-open-sans text-body-mobile xl:text-body-desktop">
-                innovaticasystems@inbox.ru
-              </div>
+              <address>
+                <a
+                  href="tel:+79996660058"
+                  className="font-heading text-body-mobile xl:text-body-desktop"
+                >
+                  +7 999 666-00-58
+                </a>
+                <a
+                  href="mailto:innovaticasystems@inbox.ru"
+                  className="font-heading text-body-mobile xl:text-body-desktop"
+                >
+                  innovaticasystems@inbox.ru
+                </a>
+                <span className="font-open-sans text-body-mobile xl:text-body-desktop">
+                  Россия, Нальчик, площадь 400-летия
+                </span>
+              </address>
             </div>
           </div>
 
@@ -98,28 +106,23 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center">
+        <div className="flex flex-col xl:flex-row xl:gap-6">
+          <span className="font-open-sans text-body-mobile">
+            Политика конфиденциальности
+          </span>
+          <span className="font-open-sans text-body-mobile">
+            Пользовательское соглашение
+          </span>
+          <span className="font-open-sans text-body-mobile">
+            Политика обработки персональных данных
+          </span>
+        </div>
 
-          <div className="font-open-sans text-body-mobile xl:text-body-desktop">
-            Россия, Нальчик, площадь 400-летия
-          </div>
-
-          <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center">
-            <div className="flex flex-col xl:flex-row xl:gap-6 space-y-1 xl:space-y-0">
-              <span className="font-open-sans text-body-mobile hover:text-accent-3">
-                Политика конфиденциальности
-              </span>
-              <span className="font-open-sans text-body-mobile hover:text-accent-3">
-                Пользовательское соглашение
-              </span>
-              <span className="font-open-sans text-body-mobile hover:text-accent-3">
-                Политика обработки персональных данных
-              </span>
-            </div>
-
-            <div className="font-open-sans text-body-mobile">
-              ©2026 ООО «Инноватика systems». Все права защищены.
-            </div>
-          </div>
+        <div className="font-open-sans text-body-mobile">
+          ©2026 ООО «Инноватика systems». Все права защищены.
         </div>
       </div>
     </footer>
