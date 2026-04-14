@@ -5,7 +5,7 @@ import "./globals.css";
 // Montserrat (только Semibold 600 для заголовков)
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  weight: ["600"], // Semibold
+  weight: ["600", "800"],
   variable: "--font-montserrat",
   display: "swap",
 });
