@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @theme {
   /* Цвета */
   --color-primary-1: #0b4872;
@@ -14,10 +21,20 @@
   --color-neutral-black-elbrus: #0d0c0c;
   --color-neutral-bright-beginning: #f8f7f7;
 
+  --color-button-secondary-default: #383737;
+  --color-text-secondary: #807e7e;
+  --color-surface-1: #1a191a;
+
+  --color-neutral-200: #969494;
+  --color-neutral-500: #565454;
+
+  --gradient-surface: linear-gradient(90deg, #1a191a 0%, #1a191a 100%);
+  --color-neutral-black-elbrus-20: rgba(13, 12, 12, 0.2);
+
   /* Размеры шрифтов */
   --text-mega-mobile: 24px;
   --text-mega-tablet: 32px;
-  --text-mega-desktop: 42px;
+  --text-mega-desktop: 40px;
 
   --text-h1-mobile: 18px;
   --text-h1-tablet: 24px;
@@ -39,6 +56,12 @@
   --text-body-tablet: 16px;
   --text-body-desktop: 16px;
 
+  --text-body-description-mobile: 10px;
+  --text-body-description-tablet: 11px;
+  --text-body-description-desktop: 12px;
+
+  --text-year: 150px;
+
   /* Line heights */
   --leading-mega-mobile: 32px;
   --leading-mega-tablet: 40px;
@@ -55,6 +78,12 @@
   --leading-body-mobile: 20px;
   --leading-body-tablet: 24px;
   --leading-body-desktop: 24px;
+
+  --leading-body-description-mobile: 12px;
+  --leading-body-description-tablet: 16px;
+  --leading-body-description-desktop: 16px;
+
+  --leading-year: 104px;
 
   --paragraph-spacing-mobile: 8px;
   --paragraph-spacing-tablet: 12px;
@@ -75,6 +104,7 @@
 .text-mega-desktop {
   font-size: var(--text-mega-desktop);
   line-height: var(--leading-mega-desktop);
+  font-weight: 600;
 }
 
 .text-h1-mobile {
@@ -152,6 +182,21 @@
   line-height: var(--leading-body-desktop);
 }
 
+.text-body-description-mobile {
+  font-size: var(--text-body-description-mobile);
+  line-height: var(--leading-body-description-mobile);
+}
+
+.text-body-description-tablet {
+  font-size: var(--text-body-description-tablet);
+  line-height: var(--leading-body-description-tablet);
+}
+
+.text-body-description-desktop {
+  font-size: var(--text-body-description-desktop);
+  line-height: var(--leading-body-description-desktop);
+}
+
 /* Классы для отступов между параграфами */
 .paragraph-spacing-mobile {
   margin-bottom: var(--paragraph-spacing-mobile);
@@ -171,4 +216,54 @@
 
 .font-heading {
   font-family: var(--font-montserrat), sans-serif;
+}
+
+button.bg-button-secondary-default {
+  background-color: var(--color-button-secondary-default);
+}
+
+p.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+a.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.btn-active {
+  background-color: var(--color-neutral-bright-beginning);
+  color: var(--color-neutral-black-elbrus);
+}
+
+.btn-inactive {
+  background-color: var(--color-button-secondary-default);
+  color: var(--color-neutral-bright-beginning);
+}
+
+.hide-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.text-percent-description {
+  font-size: var(--text-body-desktop);
+  line-height: var(--leading-body-desktop);
+  color: var(--color-neutral-200);
+}
+
+.text-year {
+  font-size: var(--text-year);
+  line-height: 1;
+  background: var(--gradient-surface);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-style: italic;
+  white-space: nowrap;
+  letter-spacing: 11;
+  display: inline-block;
 }
