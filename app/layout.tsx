@@ -5,7 +5,7 @@ import "./globals.css";
 // Montserrat (только Semibold 600 для заголовков)
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  weight: ["600"], // Semibold
+  // weight: ["600"], // Semibold
   variable: "--font-montserrat",
   display: "swap",
 });
@@ -19,7 +19,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "IINOVATICA",
+  title: "INNOVATICA",
   description: "Corporate Website",
 };
 
