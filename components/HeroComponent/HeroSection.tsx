@@ -1,10 +1,10 @@
 import React from "react";
-import bgImage from "../public/bg-hero.png";
+import bgImage from "@/public/bg-hero.png";
 
 export const HeroSection = () => {
   return (
     <section
-    id="hero"
+      id="hero"
       className="w-full flex flex-col items-center py-[232px] bg-[url(../public/bg-hero.png)] bg-hero bg-no-repeat bg-center bg-cover"
       style={{ backgroundImage: `url(${bgImage})`}}
     >
