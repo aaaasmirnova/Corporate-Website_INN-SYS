@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 my-[32px] px-[24px] rounded-xl bg-neutral-black-elbrus/20 backdrop-blur-xs text-white">
       <div className="flex justify-between items-center">
-        <div className="px-[32px] font-logo text-2xl text-accent-2">
+        <div className="px-[32px]">
           <Image
             className=""
             src={Logo}
@@ -17,7 +17,7 @@ export const Header = () => {
         </div>
         <div className="text-accent-3">
           <nav>
-            <ul className="flex flex-row text-white font-montserrat">
+            <ul className="flex flex-row text-white font-nav text-[14px] font-normal">
               <li className="px-[24px] py-[16px]"><a href="#!">ПРОДУКТЫ</a></li>
               <li className="px-[24px] py-[16px]"><a href="#!">О КОМПАНИИ</a></li>
               <li className="px-[24px] py-[16px]"><a href="#!">ЭКСПЕРТИЗА</a></li>
