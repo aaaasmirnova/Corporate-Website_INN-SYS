@@ -5,20 +5,27 @@
   --color-primary-1: #0b4872;
   --color-primary-2: #086190;
   --color-primary-3: #0771a2;
+  --color-primary-4: #26C7FF;
 
   --color-accent-1: #0490c7;
   --color-accent-2: #2dbff2;
   --color-accent-3: #74d4f7;
   --color-accent-4: #9de0fa;
+  --color-accent-5: #383737;
+  --color-accent-6: #565454;
+  --color-accent-7: #474646;
 
   --color-neutral-black-elbrus: #0d0c0c;
   --color-neutral-bright-beginning: #f8f7f7;
 
+  --color-button-primary: #F8F7F7;
+
+  --background-image-title-gradient: radial-gradient(50% 50% at 50% 50%, #F8F7F7 0%, #807E7E 100%);
   /* Размеры шрифтов */
   --text-mega-mobile: 24px;
   --text-mega-tablet: 32px;
   --text-mega-desktop: 42px;
-
+  
   --text-h1-mobile: 18px;
   --text-h1-tablet: 24px;
   --text-h1-desktop: 28px;
@@ -59,6 +66,8 @@
   --paragraph-spacing-mobile: 8px;
   --paragraph-spacing-tablet: 12px;
   --paragraph-spacing-desktop: 12px;
+
+  --secondary-title: 24px;
 }
 
 /* Классы для размеров текста */
@@ -171,4 +180,10 @@
 
 .font-heading {
   font-family: var(--font-montserrat), sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --secondary-title: 48px;
+  }
 }
