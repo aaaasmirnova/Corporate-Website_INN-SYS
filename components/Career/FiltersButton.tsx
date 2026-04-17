@@ -13,8 +13,8 @@ export const FiltersButton = ({
 }: FiltersButtonProps) => {
   return (
     <button
-      className={`${customClassName} whitespace-nowrap text-body-description-desktop rounded-[16px] px-4 py-1.5 ${
-        isActive ? "btn-active" : "btn-inactive"
+      className={`${customClassName} whitespace-nowrap text-[12px] leading-4.5 rounded-2xl px-4 py-1.5 ${
+        isActive ? "btn-picked" : "btn-default"
       }`}
       onClick={changeFilters}
     >

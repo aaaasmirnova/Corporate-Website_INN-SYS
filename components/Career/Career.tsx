@@ -107,12 +107,14 @@ export const Career = () => {
   const filteredVacancies = getFilteredVacancies();
 
   return (
-    <section className="flex flex-col  text-white bg-neutral-black-elbrus w-full">
-      <h2 className=" text-mega-desktop mb-24 text-center font-heading">
-        Карьера
-      </h2>
-      <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0 md:overflow-x-visible">
-        <div className="flex gap-6 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-6">
+    <section className="flex flex-col  text-white bg-neutral-black-elbrus w-full mb-50">
+      <div className="text-center w-full">
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 font-heading font-semibold gradient-text inline-block">
+          Карьера
+        </h2>
+      </div>
+      <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0">
+        <div className="flex gap-6 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-6.5 md:mb-7.5 lg:mb-12">
           {cards.map((card, index) => (
             <Card info={card} key={index} />
           ))}
@@ -133,37 +135,38 @@ export const Career = () => {
           />
         ))}
       </div>
+      <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-x-visible mb-12 ">
+        <div className="flex gap-8 mb-12">
+          <div className="flex gap-2">
+            {positions.map((position, index) => (
+              <FiltersButton
+                text={position}
+                key={index}
+                changeFilters={() => choosePosition(position)}
+                isActive={
+                  (position === FILTER_KEYS.ALL_DIRECTIONS &&
+                    filters.selectedPositions.length === 0) ||
+                  filters.selectedPositions.includes(position)
+                }
+              />
+            ))}
+          </div>
+          <div className="flex gap-2">
+            {contracts.map((contract, index) => (
+              <FiltersButton
+                text={contract}
+                key={index}
+                changeFilters={() => chooseContract(contract)}
+                isActive={filters.selectedContracts.includes(contract)}
+              />
+            ))}
+          </div>
 
-      <div className="flex gap-8 mb-12">
-        <div className="flex gap-2">
-          {positions.map((position, index) => (
-            <FiltersButton
-              text={position}
-              key={index}
-              changeFilters={() => choosePosition(position)}
-              isActive={
-                (position === FILTER_KEYS.ALL_DIRECTIONS &&
-                  filters.selectedPositions.length === 0) ||
-                filters.selectedPositions.includes(position)
-              }
-            />
-          ))}
+          <FiltersButton
+            text={"Все вакансии"}
+            customClassName={"btn-default ml-auto"}
+          />
         </div>
-        <div className="flex gap-2">
-          {contracts.map((contract, index) => (
-            <FiltersButton
-              text={contract}
-              key={index}
-              changeFilters={() => chooseContract(contract)}
-              isActive={filters.selectedContracts.includes(contract)}
-            />
-          ))}
-        </div>
-
-        <FiltersButton
-          text={"Все вакансии"}
-          customClassName={"bg-button-secondary-default ml-auto"}
-        />
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
