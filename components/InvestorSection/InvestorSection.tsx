@@ -24,9 +24,11 @@ export const InvestorSection = () => {
 
   return (
     <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-50">
-      <h2 className="text-mega-desktop mb-24 text-center font-heading">
-        Для инвесторов
-      </h2>
+      <div className="text-center w-full">
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 text-center font-heading font-semibold gradient-text">
+          Для инвесторов
+        </h2>
+      </div>
 
       <Statistics info={statistics} />
 
@@ -36,18 +38,18 @@ export const InvestorSection = () => {
 
       <DesktopReport info={reports} />
 
-      <p className="text-body-description-desktop text-neutral-500 mt-16 text-center mb-10">
+      <p className="text-[10px] md:text-[11px] lg:text-[12px] leading-[150%] font-regular text-neutral-500 mt-4 text-center mb-10">
         Отчеты обновляются ежегодно после публикации официальной отчетности
       </p>
 
       <div className="flex justify-center gap-4">
         <Button
           text="Связаться с нами"
-          customClassName="bg-neutral-bright-beginning text-desktop text-neutral-black-elbrus px-8 rounded-[12px] py-3"
+          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3"
         />
         <Button
           text="Устав компании"
-          customClassName="bg-button-secondary-default text-body-desktop text-white px-6 rounded-[12px] py-3"
+          customClassName="bg-button-secondary-default text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3"
         />
       </div>
     </section>

@@ -6,8 +6,13 @@ interface DesktopReportProps {
 }
 
 export const DesktopReport = ({ info }: DesktopReportProps) => {
+  const isTwoYears = info.length === 2;
   return (
-    <div className="hidden lg:flex flex-row gap-12 overflow-x-auto hide-scroll pb-4">
+    <div
+      className={`hidden lg:flex ${
+        isTwoYears ? "justify-center" : ""
+      } gap-12 overflow-x-auto hide-scroll pb-4`}
+    >
       {info.map((report) => (
         <div
           key={report.year}
@@ -15,7 +20,9 @@ export const DesktopReport = ({ info }: DesktopReportProps) => {
         >
           <div className="text-center">
             <div className="h-[114px] flex items-start justify-center">
-              <div className="font-heading text-year">{report.year}</div>
+              <div className="font-heading text-year-report text-[150px] leading-[104%]">
+                {report.year}
+              </div>
             </div>
 
             <ReportLinks report={report} variant="desktop" />

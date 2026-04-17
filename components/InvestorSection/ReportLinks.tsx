@@ -14,7 +14,7 @@ export const ReportLinks = ({
       <div className="flex flex-col gap-4 items-center">
         <a
           href={report.reportUrl}
-          className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-3 px-8 text-center"
+          className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-3 px-8 text-center"
           target="_blank"
           download
         >
@@ -22,7 +22,7 @@ export const ReportLinks = ({
         </a>
         <a
           href={report.presentationUrl}
-          className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-3 px-8 text-center"
+          className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-3 px-8 text-center"
           target="_blank"
           download
         >
@@ -37,7 +37,7 @@ export const ReportLinks = ({
       <div className="flex flex-col gap-2">
         <a
           href={report.reportUrl}
-          className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
+          className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
           target="_blank"
           download
         >
@@ -45,7 +45,7 @@ export const ReportLinks = ({
         </a>
         <a
           href={report.presentationUrl}
-          className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
+          className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
           target="_blank"
           download
         >
@@ -60,7 +60,7 @@ export const ReportLinks = ({
     <div className="flex flex-row gap-4">
       <a
         href={report.reportUrl}
-        className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
+        className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-2 px-6 whitespace-nowrap text-center  width-[204px]"
         target="_blank"
         download
       >
@@ -68,7 +68,7 @@ export const ReportLinks = ({
       </a>
       <a
         href={report.presentationUrl}
-        className="text-body-desktop bg-neutral-black-elbrus-20 rounded-[12px] py-2 px-6 whitespace-nowrap text-center"
+        className="text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] py-2 px-6 whitespace-nowrap text-center  width-[204px]"
         target="_blank"
         download
       >
