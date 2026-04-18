@@ -5,11 +5,13 @@ import { KeyIndicatorsSection } from "@/components/KeyIndicatorsComponent/KeyInd
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-neutral-black-elbrus">
       <Header />
       <HeroSection />
       <AboutSection />
       <KeyIndicatorsSection />
+      <HeroSection />
+      <AboutSection />
     </div>
   );
 }

@@ -8,7 +8,7 @@ export const KeyIndicatorsSection = () => {
   return (
     <section
       id="key-indicators"
-      className="w-full flex flex-col gap-12 items-center pt-16 pb-36 bg-neutral-black-elbrus"
+      className="w-full flex flex-col gap-12 items-center pt-16 pb-36"
     >
       <h1 className="font-heading font-semibold bg-radial from-neutral-bright-beginning to-neutral-grey-300 bg-clip-text text-transparent text-[40px]">Ключевые показатели</h1>
       <div className={divClass}>
