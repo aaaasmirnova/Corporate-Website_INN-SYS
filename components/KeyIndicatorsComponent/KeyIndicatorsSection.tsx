@@ -6,7 +6,6 @@ import { KeyCard } from "./KeyCard";
 export const KeyIndicatorsSection = () => {
   const divClass = "my-16 grid grid-cols-2 grid-rows-2 gap-50 bg-[url(../public/assets/png/key-picture.png)] bg-hero bg-no-repeat bg-center";
 
-  // className="my-16 grid grid-cols-1 md:grid-cols-6 xl:grid-cols-12 grid-rows-4 md:grid-rows-5 xl:grid-rows-6 place-content-center place-items-center gap-5 bg-[url(../public/assets/png/key-picture.png)] bg-hero bg-no-repeat bg-center"
   return (
     <section
       id="key-indicators"
