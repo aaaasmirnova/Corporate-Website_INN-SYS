@@ -9,7 +9,7 @@ export const KeyIndicatorsSection = () => {
   return (
     <section
       id="key-indicators"
-      className="w-full flex flex-col items-center px-16 bg-neutral-black-elbrus"
+      className="w-full flex flex-col gap-12 items-center pt-16 pb-36 bg-neutral-black-elbrus"
       style={{ backgroundImage: `url(${bgImage})`}}
     >
       <h1 className="font-heading font-semibold bg-radial from-neutral-bright-beginning to-neutral-grey-300 bg-clip-text text-transparent text-[40px]">Ключевые показатели</h1>
