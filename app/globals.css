@@ -12,7 +12,9 @@
   --color-accent-4: #9de0fa;
 
   --color-neutral-black-elbrus: #0d0c0c;
+  --color-neutral-grey-300: #807e7e;
   --color-neutral-bright-beginning: #f8f7f7;
+  --color-neutral-bright-beginning-4: rgba(248 247 247 / 4%);
 
   /* Размеры шрифтов */
   --text-mega-mobile: 24px;
@@ -59,6 +61,11 @@
   --paragraph-spacing-mobile: 8px;
   --paragraph-spacing-tablet: 12px;
   --paragraph-spacing-desktop: 12px;
+
+  /* Tailwind Base Replacement */
+
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
 }
 
 /* Классы для размеров текста */
