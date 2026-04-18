@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-// Montserrat (только Semibold 600 для заголовков)
+// Montserrat
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  // weight: ["600"], // Semibold
+  weight: ["400", "500", "600", "800"],
   variable: "--font-montserrat",
   display: "swap",
 });
