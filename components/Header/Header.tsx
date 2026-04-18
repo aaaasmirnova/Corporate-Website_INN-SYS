@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/assets/svg/innovatica-logo.svg"
+import Logo from "../../public/assets/svg/innovatica-logo.svg"
 import { Nav } from "./Nav"
 
 export const Header = () => {
