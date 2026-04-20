@@ -26,7 +26,7 @@ export const TabletReport = ({ pairedReports }: TabletProps) => {
                     </div>
                   </div>
 
-                  <ReportLinks report={report} variant="tablet" />
+                  <ReportLinks report={report} />
                 </div>
               </div>
             ))}
