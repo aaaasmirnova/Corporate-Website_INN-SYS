@@ -3,7 +3,7 @@ import { Button } from "../UI/Button";
 
 export const Contacts = () => {
   return (
-    <section className="text-white bg-neutral-black-elbrus w-full relative min-h-[776px]">
+    <section className="text-white bg-neutral-black-elbrus w-full relative md:min-h-[776px]">
       <div className="text-center w-full">
         <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-heading font-semibold gradient-text">
           Контакты
@@ -31,10 +31,9 @@ export const Contacts = () => {
             systemsinnovatica@gmail.com
           </a>
           <div className="flex flex-col items-center md:items-start">
-            <Button
-              text="Обсудить проект"
-              customClassName="bg-neutral-bright-beginning text-[16px] leading-6 text-neutral-black-elbrus px-6 rounded-[12px] py-3 w-[197px] mb-6 font-open-sans"
-            />
+            <Button customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-6 rounded-[12px] py-3 w-[197px] mb-6 font-open-sans">
+              Обсудить проект
+            </Button>
             <a className="w-49.25 text-center hover:text-link-hover active:text-link-active text-[13px] md:text-[14px] lg:text-[16px] leading-5 font-semibold font-heading">
               Наши ресурсы
             </a>
