@@ -7,7 +7,7 @@ export const products = [
     images: [
       {
         className:
-          "top-26 -right-18 md:top-27 md:-right-20 lg:-top-5 lg:right-20 -rotate-z-20 w-[300px] h-[300px] md:w-[364px] md:h-[364px] lg:w-[861px] lg:h-[861px]",
+          "top-26 -right-18 md:top-27 md:-right-20 lg:-top-5 lg:right-20 -rotate-z-20 w-[300px] h-[300px] md:w-[364px] md:h-[364px] lg:w-[700px] lg:h-[861px]",
       },
       {
         className:
