@@ -1,10 +1,12 @@
 interface ButtonProps {
-  text: string;
+  children: React.ReactNode;
   customClassName: string;
 }
 
-export const Button = ({ text, customClassName }: ButtonProps) => {
+export const Button = ({ children, customClassName }: ButtonProps) => {
   return (
-    <button className={`${customClassName} rounded-[16px] py-3`}>{text}</button>
+    <button className={`${customClassName} rounded-[16px] py-3`}>
+      {children}
+    </button>
   );
 };
