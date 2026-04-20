@@ -1,11 +1,14 @@
 import { ICard } from "./data";
+
 interface ICardProps {
   info: ICard;
 }
 
 export const Card = ({ info }: ICardProps) => {
+  const Icon = info.icon;
   return (
     <div className="w-[284px] md:w-auto">
+      {Icon && <Icon className="w-8 h-8" />}
       <h3 className="text-[18px] md:text-[22px] leading-6 md:leading-8 font-heading font-medium mb-3">
         {info.title}
       </h3>

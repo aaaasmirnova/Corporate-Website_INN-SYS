@@ -1,6 +1,11 @@
+import ComfortSupport from "@/public/icons/comfort-support.svg";
+import Check from "@/public/icons/check.svg";
+import ArrowLeftRight from "@/public/icons/arrow-left-right.svg";
+import ArrowUp from "@/public/icons/arrow-up.svg";
 export interface ICard {
   title: string;
   description: string;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
 }
 
 export const cards: ICard[] = [
@@ -8,19 +13,23 @@ export const cards: ICard[] = [
     title: "Комфортные условия",
     description:
       "Офис или удалёнка по московскому времени — на ваше усмотрение",
+    icon: ComfortSupport,
   },
   {
     title: "Забота о здоровье",
     description: "ДМС, телемедицина, чекапы, страховки для родственников",
+    icon: Check,
   },
   {
     title: "Развитие в профессии",
     description: "Менторство, командные мероприятия, условия роста",
+    icon: ArrowLeftRight,
   },
   {
     title: "Эффективный старт",
     description:
       "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям",
+    icon: ArrowUp,
   },
 ];
 export const placeOfWorks = ["Все города", "Удаленно", "Нальчик", "Москва"];
