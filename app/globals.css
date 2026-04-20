@@ -40,7 +40,7 @@ body {
 
   --color-brand-400: #26c7ff;
 
-  --gradient-surface: linear-gradient(90deg, #1a191a 0%, #1a191a 100%);
+  --gradient-surface: linear-gradient(0deg, #1a191a 0%, #1a191a 100%);
 
   --color-neutral-black-elbrus-20: rgba(13, 12, 12, 0.2);
 
@@ -298,6 +298,15 @@ a.text-secondary {
     background-clip: text;
     color: transparent;
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
   }
+}
+
+.md\:overflow-y-auto.hide-scroll-vertical {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.md\:overflow-y-auto.hide-scroll-vertical::-webkit-scrollbar {
+  display: none;
 }
