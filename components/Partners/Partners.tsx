@@ -36,7 +36,7 @@ export const Partners = () => {
                 key={index}
                 className="h-[64px] md:h-[80px] lg:h-[128px] flex-shrink-0"
               >
-                <Partner className="h-full w-auto object-contain" />
+                <Partner className="h-full w-auto object-contain transition-all hover:neutral-bright-beginning hover:invert" />
               </div>
             ))}
           </div>
