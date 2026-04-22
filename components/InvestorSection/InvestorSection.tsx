@@ -24,7 +24,7 @@ export const InvestorSection = () => {
   }
 
   return (
-    <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-50">
+    <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-20 md:mb-32 lg:mb-42">
       <div className="text-center w-full">
         <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 text-center font-heading font-semibold gradient-text">
           Для инвесторов
@@ -49,10 +49,15 @@ export const InvestorSection = () => {
         <Button customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px]">
           Связаться с нами
         </Button>
-        <Button customClassName="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 w-[297px] md:w-[204px] lg:w-[207px]">
+        <a
+          href=""
+          target="_blank"
+          download
+          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 w-[297px] md:w-[204px] lg:w-[207px]"
+        >
           Устав компании
           <Download className="w-4 h-4" />
-        </Button>
+        </a>
       </div>
     </section>
   );
