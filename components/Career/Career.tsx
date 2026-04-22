@@ -107,7 +107,7 @@ export const Career = () => {
   const filteredVacancies = getFilteredVacancies();
 
   return (
-    <section className="flex flex-col  text-white bg-neutral-black-elbrus w-full mb-50">
+    <section className="flex flex-col  text-white bg-neutral-black-elbrus w-full mb-19 md:mb-16 lg:mb-47">
       <div className="text-center w-full">
         <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 font-heading font-semibold gradient-text inline-block">
           Карьера
