@@ -19,6 +19,7 @@
   --color-neutral-bright-beginning: #f8f7f7;
 
   --color-button-primary: #F8F7F7;
+  --color-button-inactive: #969494;
 
   --background-image-title-gradient: radial-gradient(50% 50% at 50% 50%, #F8F7F7 0%, #807E7E 100%);
   /* Размеры шрифтов */
