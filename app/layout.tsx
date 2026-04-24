@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
+import "./icomoon.css";
 
 // Montserrat (только Semibold 600 для заголовков)
 const montserrat = Montserrat({
