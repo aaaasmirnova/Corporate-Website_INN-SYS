@@ -121,7 +121,7 @@ export const Career = () => {
         </div>
       </div>
 
-      <div className="flex gap-2 mb-4">
+      <div className="overflow-x-auto hide-scroll md:overflow-x-visible  flex gap-2 mb-4">
         {placeOfWorks.map((place, index) => (
           <FiltersButton
             text={place}
@@ -135,9 +135,10 @@ export const Career = () => {
           />
         ))}
       </div>
-      <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-x-visible mb-12 ">
-        <div className="flex gap-8 mb-12">
-          <div className="flex gap-2">
+
+      <div className="flex flex-col md:flex-row md:items-center  gap-4 md:gap-8 mb-12">
+        <div className="overflow-x-auto hide-scroll pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-x-visible">
+          <div className="flex gap-2 min-w-max md:min-w-0">
             {positions.map((position, index) => (
               <FiltersButton
                 text={position}
@@ -151,6 +152,8 @@ export const Career = () => {
               />
             ))}
           </div>
+        </div>
+        <div className="flex flex-wrap items-center md:justify-between gap-2 md:flex-nowrap">
           <div className="flex gap-2">
             {contracts.map((contract, index) => (
               <FiltersButton

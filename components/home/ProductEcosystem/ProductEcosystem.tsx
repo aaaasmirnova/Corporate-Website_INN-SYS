@@ -71,7 +71,7 @@ export const ProductEcosystem = () => {
 
             return (
               <div key={index} className="group">
-                <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 lg:py-8 lg:px-12 rounded-[24px] relative overflow-hidden md:h-[216px] lg:h-[272px] flex flex-col justify-between">
+                <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 lg:py-8 lg:px-12 rounded-[24px] relative overflow-hidden md:h-[216px] lg:h-[320px] flex flex-col justify-between">
                   <div
                     className={`${product.imageClassName} absolute overflow-hidden rounded-lg transition-all duration-500`}
                   >

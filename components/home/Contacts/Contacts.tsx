@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../UI/Button";
+import { Button } from "../../UI/Button";
 
 export const Contacts = () => {
   return (

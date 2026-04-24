@@ -302,6 +302,17 @@ a.text-secondary {
   }
 }
 
+@layer utilities {
+  .gradient-text-hero-about {
+    background: radial-gradient(circle, #f8f7f7 44%, #807e7e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    /* text-align: center; */
+  }
+}
+
 .md\:overflow-y-auto.hide-scroll-vertical {
   scrollbar-width: none;
   -ms-overflow-style: none;

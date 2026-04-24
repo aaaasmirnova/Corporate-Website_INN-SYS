@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "../UI/Button";
-import { statistics, reports } from "../InvestorSection/data";
+import { Button } from "../../UI/Button";
+import { statistics, reports } from "./data";
 import { Statistics } from "./Statistics";
 import { TabletReport } from "./TabletReport";
 import { DesktopReport } from "./DesktopReport";

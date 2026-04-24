@@ -20,7 +20,7 @@ export const Partners = () => {
           <div className="hidden md:block md:w-[540px] md:h-[597px] lg:w-[858px] lg:h-[949px]">
             <LogoPartners className="w-full h-full" />
           </div>
-          <div className="hidden md:block text-left md:-mt-60 lg:-mt-85 ">
+          <div className="hidden md:block text-left md:-mt-45 lg:-mt-85 ">
             <h3 className="text-[80px] lg:text-[115px] leading-[100%] font-heading font-semibold gradient-text whitespace-pre-line text-left  block">
               Наши
               <br />
