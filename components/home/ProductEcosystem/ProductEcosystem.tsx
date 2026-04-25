@@ -1,14 +1,17 @@
 import Image from "next/image";
 import { products } from "./data";
+import { useTranslations } from "next-intl";
 
 export const ProductEcosystem = () => {
+  const t = useTranslations("Product_ecosystem");
+
   const [mainProduct, ...otherProducts] = products;
 
   return (
     <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-[107px]">
       <div className="text-center w-full">
         <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] text-center font-heading font-semibold mb-12 md:mb-20 lg:mb-24 gradient-text inline-block">
-          Продуктовая экосистема
+          {t("title")}
         </h3>
       </div>
 

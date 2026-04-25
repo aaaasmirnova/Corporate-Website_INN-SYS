@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Footer } from "@/components/common/Footer";
 import { Career } from "@/components/home/Career/Career";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
@@ -7,6 +8,7 @@ import { ProductEcosystem } from "@/components/home/ProductEcosystem/ProductEcos
 import { Partners } from "@/components/home/Partners/Partners";
 
 export default function Home() {
+  
   return (
     <MainLayout>
       <ProductEcosystem />
