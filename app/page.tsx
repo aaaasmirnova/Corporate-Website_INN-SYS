@@ -10,8 +10,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <KeyIndicatorsSection />
-      <HeroSection />
-      <AboutSection />
     </div>
   );
 }
