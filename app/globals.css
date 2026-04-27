@@ -189,4 +189,45 @@
   font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
 }
+.card-1 {
+  transform: translate(20%, -10%);
+}
+.card-2 {
+  transform: translate(20%, 20%);
+}
+.card-3 {
+  transform: translate(-5%, -50%);
+}
+.card-4 {
+  transform: translate(-10%, -50%);
+}
 
+@media screen and (max-width: 1024px) {
+  .card-1 {
+    transform: translate(0, 5%);
+  }
+  .card-2 {
+    transform: translate(0, 0);
+  }
+  .card-3 {
+    transform: translate(0, 5%);
+  }
+  .card-4 {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-1 {
+    transform: translate(0, 0);
+  }
+  .card-2 {
+    transform: translate(0, 0);
+  }
+  .card-3 {
+    transform: translate(0, 0);
+  }
+  .card-4 {
+    transform: translate(0, 0);
+  }
+}
