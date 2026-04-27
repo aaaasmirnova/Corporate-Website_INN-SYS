@@ -11,8 +11,8 @@ export const KeyCard = ({ info }: IKeyCardProps) => {
     <article
       className={cardClass}
     >
-      <h3 className="font-heading font-semibold text-h1-desktop text-neutral-bright-beginning">{info.title}</h3>
-      <p className="text-body-desktop text-neutral-bright-beginning">{info.description}</p>
+      <h3 className="font-heading font-semibold text-[24px] xl:text-h1-desktop text-neutral-bright-beginning">{info.title}</h3>
+      <p className="text-[14px] xl:text-body-desktop text-neutral-bright-beginning">{info.description}</p>
     </article>
   );
 };
