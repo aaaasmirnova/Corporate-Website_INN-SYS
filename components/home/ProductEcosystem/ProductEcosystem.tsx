@@ -8,11 +8,11 @@ export const ProductEcosystem = () => {
   const [mainProduct, ...otherProducts] = products;
 
   return (
-    <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-[107px]">
+    <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-[107px]">
       <div className="text-center w-full">
-        <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] text-center font-heading font-semibold mb-12 md:mb-20 lg:mb-24 gradient-text inline-block">
-          {t("title")}
-        </h3>
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] text-center font-heading font-semibold mb-11 md:mb-18 lg:mb-24 gradient-text inline-block">
+          Продуктовая экосистема
+        </h2>
       </div>
 
       <div className="mx-auto">
@@ -43,7 +43,7 @@ export const ProductEcosystem = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="block lg:hidden group">
-            <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 rounded-[24px] relative overflow-hidden md:h-[216px] lg:h-[272px] flex flex-col justify-between">
+            <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 rounded-[24px] relative overflow-hidden h-[189px] md:h-[216px] lg:h-[272px] flex flex-col justify-between">
               {mainProduct.images?.map((img, idx) => (
                 <div
                   key={idx}
@@ -57,14 +57,14 @@ export const ProductEcosystem = () => {
                   />
                 </div>
               ))}
-              <div className="relative z-10">
-                <h3 className="text-[18px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold font-heading mb-21">
-                  {mainProduct.name}
-                </h3>
-                <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium font-heading whitespace-pre-line max-w-[300px] md:max-w-[252px]">
-                  {mainProduct.description}
-                </p>
-              </div>
+              {/* <div className="relative z-10"> */}
+              <h3 className="relative z-10 text-[18px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold font-heading">
+                {mainProduct.name}
+              </h3>
+              <p className="relative z-10  text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium font-heading whitespace-pre-line max-w-[300px] md:max-w-[252px] ">
+                {mainProduct.description}
+              </p>
+              {/* </div> */}
             </div>
           </div>
 
@@ -95,14 +95,15 @@ export const ProductEcosystem = () => {
                         }
                       >
                         <h3 className="text-[18px] md:text-[24px]  lg:text-[28px] leading-[150%] font-semibold font-heading">
-                          {isElbrusCortes ? (
+                          {/* {isElbrusCortes ? (
                             <div className="group-hover:flex group-hover:flex-col">
                               <span>Elbrus </span>
                               <span>Cortex</span>
                             </div>
                           ) : (
                             product.name
-                          )}
+                          )} */}
+                          {product.name}
                         </h3>
                       </div>
                     </div>

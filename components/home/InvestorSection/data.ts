@@ -12,9 +12,9 @@ export const statistics: Statistic[] = [
   { name: "CAGR", percent: "+70%" },
   { name: "Выручка", percent: "+70%" },
   { name: "Валовая прибыль", percent: "+70%" },
+  { name: "Свободный денежный поток", percent: "+70%" },
   { name: "EBITDA", percent: "+70%" },
   { name: "Рентабельность", percent: "+70%" },
-  { name: "Свободный денежный поток", percent: "+70%" },
 ];
 
 export const reports: Report[] = [

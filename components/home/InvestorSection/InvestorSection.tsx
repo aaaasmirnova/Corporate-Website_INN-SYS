@@ -24,9 +24,9 @@ export const InvestorSection = () => {
   }
 
   return (
-    <section className="flex flex-col text-white bg-neutral-black-elbrus w-full mb-20 md:mb-32 lg:mb-42">
+    <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-20 md:mb-32 lg:mb-42">
       <div className="text-center w-full">
-        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 text-center font-heading font-semibold gradient-text">
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-18 lg:mb-24 text-center font-heading font-semibold gradient-text">
           Для инвесторов
         </h2>
       </div>

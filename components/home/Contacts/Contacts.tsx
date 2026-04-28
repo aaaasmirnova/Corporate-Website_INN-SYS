@@ -3,7 +3,7 @@ import { Button } from "../../UI/Button";
 
 export const Contacts = () => {
   return (
-    <section className="text-white bg-neutral-black-elbrus w-full relative md:min-h-[776px]">
+    <section className="container text-white bg-neutral-black-elbrus w-full relative md:min-h-[776px]">
       <div className="text-center w-full">
         <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-heading font-semibold gradient-text">
           Контакты
@@ -12,21 +12,21 @@ export const Contacts = () => {
 
       <div className="flex justify-center md:justify-start">
         <div className="flex flex-col w-[348px] md:mt-[200px]  font-heading">
-          <span className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6">
+          <span className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center  md:text-left">
             Кабардино-Балкарская Республика,
           </span>
-          <span className="text-neutral-bright-beginning font-medium mb-6 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6">
+          <span className="text-neutral-bright-beginning font-medium mb-9 md:mb-6 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center md:text-left">
             ул. Ленина 32А, г. Нальчик
           </span>
           <a
             href="mailto:innovaticasystems@inbox.ru"
-            className="text-brand-400 hover:text-link-hover active:text-link-active mb-2 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
+            className="text-brand-400 hover:text-link-hover active:text-link-active mb-4 md:mb-2 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
           >
             innovaticasystems@inbox.ru
           </a>
           <a
             href="mailto:systemsinnovatica@gmail.com"
-            className="text-neutral-200 hover:text-link-hover active:text-link-active mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
+            className="text-neutral-200 hover:text-link-hover active:text-link-active mb-9 md:mb-4 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
           >
             systemsinnovatica@gmail.com
           </a>
