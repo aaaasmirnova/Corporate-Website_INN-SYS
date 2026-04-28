@@ -7,6 +7,7 @@ import { ProductEcosystem } from "@/components/home/ProductEcosystem/ProductEcos
 import { Partners } from "@/components/home/Partners/Partners";
 
 export default function Home() {
+  
   return (
     <MainLayout>
       <ProductEcosystem />

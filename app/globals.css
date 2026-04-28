@@ -7,12 +7,23 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--color-neutral-black-elbrus);
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
 @theme {
   /* Цвета */
   --color-primary-1: #0b4872;
   --color-primary-2: #086190;
   --color-primary-3: #0771a2;
-  --color-primary-4: #26C7FF;
+  --color-primary-4: #26c7ff;
 
   --color-accent-1: #0490c7;
   --color-accent-2: #2dbff2;
@@ -25,10 +36,14 @@ body {
   --color-neutral-black-elbrus: #0d0c0c;
   --color-neutral-bright-beginning: #f8f7f7;
 
-  --color-button-primary: #F8F7F7;
+  --color-button-primary: #f8f7f7;
   --color-button-inactive: #969494;
 
-  --background-image-title-gradient: radial-gradient(50% 50% at 50% 50%, #F8F7F7 0%, #807E7E 100%);
+  --background-image-title-gradient: radial-gradient(
+    50% 50% at 50% 50%,
+    #f8f7f7 0%,
+    #807e7e 100%
+  );
   --color-button-primary-hover: #acaaaa;
 
   --color-button-secondary-default: #383737;
