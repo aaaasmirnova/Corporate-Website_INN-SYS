@@ -10,7 +10,7 @@ import "../icomoon.css";
 // Montserrat (только Semibold 600 для заголовков)
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  weight: ["500", "600", "800"],
+  weight: ["400", "500", "600", "800"],
   variable: "--font-montserrat",
   display: "swap",
 });
@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 // Open Sans (Regular 400 для текста)
 const openSans = Open_Sans({
   subsets: ["latin", "cyrillic"],
-  weight: ["400"], // Regular
+  weight: ["400", "500", "600", "800"], // Regular
   variable: "--font-open-sans",
   display: "swap",
 });
@@ -45,8 +45,8 @@ export default async function LocaleLayout({
       <body
         className={`${montserrat.variable} ${openSans.variable} font-open-sans antialiased`}
       >
-        <NextIntlClientProvider>{children}
-
+        <NextIntlClientProvider>
+          {children}
           <Footer />
         </NextIntlClientProvider>
       </body>

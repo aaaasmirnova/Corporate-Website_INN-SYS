@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { Footer } from "@/components/common/Footer";
 import { Career } from "@/components/home/Career/Career";
 import { MainLayout } from "@/components/MainLayout/MainLayout";

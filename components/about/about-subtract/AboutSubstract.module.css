@@ -1,0 +1,105 @@
+.substract_2,
+.substract_4 {
+  margin-left: auto;
+}
+
+.substract_1 div,
+.substract_3 div {
+  margin-left: auto;
+}
+
+@media (min-width: 360px) {
+  .substract_1 {
+    padding-block: 30px 50px;
+    background-size: 100% 122%;
+    background-image: url("/images/about/about-mobile-subtract1.png");
+  }
+
+  .substract_2 {
+    padding-block: 30px 40px;
+    background-position: 0;
+    background-size: 100% 148%;
+    background-image: url("/images/about/about-mobile-subtract2.png");
+  }
+
+  .substract_3 {
+    margin-top: -25px;
+    padding-block: 60px 30px;
+    background-position: 0;
+    background-size: 100% 135%;
+    background-image: url("/images/about/about-mobile-subtract3.png");
+  }
+
+  .substract_4 {
+    margin-top: -43px;
+    padding-block: 90px 30px;
+    background-size: 100% 100%;
+    background-image: url("/images/about/about-mobile-subtract4.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .substract_1,
+  .substract_2,
+  .substract_3,
+  .substract_4 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .substract_1 {
+    padding-block: 40px 138px;
+    background-image: url("/images/about/about-tablet-subtract1.png");
+  }
+
+  .substract_2 {
+    margin-top: -90px;
+    padding-block: 135px 163px;
+    background-image: url("/images/about/about-tablet-subtract2.png");
+  }
+
+  .substract_3 {
+    margin-top: -125px;
+    padding-block: 167px 121px;
+    background-image: url("/images/about/about-tablet-subtract3.png");
+  }
+
+  .substract_4 {
+    margin-top: -70px;
+    padding-block: 127px 64px;
+    background-image: url("/images/about/about-tablet-subtract4.png");
+  }
+}
+
+@media (min-width: 1280px) {
+  .substract_1 {
+    padding-block: 50px 140px;
+    /* border: 10px solid transparent;
+  border-image: url(/images/about/about-subtract1.png) 15 fill stretch; */
+    background-image: url("/images/about/about-subtract1.png");
+  }
+
+  .substract_2 {
+    margin-top: -120px;
+    padding-block: 140px 150px;
+    /*border: 10px solid transparent;
+  border-image: url(/images/about/about-subtract2.png) 15 fill stretch; */
+    background-image: url("/images/about/about-subtract2.png");
+  }
+
+  .substract_3 {
+    margin-top: -125px;
+    padding-block: 168px 114px;
+    /* border: 10px solid transparent;
+  border-image: url(/images/about/about-subtract3.png) 15 fill stretch; */
+    background-image: url("/images/about/about-subtract3.png");
+  }
+
+  .substract_4 {
+    margin-top: -70px;
+    padding-block: 156px 75px;
+    /* border: 10px solid transparent;
+  border-image: url(/images/about/about-subtract4.png) 15 fill stretch; */
+    background-image: url("/images/about/about-subtract4.png");
+  }
+}
