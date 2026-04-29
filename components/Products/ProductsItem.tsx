@@ -16,7 +16,7 @@ export const ProductsItem = ({
 
   return (
     <article className="flex flex-col text-white bg-(--color-button-secondary-active) rounded-3xl overflow-hidden hover:bg-(--color-button-secondary-hover) xl:flex-row">
-      <div className="pt-8 px-6 pb-2 md:max-w-full md:w-full xl:max-w-155.25 xl:w-[51.75%] xl:pb-12.5 md:pt-11.5 md:px-11.5 xl:pt-8 xl:pl-12 xl:pr-0">
+      <div className="pt-8 px-6 pb-2 md:max-w-full md:w-full xl:max-w-172.5 xl:w-[57.5%] xl:pb-12.5 md:pt-11.5 md:px-11.5 xl:pt-8 xl:pl-12 xl:pr-0">
         <h3 className="flex items-center mb-4 text-[24px] font-semibold md:mb-9 xl:mb-8 md:text-[32px] xl:text-[40px]">
           {t(link)}
           <i className="icon-arrow-right text-xs ml-4"></i>
