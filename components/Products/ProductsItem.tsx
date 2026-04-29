@@ -23,7 +23,7 @@ export const ProductsItem = ({
         </h3>
         <p className="text-sm leading-[150%] md:text-base">{t(description)}</p>
       </div>
-      <div className="relative w-full h-44 xl:w-[55%] sm:h-49 xl:h-76.5">
+      <div className="relative w-full h-44 mt-auto xl:w-[55%] sm:h-49 xl:h-76.5">
         <Image
           src={image}
           alt={link}
