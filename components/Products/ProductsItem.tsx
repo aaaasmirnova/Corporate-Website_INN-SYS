@@ -28,7 +28,7 @@ export const ProductsItem = ({
           src={image}
           alt={link}
           fill
-          className="object-cover object-right sm:object-contain xl:object-contain"
+          className="object-cover object-right sm:object-contain xl:object-contain xl:object-bottom"
           priority
         />
       </div>
