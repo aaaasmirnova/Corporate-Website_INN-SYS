@@ -7,7 +7,7 @@ interface MainLayoutProps {
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="min-h-screen bg-neutral-black-elbrus">
-      <div className="px-6 md:px-8 xl:px-24">{children}</div>
+      <div>{children}</div>
     </div>
   );
 };
