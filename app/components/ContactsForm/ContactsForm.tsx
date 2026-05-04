@@ -92,7 +92,7 @@ export default function ContactsForm() {
   };
 
   return (
-    <section className="bg-neutral-black-elbrus">
+    <section id="contact-form" className="bg-neutral-black-elbrus">
       <div className="max-w-216 w-full mx-auto px-6 text-white">
         <h2 className="mb-12 bg-title-gradient bg-clip-text text-2xl font-semibold text-transparent text-center md:text-[40px] md:mb-24">
           Ответим на ваши вопросы

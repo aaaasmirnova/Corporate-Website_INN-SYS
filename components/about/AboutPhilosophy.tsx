@@ -52,17 +52,17 @@ export const AboutPhilosophy = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center text-white bg-neutral-black-elbrus">
-      <h2 className="gradient-text text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-heading mb-8 md:mb-12 lg:mb-8 text-center ">
+    <section className="container flex flex-col items-center text-white bg-neutral-black-elbrus">
+      <h2 className="gradient-text text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-8 md:mb-12 lg:mb-8 text-center ">
         Мир управляется данными
       </h2>
-      <p className="relative text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[22px] leading-[150%] font-heading md:w-[553px] lg:w-[790px] text-center mb-[159px] md:mb-[184px] lg:mb-[281px]">
+      <p className="relative text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[22px] leading-[150%] font-medium md:w-[553px] lg:w-[790px] text-center mb-[159px] md:mb-[184px] lg:mb-[281px]">
         Решения принимаются в реальности, где скорость изменений превышает
         возможности их интерпретации, а системы усложняются быстрее, чем
         формируются механизмы контроля. В результате возникает разрыв между
         действием и пониманием
       </p>
-      <div className="absolute left-0 right-0 flex justify-center pointer-events-none top-[758px] md:top-[910px] lg:top-[1540px] top-1/2 -translate-y-1/2">
+      <div className="absolute left-0 right-0 flex justify-center pointer-events-none top-[880px] md:top-[920px] lg:top-[1600px] top-1/2 -translate-y-1/2">
         <Image
           src="/icons/about_company_frame.svg"
           alt="Frame"
@@ -72,7 +72,7 @@ export const AboutPhilosophy = () => {
           priority
         />
       </div>
-      <p className="text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[22px] leading-[150%] font-heading  lg:w-[770px] text-center mb-8 md:mb-12 lg:mb-20">
+      <p className="text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[22px] leading-[150%] font-medium lg:w-[770px] text-center mb-8 md:mb-12 lg:mb-20">
         Неопределённость становится фактором системного риска.
         <br className="hidden md:block" />В этих условиях организация
         оказывается в центре — <br className="block md:hidden lg:block" />
@@ -83,19 +83,11 @@ export const AboutPhilosophy = () => {
         <br className="hidden md:block lg:hidden" /> а способность
         интерпретировать её и контролировать последствия
       </p>
-      <p className="text-neutral-bright-beginning text-[18px] md:text-[20px] lg:text-[22px] leading-[150%] font-heading font-medium md:font-semibold lg:font-medium md:w-[650px]  lg:w-[770px] text-center mb-19.5 md:mb-20 lg:mb-24">
+      <p className="text-neutral-bright-beginning text-[18px] md:text-[20px] lg:text-[22px] leading-[150%] font-medium md:font-semibold lg:font-medium md:w-[650px]  lg:w-[770px] text-center mb-19.5 md:mb-20 lg:mb-24">
         Именно в этой точке возникает необходимость осознанной и контролируемой
         навигации
       </p>
 
-      {/* <Image
-        src="/icons/about-philosophy-block.svg"
-        alt="Инноватика Systems"
-        width={1235}
-        height={816}
-        className="object-cover object-center"
-        priority
-      /> */}
       <div className="relative w-full flex justify-center px-4 md:px-8 lg:px-0 ">
         <div className="w-full max-w-[1440px]">
           <video
@@ -120,6 +112,14 @@ export const AboutPhilosophy = () => {
           </video>
         </div>
       </div>
+      <h2 className="gradient-text text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-8 md:mb-12 lg:mb-8 text-center mt-[21] md:mt-[19] lg:mt-10">
+        Мы формируем этот навигационный контур
+      </h2>
+      <p className=" text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[18px] leading-[150%]  md:w-[553px] lg:w-[790px] text-center mb-[159px] md:mb-[184px] lg:mb-[134px]">
+        Инноватика Systems — технологическая компания в области Big Data
+        и машинного обучения, проектирующая инфраструктуру анализа,
+        прогнозирования и защиты данных
+      </p>
     </section>
   );
 };
