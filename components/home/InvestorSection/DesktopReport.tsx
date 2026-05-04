@@ -20,7 +20,7 @@ export const DesktopReport = ({ info }: DesktopReportProps) => {
         >
           <div className="text-center">
             <div className="h-[114px] flex items-start justify-start">
-              <div className="font-heading text-year-report text-[150px] leading-[104%]">
+              <div className="text-year-report text-[150px] leading-[104%]">
                 {report.year}
               </div>
             </div>

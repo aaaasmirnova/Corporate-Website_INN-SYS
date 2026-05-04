@@ -21,7 +21,7 @@ export const TabletReport = ({ pairedReports }: TabletProps) => {
               >
                 <div className="text-center">
                   <div className="h-[114px] flex items-start justify-center">
-                    <div className="font-heading text-year-report text-[150px] leading-[104%]">
+                    <div className="text-year-report text-[150px] leading-[104%]">
                       {report.year}
                     </div>
                   </div>

@@ -124,7 +124,7 @@ export const Career = () => {
         </div>
       </div>
 
-      <div className="overflow-x-auto hide-scroll md:overflow-x-visible  flex gap-2 mb-4">
+      <div className="overflow-x-auto hide-scroll md:overflow-x-visible  flex gap-2  mb-4 -mx-4 px-4 md:mx-0 md:px-0">
         {placeOfWorks.map((place, index) => (
           <FiltersButton
             text={place}
@@ -139,7 +139,7 @@ export const Career = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row md:items-center  gap-4 md:gap-8 mb-12 ">
+      <div className="flex flex-wrap lg:flex-nowrap items-center gap-2 md:gap-x-8 md:gap-y-4 mb-12">
         <div className="overflow-x-auto hide-scroll pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-x-visible">
           <div className="flex gap-2 min-w-max md:min-w-0">
             {positions.map((position, index) => (
@@ -156,23 +156,24 @@ export const Career = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-wrap items-center md:justify-between gap-2 md:flex-nowrap w-full">
-          <div className="flex gap-2">
-            {contracts.map((contract, index) => (
-              <FiltersButton
-                text={contract}
-                key={index}
-                changeFilters={() => chooseContract(contract)}
-                isActive={filters.selectedContracts.includes(contract)}
-              />
-            ))}
-          </div>
-
+        {/* <div className="flex flex-wrap md:flex-nowrap items-center gap-2 w-full md:w-full lg:w-full lg:justify-between"> */}
+        <div className="flex gap-2 flex-shrink-0">
+          {contracts.map((contract, index) => (
+            <FiltersButton
+              text={contract}
+              key={index}
+              changeFilters={() => chooseContract(contract)}
+              isActive={filters.selectedContracts.includes(contract)}
+            />
+          ))}
+        </div>
+        <div className="md:order-last lg:order-none lg:ml-auto">
           <FiltersButton
             text={"Все вакансии"}
-            customClassName={"btn-default ml-auto"}
+            customClassName={"btn-default"}
           />
         </div>
+        {/* </div> */}
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -1,17 +1,28 @@
+"use client";
 import Image from "next/image";
 import { Button } from "../../UI/Button";
+import Link from "next/link";
 
 export const Contacts = () => {
+  const scrollToForm = () => {
+    const formElement = document.getElementById("contact-form");
+    if (formElement) {
+      formElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
-    <section className="container text-white bg-neutral-black-elbrus w-full relative md:min-h-[776px]">
+    <section className="container text-white bg-neutral-black-elbrus relative md:min-h-[776px]">
       <div className="text-center w-full">
-        <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-heading font-semibold gradient-text">
+        <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-semibold gradient-text">
           Контакты
         </h3>
       </div>
 
       <div className="flex justify-center md:justify-start">
-        <div className="flex flex-col w-[348px] md:mt-[200px]  font-heading">
+        <div className="flex flex-col w-[348px] md:mt-[200px] ">
           <span className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center  md:text-left">
             Кабардино-Балкарская Республика,
           </span>
@@ -31,16 +42,20 @@ export const Contacts = () => {
             systemsinnovatica@gmail.com
           </a>
           <div className="flex flex-col items-center md:items-start">
-            <Button customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-6 rounded-[12px] py-3 w-[197px] mb-6 font-open-sans">
+            <Button
+              customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-6 rounded-[12px] py-3 w-[197px] mb-6 font-open-sans"
+              onClick={scrollToForm}
+            >
               Обсудить проект
             </Button>
-            <a className="w-49.25 text-center hover:text-link-hover active:text-link-active text-[13px] md:text-[14px] lg:text-[16px] leading-5 font-semibold font-heading">
+
+            <a className="w-49.25 text-center hover:text-link-hover active:text-link-active text-[13px] md:text-[14px] lg:text-[16px] leading-5 font-semibold">
               Наши ресурсы
             </a>
           </div>
         </div>
       </div>
-      <div className="hidden md:block  absolute left-68 top-0 w-353 max-w-none z-0 pointer-events-none">
+      <div className="hidden md:block  absolute left-84 top-0 w-353 max-w-none z-0 pointer-events-none">
         <div className="mx-auto">
           <Image
             src="/images/map.svg"

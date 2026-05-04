@@ -24,7 +24,7 @@ export const MobileReport = ({
 
           <div className="text-center mx-12">
             <div className="h-[114px] flex items-start justify-center">
-              <div className="font-heading text-year-report text-[96px] leading-[104%]">
+              <div className="text-year-report text-[96px] leading-[104%]">
                 {currentReport.year}
               </div>
             </div>

@@ -11,10 +11,10 @@ export const Statistics = ({ info }: StatisticsProps) => {
           className="flex flex-col items-center w-[128px] md:w-[188px] lg:w-[188px] gap-3 group cursor-pointer"
           key={index}
         >
-          <p className="text-[24px] md:text-[40px] leading-[150%] font-heading font-semibold group-hover:text-brand-400">
+          <p className="text-[24px] md:text-[40px] leading-[150%] font-semibold group-hover:text-brand-400">
             {param.percent}
           </p>
-          <p className="text-[14px] md:text-[16px] leading-[150%] text-center font-regular text-neutral-200 group-hover:text-neutral-0">
+          <p className="text-[14px] md:text-[16px] leading-[150%] text-center font-regular font-open-sans text-neutral-200 group-hover:text-neutral-0">
             {param.name}
           </p>
         </div>

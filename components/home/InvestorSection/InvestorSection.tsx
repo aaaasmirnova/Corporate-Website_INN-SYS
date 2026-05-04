@@ -8,6 +8,7 @@ import { TabletReport } from "./TabletReport";
 import { DesktopReport } from "./DesktopReport";
 import { MobileReport } from "./MobileReport";
 import Download from "@/public/icons/download.svg";
+import Link from "next/link";
 
 export const InvestorSection = () => {
   const [activeYearIndex, setActiveYearIndex] = useState(0);
@@ -23,10 +24,20 @@ export const InvestorSection = () => {
     pairedReports.push(reports.slice(i, i + 2));
   }
 
+  const scrollToForm = () => {
+    const formElement = document.getElementById("contact-form");
+    if (formElement) {
+      formElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-20 md:mb-32 lg:mb-42">
       <div className="text-center w-full">
-        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-18 lg:mb-24 text-center font-heading font-semibold gradient-text">
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-18 lg:mb-24 text-center font-semibold gradient-text">
           Для инвесторов
         </h2>
       </div>
@@ -46,9 +57,13 @@ export const InvestorSection = () => {
       </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-2 order-2 md:order-1 lg:order-2 md:mt-12">
-        <Button customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px]">
+        <Button
+          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px]"
+          onClick={scrollToForm}
+        >
           Связаться с нами
         </Button>
+
         <a
           href=""
           target="_blank"

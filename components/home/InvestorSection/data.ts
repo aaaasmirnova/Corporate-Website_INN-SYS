@@ -9,12 +9,12 @@ export interface Report {
   presentationUrl: string;
 }
 export const statistics: Statistic[] = [
-  { name: "CAGR", percent: "+70%" },
-  { name: "Выручка", percent: "+70%" },
-  { name: "Валовая прибыль", percent: "+70%" },
-  { name: "Свободный денежный поток", percent: "+70%" },
-  { name: "EBITDA", percent: "+70%" },
-  { name: "Рентабельность", percent: "+70%" },
+  { name: "CAGR", percent: "0" },
+  { name: "Выручка", percent: "0" },
+  { name: "Валовая прибыль", percent: "0" },
+  { name: "Свободный денежный поток", percent: "0" },
+  { name: "EBITDA", percent: "0" },
+  { name: "Рентабельность", percent: "0" },
 ];
 
 export const reports: Report[] = [
