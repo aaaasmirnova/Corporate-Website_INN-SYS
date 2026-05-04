@@ -13,7 +13,7 @@ export const Header = () => {
             <Image
               className=""
               src={Logo}
-              alt="INNOVATICA"
+              alt="ИННОВАТИКА"
               width="24"
               height="32"
             />
