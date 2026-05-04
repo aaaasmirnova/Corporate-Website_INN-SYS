@@ -1,27 +1,16 @@
 "use client";
 import React, { useState } from "react";
-// import { BurgerNav } from "./BurgerNav";
 import Image from "next/image";
 import Logo from "../../public/assets/svg/innovatica-logo.svg"
 
 export const Burger = () => {
-  // const burgerRef = useRef(null);
   const [isOpen, setOpen] = useState(false);
   const toggleBurger = () => {
     setOpen(!isOpen);
   };
-  /*
-  useEffect(() => {
-    const openBurger = () => {
-      burgerRef.current.classList.add
-    };
-    if (burgerRef.current) {
-      burgerRef.current.addEventListener("click", openBurger);
-    }
-  }, []);
-  */
+
   return (
-    <div /* ref ={burgerRef} */ className={`flex flex-col justify-start items-start w-14 h-14 xl:hidden py-4 bg-neutral-black-elbrus/20 backdrop-blur-xs transition-250ms overflow-clip ${isOpen ? "fixed top-0 right-0 w-93.75 h-svh rounded-none" : "absolute top-0 right-0 rounded-xl"}`}>
+    <div className={`flex flex-col justify-start items-start w-14 h-14 xl:hidden py-4 bg-neutral-black-elbrus/20 backdrop-blur-xs transition-250ms overflow-clip ${isOpen ? "fixed top-0 right-0 w-93.75 h-svh rounded-none" : "absolute top-0 right-0 rounded-xl"}`}>
       <div className={`relative ${isOpen ? "px-12 py-8" : "px-0 py-0"} xl:px-8 w-full flex flex-row ${isOpen ? "justify-end items-center" : "justify-center items-center"}`}>
         <Image
           className={`absolute top-5 left-10 opacity-0 transition-default ${isOpen ? "opacity-100" : ""}`}
