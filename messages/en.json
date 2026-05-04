@@ -3,7 +3,25 @@
     "title": "products"
   },
   "Product_ecosystem": {
-    "title": "Product ecosystem"
+    "title": "Product ecosystem",
+    "products": {
+      "cheget": {
+        "name": "Cheget",
+        "description": "Decision Support System"
+      },
+      "kuliev": {
+        "name": "Kuliev",
+        "description": "Intelligent Assistant for Data and Knowledge"
+      },
+      "baksan": {
+        "name": "Baksan",
+        "description": "Data Protection for AI Systems"
+      },
+      "elbrus_cortex": {
+        "name": "Elbrus Cortex",
+        "description": "Multi-Agent Platform for Intelligent Data Systems"
+      }
+    }
   },
   "About": {
     "Substract": {
@@ -27,5 +45,27 @@
   },
   "Business": {
     "description": "Мы формируем основу для функционирования процессов, от которых зависит устойчивость бизнеса и систем государства"
+  },
+  "CareerHero": {
+    "title": "Проектируйте архитектуру решений для мира Big Data и AI",
+    "description": "Мы объединяем специалистов в области Big Data, машинного обучения, аналитики, разработки и дизайна для создания систем, работающих в условиях высокой сложности"
+  },
+  "CareerAdvantages": {
+    "advantage1": {
+      "title": "Гибкая рабочая среда",
+      "description": "Возможность выстраивать рабочий процесс с учётом задач и личных обстоятельств"
+    },
+    "advantage2": {
+      "title": "Развитие в профессии",
+      "description": "Менторство, командные мероприятия, условия роста"
+    },
+    "advantage3": {
+      "title": "Эффективный старт",
+      "description": "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям"
+    },
+    "advantage4": {
+      "title": "Поддерживающая профессиональная культура",
+      "description": "Командная среда, основанная на взаимной поддержке, вовлеченности и уважении к рабочему ритму человека"
+    }
   }
 }
