@@ -24,7 +24,7 @@ export const Footer = () => {
           className="absolute bottom-0 left-0 w-full h-auto"
           preserveAspectRatio="none"
           style={{
-            transform: "translateY(-290px)", // ← используем translateY для поднятия
+            transform: "translateY(-290px)",
             minHeight: "500px",
           }}
         >
@@ -57,7 +57,7 @@ export const Footer = () => {
             <ul className="grid grid-cols-2 gap-4 text-left md:flex md:flex-row md:flex-wrap md:gap-9 lg:gap-20 justify-center mb-10">
               {nav.map((elem, index) => (
                 <li key={index}>
-                  <a className="text-[16px] hover:text-accent-2 transition-colors">
+                  <a className="text-[14px] lg:text-[16px] hover:text-accent-2 transition-colors">
                     {elem}
                   </a>
                 </li>
@@ -77,7 +77,7 @@ export const Footer = () => {
         <div className="mx-auto">
           <div className="">
             <address className="flex flex-col md:flex-row  md:justify-between not-italic pt-10">
-              <p className="text-18px leading-[150%] text-neutral-200 font-heading w-[317px] mb-[22px]">
+              <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-[270px] mb-[22px] ">
                 <span className="inline md:hidden">
                   РФ, Кабардино-Балкарская Республика,
                   <br />
@@ -103,13 +103,13 @@ export const Footer = () => {
               <div className="flex flex-col gap-[23px] md:gap-[5px] space-y-1 text-left md:text-right mb-11.75 md:mb-24">
                 <a
                   href="mailto:innovaticasystems@inbox.ru"
-                  className="block text-[18px] text-brand-400 hover:text-link-hover active:text-link-active font-heading"
+                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-brand-400 hover:text-link-hover active:text-link-active"
                 >
                   innovaticasystems@inbox.ru
                 </a>
                 <a
                   href="mailto:systemsinnovatica@gmail.com"
-                  className="block text-[18px] text-neutral-200 hover:text-link-hover active:text-link-active font-heading"
+                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-neutral-200 hover:text-link-hover active:text-link-active"
                 >
                   systemsinnovatica@gmail.com
                 </a>
@@ -119,13 +119,13 @@ export const Footer = () => {
 
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row flex-wrap justify-between gap-4 md:gap-6">
-              <a className="text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active">
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
                 Политика конфиденциальности
               </a>
-              <a className="text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active">
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
                 Пользовательское соглашение
               </a>
-              <a className="text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0">
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0 font-open-sans">
                 Политика обработки и защиты
                 <span className="hidden md:inline">
                   <br />
@@ -134,8 +134,8 @@ export const Footer = () => {
                 персональных данных
               </a>
             </div>
-            <div className="text-[12px] text-neutral-200 mt-4">
-              © Innovatica Systems {currentYear}
+            <div className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 mt-4">
+              © Инноватика Системс {currentYear}
             </div>
           </div>
         </div>
