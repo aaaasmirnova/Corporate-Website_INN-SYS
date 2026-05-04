@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/assets/svg/innovatica-logo.svg"
+import Logo from "@/public/assets/svg/innovatica-logo.svg"
 
 export const Burger = () => {
   const [isOpen, setOpen] = useState(false);
