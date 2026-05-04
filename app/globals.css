@@ -204,16 +204,16 @@
 
 @media screen and (max-width: 1024px) {
   .card-1 {
-    transform: translate(0, 5%);
+    transform: translate(0, 10%);
   }
   .card-2 {
-    transform: translate(0, 0);
+    transform: translate(0, -10%);
   }
   .card-3 {
-    transform: translate(0, 5%);
+    transform: translate(0, 10%);
   }
   .card-4 {
-    transform: translate(0, 0);
+    transform: translate(0, -10%);
   }
 }
 
