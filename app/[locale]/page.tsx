@@ -16,7 +16,6 @@ export default function Home() {
       <InvestorSection />
       <Career />
       <Contacts />
-      <CareerForm />
       <Footer />
     </MainLayout>
   );
