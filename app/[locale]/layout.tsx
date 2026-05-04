@@ -42,7 +42,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+
       <body className={`${montserrat.variable} antialiased`}>
+
+
         <NextIntlClientProvider>
           {children}
           <Footer />
