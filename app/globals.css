@@ -231,3 +231,15 @@
     transform: translate(0, 0);
   }
 }
+
+.translate-xy-half {
+  transform: translate(8px, -8px);
+}
+
+.transition-default {
+  transition: all ease-in-out 0.4s;
+}
+.transition-250ms {
+  transition: all ease-in-out 0.25s;
+}
+
