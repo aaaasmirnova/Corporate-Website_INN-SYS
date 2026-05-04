@@ -58,7 +58,7 @@ export const InvestorSection = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-2 order-2 md:order-1 lg:order-2 md:mt-12">
         <Button
-          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px]"
+          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px] whitespace-nowrap"
           onClick={scrollToForm}
         >
           Связаться с нами
@@ -68,7 +68,7 @@ export const InvestorSection = () => {
           href=""
           target="_blank"
           download
-          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 w-[297px] md:w-[204px] lg:w-[207px]"
+          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 w-[297px] md:w-[204px] lg:w-[207px] whitespace-nowrap"
         >
           Устав компании
           <Download className="w-4 h-4" />
