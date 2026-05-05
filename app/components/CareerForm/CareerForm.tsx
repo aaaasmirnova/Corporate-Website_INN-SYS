@@ -99,7 +99,7 @@ export default function CareerForm() {
   };
 
   return (
-    <section className="bg-neutral-black-elbrus">
+    <section className="container bg-neutral-black-elbrus">
       <div className="max-w-216 w-full mx-auto text-white">
         <h2 className="mb-12 bg-title-gradient bg-clip-text text-2xl font-semibold text-transparent text-center md:text-[40px] md:mb-24">
           {t("title")}
