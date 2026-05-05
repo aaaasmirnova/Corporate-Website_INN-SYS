@@ -18,7 +18,7 @@ const advantages = [
     title: "CareerAdvantages.advantage2.title",
     description: "CareerAdvantages.advantage2.description",
     position:
-      "md:top-[250px] md:-left-[70px] lg:top-[590px] lg:-left-[150px] transform -translate-x-1/2 -translate-y-1/2",
+      "translate-0 md:top-[250px] md:-left-[70px] lg:top-[590px] lg:-left-[150px] transform lg:-translate-x-1/2 lg:-translate-y-1/2",
     width: "max-w-[294px]",
     icon: ArrowLeftRight,
   },
@@ -34,17 +34,17 @@ const advantages = [
     title: "CareerAdvantages.advantage4.title",
     description: "CareerAdvantages.advantage4.description",
     position:
-      "md:bottom-[60px] md:left-[100px] lg:bottom-[70px] lg:left-[210px] transform -translate-x-1/2",
+      "translate-0 md:bottom-[60px] md:left-[100px] lg:bottom-[70px] lg:left-[210px] transform lg:-translate-x-1/2",
     width: "max-w-[355px]",
     icon: Condition,
   },
 ];
 
 const circles = [
-  "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1220px] h-[1220px] md:w-[610px]  md:h-[610px] lg:w-[916px] lg:h-[916px] opacity-10 ",
-  "absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[764px] h-[764px] md:w-[382px]  md:h-[382px]  lg:w-[686px] lg:h-[686px] opacity-20",
-  "absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[458px] h-[458px] md:w-[229px]  md:h-[229px] lg:w-[430px] lg:h-[430px] opacity-30",
-  "absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[152px] h-[152px] md:w-[76px]  md:h-[76px] lg:w-[172px] lg:h-[172px] opacity-40",
+  "lg:absolute top-1/2 left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 w-[1220px] h-[1220px] md:w-[610px]  md:h-[610px] lg:w-[916px] lg:h-[916px] opacity-10",
+  "lg:absolute top-1/2 left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 w-[764px] h-[764px] md:w-[382px]  md:h-[382px]  lg:w-[686px] lg:h-[686px] opacity-20",
+  "lg:absolute top-1/2 left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 w-[458px] h-[458px] md:w-[229px]  md:h-[229px] lg:w-[430px] lg:h-[430px] opacity-30",
+  "lg:absolute top-1/2 left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 w-[152px] h-[152px] md:w-[76px]  md:h-[76px] lg:w-[172px] lg:h-[172px] opacity-40",
 ];
 
 export const CareerAdvantages = () => {
@@ -60,19 +60,19 @@ export const CareerAdvantages = () => {
           ></div>
         ))}
       </div>
-      {/* <div className="w-full">
+      <div className="w-full">
         <Image
           src="/images/ellipses.png"
           fill
-          alt="ff"
-          className="block md:hidden object-cover"
+          alt="background circle"
+          className="block max-h-144.75 h-screen md:hidden object-cover"
         />
-      </div> */}
-      <div className="flex flex-col gap-13 items-center justify-center w-[355px]">
+      </div>
+      <div className="relative z-10 flex flex-col gap-9 items-center justify-center pt-17.25 w-88.75 md:gap-13 md:pt-0">
         {advantages.map((advantage, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center absolute ${advantage.position} ${advantage.width} w-full`}
+            className={`flex flex-col items-center lg:absolute ${advantage.position} ${advantage.width} w-full`}
           >
             <advantage.icon className=" text-brand-400 mb-3" />
             <h3 className="text-neutral-0 text-[16px] md:text-[20px] lg:text-[22px] leading-[150%] text-center mb-2 md:mb-3 font-semibold max-w-[355px]">
