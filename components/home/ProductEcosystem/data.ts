@@ -1,7 +1,7 @@
 export const products = [
   {
-    name: "Cheget",
-    description: "Система поддержки принятия решений",
+    name: "Product_ecosystem.products.cheget.name",
+    description: "Product_ecosystem.products.cheget.description",
     image: "/images/Star.svg",
     imageAlt: "Cheget",
     images: [
@@ -16,26 +16,24 @@ export const products = [
     ],
   },
   {
-    name: "Kuliev",
-    description:
-      "Интеллектуальный\nассистент для работы\n с данными и знаниями",
+    name: "Product_ecosystem.products.kuliev.name",
+    description: "Product_ecosystem.products.kuliev.description",
     image: "/images/Sheet.svg",
     imageAlt: "Sheet",
     imageClassName:
       "top-0 right-[15px] md:-right-0 -rotate-75 w-[125px] h-[125px] md:w-[153px] md:h-[153px] lg:w-[224px] lg:h-[224px]",
   },
   {
-    name: "Baksan",
-    description: "Защита данных\nв системах искусственного интеллекта",
+    name: "Product_ecosystem.products.baksan.name",
+    description: "Product_ecosystem.products.baksan.description",
     image: "/images/Cube.svg",
     imageAlt: "Cube",
     imageClassName:
       "-top-15 -right-10  md:-right-19  lg:-right-25 w-[190px] h-[190px] md:w-[233px] md:h-[233px] lg:w-[286px] lg:h-[286px]",
   },
   {
-    name: "Elbrus Cortex",
-    description:
-      "Мультиагентская платформа для создания и управления интеллектуальными системами анализа данных",
+    name: "Product_ecosystem.products.elbrus_cortex.name",
+    description: "Product_ecosystem.products.elbrus_cortex.description",
     image: "/images/Ring.svg",
     imageAlt: "Ring",
     imageClassName:

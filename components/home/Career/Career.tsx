@@ -14,6 +14,7 @@ import { Card } from "./Card";
 import { FiltersButton } from "./FiltersButton";
 import { VacancyCard } from "./VacancyCard";
 import { SendResumeCard } from "./SendResumeCard";
+import Image from "next/image";
 
 interface FiltersState {
   selectedLocations: string[];
@@ -107,21 +108,23 @@ export const Career = () => {
   const filteredVacancies = getFilteredVacancies();
 
   return (
-    <section className="flex flex-col  text-white bg-neutral-black-elbrus w-full mb-19 md:mb-16 lg:mb-47">
+    <section className="container flex flex-col  text-white bg-neutral-black-elbrus w-full mb-19 md:mb-16 lg:mb-47">
       <div className="text-center w-full">
-        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-24 font-heading font-semibold gradient-text inline-block">
+        <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-16 lg:mb-24  font-heading font-semibold gradient-text inline-block">
           Карьера
         </h2>
       </div>
-      <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0">
-        <div className="flex gap-6 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-6.5 md:mb-7.5 lg:mb-12">
-          {cards.map((card, index) => (
-            <Card info={card} key={index} />
-          ))}
+      <div className="relative scroll-gradient-container">
+        <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0">
+          <div className="flex md:gap-y-10 md:gap-x-20 lg:gap-x-6 lg:gap-y-0 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-6.5 md:mb-7.5 lg:mb-12">
+            {cards.map((card, index) => (
+              <Card info={card} key={index} />
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="overflow-x-auto hide-scroll md:overflow-x-visible  flex gap-2 mb-4">
+      <div className="overflow-x-auto hide-scroll md:overflow-x-visible  flex gap-2  mb-4 -mx-4 px-4 md:mx-0 md:px-0">
         {placeOfWorks.map((place, index) => (
           <FiltersButton
             text={place}
@@ -136,7 +139,7 @@ export const Career = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row md:items-center  gap-4 md:gap-8 mb-12">
+      <div className="flex flex-wrap lg:flex-nowrap items-center gap-2 md:gap-x-8 md:gap-y-4 mb-12">
         <div className="overflow-x-auto hide-scroll pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 md:overflow-x-visible">
           <div className="flex gap-2 min-w-max md:min-w-0">
             {positions.map((position, index) => (
@@ -153,23 +156,24 @@ export const Career = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-wrap items-center md:justify-between gap-2 md:flex-nowrap">
-          <div className="flex gap-2">
-            {contracts.map((contract, index) => (
-              <FiltersButton
-                text={contract}
-                key={index}
-                changeFilters={() => chooseContract(contract)}
-                isActive={filters.selectedContracts.includes(contract)}
-              />
-            ))}
-          </div>
-
+        {/* <div className="flex flex-wrap md:flex-nowrap items-center gap-2 w-full md:w-full lg:w-full lg:justify-between"> */}
+        <div className="flex gap-2 flex-shrink-0">
+          {contracts.map((contract, index) => (
+            <FiltersButton
+              text={contract}
+              key={index}
+              changeFilters={() => chooseContract(contract)}
+              isActive={filters.selectedContracts.includes(contract)}
+            />
+          ))}
+        </div>
+        <div className="md:order-last lg:order-none lg:ml-auto">
           <FiltersButton
             text={"Все вакансии"}
-            customClassName={"btn-default ml-auto"}
+            customClassName={"btn-default"}
           />
         </div>
+        {/* </div> */}
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

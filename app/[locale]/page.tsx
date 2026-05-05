@@ -5,9 +5,9 @@ import { InvestorSection } from "@/components/home/InvestorSection/InvestorSecti
 import { Contacts } from "@/components/home/Contacts/Contacts";
 import { ProductEcosystem } from "@/components/home/ProductEcosystem/ProductEcosystem";
 import { Partners } from "@/components/home/Partners/Partners";
+import ContactsForm from "../components/ContactsForm/ContactsForm";
 
 export default function Home() {
-  
   return (
     <MainLayout>
       <ProductEcosystem />
@@ -15,7 +15,8 @@ export default function Home() {
       <InvestorSection />
       <Career />
       <Contacts />
-      <Footer />
+      <ContactsForm />
+      {/* <Footer /> */}
     </MainLayout>
   );
 }
