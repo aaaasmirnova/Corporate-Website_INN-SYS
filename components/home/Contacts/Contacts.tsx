@@ -18,7 +18,7 @@ export const Contacts = () => {
     }
   };
   return (
-    <section className="container text-white bg-neutral-black-elbrus relative md:min-h-[776px]">
+    <section className="container text-white bg-neutral-black-elbrus relative md:md:min-h-194">
       <div className="text-center w-full">
         <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-semibold gradient-text">
           {t("contacts.title")}
@@ -26,7 +26,7 @@ export const Contacts = () => {
       </div>
 
       <div className="flex items-center md:justify-start lg:mb-50">
-        <div className="flex flex-col max-w-87 w-[30%]">
+        <div className="flex flex-col max-w-87 w-[22%]">
           <p className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center md:text-left mb-8">
             {t("contacts.address")}
           </p>
@@ -55,17 +55,16 @@ export const Contacts = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block relative -right-6 w-353 max-w-none z-0 pointer-events-none ">
+        <div className="hidden md:block relative max-w-353 w-[80%] z-0 pointer-events-none lg:translate-x-[20%]">
           <div className="mx-auto">
             <Image
               src="/images/map-big.png"
               alt={t("contacts.map_alt")}
-              width={1086}
+              width={1412}
               height={776}
               className="w-full h-auto mx-auto max-w-353"
             />
-
-            <div className="absolute w-3 h-3 rounded-full bg-brand-400 top-153 left-15 -translate-x-1/2 -translate-y-1/2 shadow-[0_0_0_4px_rgba(38,199,255,0.3)] animate-pulse"></div>
+            <div className="absolute w-3 h-3 rounded-full bg-brand-400 bottom-[22%] left-[4%] shadow-[0_0_0_4px_rgba(38,199,255,0.3)] animate-pulse"></div>
           </div>
         </div>
       </div>
