@@ -18,14 +18,7 @@ export const AboutHero = () => {
         className="object-cover block lg:hidden"
         priority
       />
-      {/* <Image
-        src="/images/AboutHeroMobile.png"
-        alt="Инноватика Systems"
-        fill
-        className="object-cover block md:hidden"
-        priority
-      /> */}
-      {/* </div> */}
+
       <div className="relative z-10 flex flex-col  items-center h-full px-4 md:px-8 lg:px-24 mt-[196px] md:mt-[134px] lg:mt-[256px]">
         <p className="text-neutral-bright-beginning text-[13px] md:text-[20px] lg:text-[22px] leading-[150%] mb-2 md:mb-4 font-semibold">
           О компании
