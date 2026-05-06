@@ -25,7 +25,7 @@ export const Contacts = () => {
         </h3>
       </div>
 
-      <div className="flex items-center md:justify-start lg:mb-50">
+      <div className="flex items-center md:justify-start lg:mb-50 lg:w-screen">
         <div className="flex flex-col max-w-87 w-[22%]">
           <p className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center md:text-left mb-8">
             {t("contacts.address")}
@@ -55,7 +55,7 @@ export const Contacts = () => {
             </a>
           </div>
         </div>
-        <div className="hidden md:block relative max-w-353 w-[80%] z-0 pointer-events-none lg:translate-x-[20%]">
+        <div className="hidden md:block relative max-w-353 w-[80%] z-0 pointer-events-none">
           <div className="mx-auto">
             <Image
               src="/images/map-big.png"
@@ -64,7 +64,7 @@ export const Contacts = () => {
               height={776}
               className="w-full h-auto mx-auto max-w-353"
             />
-            <div className="absolute w-3 h-3 rounded-full bg-brand-400 bottom-[22%] left-[4%] shadow-[0_0_0_4px_rgba(38,199,255,0.3)] animate-pulse"></div>
+            <div className="absolute w-3 h-3 rounded-full bg-brand-400 bottom-[22%] left-[5.5%] shadow-[0_0_0_4px_rgba(38,199,255,0.3)] animate-pulse"></div>
           </div>
         </div>
       </div>
