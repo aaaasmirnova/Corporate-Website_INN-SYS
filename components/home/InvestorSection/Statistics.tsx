@@ -1,9 +1,12 @@
+import { useTranslations } from "next-intl";
 import { Statistic } from "./data";
 
 interface StatisticsProps {
   info: Statistic[];
 }
 export const Statistics = ({ info }: StatisticsProps) => {
+  const t = useTranslations("Home");
+
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-8 md:gap-y-10 mb-16 justify-items-center">
       {info.map((param, index) => (
@@ -15,7 +18,7 @@ export const Statistics = ({ info }: StatisticsProps) => {
             {param.percent}
           </p>
           <p className="text-[14px] md:text-[16px] leading-[150%] text-center font-regular font-open-sans text-neutral-200 group-hover:text-neutral-0">
-            {param.name}
+            {t(param.name)}
           </p>
         </div>
       ))}

@@ -10,41 +10,40 @@ export interface ICard {
 
 export const cards: ICard[] = [
   {
-    title: "Комфортные условия",
+    title: "career_block.block1.title",
     description:
-      "Офис или удалёнка по московскому времени — на ваше усмотрение",
+      "career_block.block1.description",
     icon: ComfortSupport,
   },
   {
-    title: "Забота о здоровье",
-    description: "ДМС, телемедицина, чекапы, страховки для родственников",
+    title: "career_block.block2.title",
+    description: "career_block.block2.description",
     icon: Check,
   },
   {
-    title: "Развитие в профессии",
-    description: "Менторство, командные мероприятия, условия роста",
+    title: "career_block.block3.title",
+    description: "career_block.block3.description",
     icon: ArrowLeftRight,
   },
   {
-    title: "Эффективный старт",
-    description:
-      "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям",
+    title: "career_block.block4.title",
+    description: "career_block.block4.description",
     icon: ArrowUp,
   },
 ];
-export const placeOfWorks = ["Все города", "Удаленно", "Нальчик", "Москва"];
+export const placeOfWorks = ["filters.all_cities", "filters.remote", "filters.nalchik", "filters.moscow"];
 export const positions = [
-  "Все направления",
-  "Backend",
-  "ML",
-  "Design",
-  "Frontend",
+  "filters.all_categories",
+  "filters.backend",
+  "filters.ml",
+  "filters.design",
+  "filters.frontend",
 ];
-export const contracts = ["Full-time", "Part-time"];
+export const contracts = ["filters.full-time", "filters.part-time"];
 
 export const FILTER_KEYS = {
-  ALL_CITIES: "Все города",
-  ALL_DIRECTIONS: "Все направления",
+  ALL_CITIES: "filters.all_cities",
+  ALL_DIRECTIONS: "filters.all_categories",
 } as const;
 
 export const INITIAL_VACANCIES_LIMIT = 5;
@@ -61,50 +60,50 @@ export interface Vacancy {
 export const vacancies: Vacancy[] = [
   {
     id: 1,
-    position: "Frontend",
-    positionDisplay: "Frontend",
-    role: "Dev",
-    contract: "Full-Time",
-    location: "Удаленно",
+    position: "filters.frontend",
+    positionDisplay: "filters.frontend",
+    role: "filters.dev",
+    contract: "filters.full-time",
+    location: "filters.remote",
   },
   {
     id: 2,
-    position: "Backend",
-    positionDisplay: "Backend",
-    role: "Dev",
-    contract: "Full-time",
-    location: "Москва",
+    position: "filters.backend",
+    positionDisplay: "filters.backend",
+    role: "filters.dev",
+    contract: "filters.full-time",
+    location: "filters.moscow",
   },
   {
     id: 3,
-    position: "ML",
-    positionDisplay: "ML",
-    role: "Data",
-    contract: "Full-time",
-    location: "Нальчик",
+    position: "filters.ml",
+    positionDisplay: "filters.ml",
+    role: "filters.data",
+    contract: "filters.full-time",
+    location: "filters.nalchik",
   },
   {
     id: 4,
-    position: "Design",
-    positionDisplay: "UX/UI-дизайнер",
-    role: "Designer",
-    contract: "Part-time",
-    location: "Удаленно",
+    position: "filters.design",
+    positionDisplay: "filters.design",
+    role: "filters.designer",
+    contract: "filters.part-time",
+    location: "filters.remote",
   },
   {
     id: 5,
-    position: "Design",
-    positionDisplay: "UX/UI-дизайнер",
-    role: "Designer",
-    contract: "Part-time",
-    location: "Москва",
+    position: "filters.design",
+    positionDisplay: "filters.design",
+    role: "filters.designer",
+    contract: "filters.part-time",
+    location: "filters.moscow",
   },
   {
     id: 6,
-    position: "Design",
-    positionDisplay: "UX/UI-дизайнер",
-    role: "Designer",
-    contract: "Part-time",
-    location: "Москва",
+    position: "filters.design",
+    positionDisplay: "filters.design",
+    role: "filters.designer",
+    contract: "filters.part-time",
+    location: "filters.nalchik",
   },
 ];

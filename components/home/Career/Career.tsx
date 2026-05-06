@@ -15,6 +15,7 @@ import { FiltersButton } from "./FiltersButton";
 import { VacancyCard } from "./VacancyCard";
 import { SendResumeCard } from "./SendResumeCard";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface FiltersState {
   selectedLocations: string[];
@@ -23,6 +24,8 @@ interface FiltersState {
 }
 
 export const Career = () => {
+  const t = useTranslations("Home");
+
   const [filters, setFilters] = useState<FiltersState>({
     selectedLocations: [],
     selectedPositions: [],
@@ -36,7 +39,7 @@ export const Career = () => {
       setFilters({
         ...filters,
         selectedLocations: filters.selectedLocations.filter(
-          (l) => l !== location
+          (l) => l !== location,
         ),
       });
     } else {
@@ -54,7 +57,7 @@ export const Career = () => {
       setFilters({
         ...filters,
         selectedPositions: filters.selectedPositions.filter(
-          (p) => p !== position
+          (p) => p !== position,
         ),
       });
     } else {
@@ -70,7 +73,7 @@ export const Career = () => {
       setFilters({
         ...filters,
         selectedContracts: filters.selectedContracts.filter(
-          (c) => c !== contract
+          (c) => c !== contract,
         ),
       });
     } else {
@@ -86,19 +89,19 @@ export const Career = () => {
 
     if (filters.selectedLocations.length > 0) {
       filtered = filtered.filter((v) =>
-        filters.selectedLocations.includes(v.location)
+        filters.selectedLocations.includes(v.location),
       );
     }
 
     if (filters.selectedPositions.length > 0) {
       filtered = filtered.filter((v) =>
-        filters.selectedPositions.includes(v.position)
+        filters.selectedPositions.includes(v.position),
       );
     }
 
     if (filters.selectedContracts.length > 0) {
       filtered = filtered.filter((v) =>
-        filters.selectedContracts.includes(v.contract)
+        filters.selectedContracts.includes(v.contract),
       );
     }
 
@@ -111,7 +114,7 @@ export const Career = () => {
     <section className="container flex flex-col  text-white bg-neutral-black-elbrus w-full mb-19 md:mb-16 lg:mb-47">
       <div className="text-center w-full">
         <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-16 lg:mb-24  font-heading font-semibold gradient-text inline-block">
-          Карьера
+          {t("career_block.title")}
         </h2>
       </div>
       <div className="relative scroll-gradient-container">
@@ -157,7 +160,7 @@ export const Career = () => {
           </div>
         </div>
         {/* <div className="flex flex-wrap md:flex-nowrap items-center gap-2 w-full md:w-full lg:w-full lg:justify-between"> */}
-        <div className="flex gap-2 flex-shrink-0">
+        <div className="flex gap-2 shrink-0">
           {contracts.map((contract, index) => (
             <FiltersButton
               text={contract}
@@ -167,9 +170,9 @@ export const Career = () => {
             />
           ))}
         </div>
-        <div className="md:order-last lg:order-none lg:ml-auto">
+        <div className="md:order-last lg:order-0 lg:ml-auto">
           <FiltersButton
-            text={"Все вакансии"}
+            text={"filters.all_vacancies"}
             customClassName={"btn-default"}
           />
         </div>

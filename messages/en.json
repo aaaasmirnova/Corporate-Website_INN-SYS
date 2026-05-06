@@ -2,6 +2,122 @@
   "Header": {
     "title": "products"
   },
+  "Home": {
+    "title": "Innovatica Systems",
+    "description": "We design, implement, and support comprehensive IT solutions for government and corporate organizations. Our mission is to make data understandable, processes manageable, and results predictable",
+    "button": "Discuss Project",
+    "section1": {
+      "description1": "A technology company that helps government and corporate organizations transform data into a management tool",
+      "description2": "We develop analysis, forecasting, and data protection systems that allow users to see patterns, identify risks early, and make decisions based on objective analytics"
+    },
+    "key_metrics": {
+      "key_metric1": {
+        "value": "+50%",
+        "description": "Improved forecasting accuracy using machine learning models and scenario analysis"
+      },
+      "key_metric2": {
+        "value": "+60%",
+        "description": "Faster decision-making through automated analytics and data integration"
+      },
+      "key_metric3": {
+        "value": "+70%",
+        "description": "Reduction in manual data processing thanks to AI agents and automated analytical processes"
+      },
+      "key_metric4": {
+        "value": "x4",
+        "description": "Faster detection of anomalies and risks through intelligent data monitoring"
+      }
+    },
+    "Our_partners": "Our Partners",
+    "For_investors": {
+      "title": "For Investors",
+      "gagr": "CAGR",
+      "revenue": "Revenue",
+      "gross_profit": "Gross Profit",
+      "ebitda": "EBITDA",
+      "profitability": "Profitability",
+      "fresh_cash_flow": "Free Cash Flow",
+      "reports": "Reports are updated annually following the publication of official financial statements",
+      "button_contact": "Contact",
+      "button_constitution": "Company charter",
+      "dates": {
+        "date1": {
+          "date": "2024",
+          "info1": "Report for 2024",
+          "info2": "IR Presentation"
+        },
+        "date2": {
+          "date": "2025",
+          "info1": "Report for 2025",
+          "info2": "IR Presentation"
+        }
+      }
+    },
+    "career_block": {
+      "title": "Career",
+      "block1": {
+        "title": "Flexible Work Format",
+        "description": "Office-based or remote work aligned with Moscow time — at your discretion"
+      },
+      "block2": {
+        "title": "Healthcare Benefits",
+        "description": "Private medical insurance, telemedicine, and health check-ups"
+      },
+      "block3": {
+        "title": "Professional Growth",
+        "description": "Mentorship, team events, and opportunities for career development"
+      },
+      "block4": {
+        "title": "Strong Start",
+        "description": "Internship programs, early career tracks, and training for IT professions"
+      }
+    },
+    "filters": {
+      "all_vacancies": "All Vacancies",
+      "all_cities": "All Cities",
+      "remote": "Remote",
+      "nalchik": "Nalchik",
+      "moscow": "Moscow",
+      "all_categories": "All specializations",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "designer": "Designer",
+      "data": "Data",
+      "dev": "Dev",
+      "ml": "ML",
+      "design": "Design",
+      "full-time": "Full-time",
+      "part-time": "Part-time"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
+      "email_1": "innovaticasystems@inbox.ru",
+      "email_2": "systemsinnovatica@gmail.com",
+      "discuss": "Discuss your project",
+      "our_resources": "Our Resources",
+      "map_alt": "Map"
+    },
+    "answer_your_questions": {
+      "title": "We will answer your questions",
+      "name": "Name",
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "phone_required": "Phone is required",
+      "invalid_email": "Invalid email",
+      "organization": "Organization",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Enter your message",
+      "attach_file": "attach one",
+      "attached_file": "File attached",
+      "privacy_policy": "I consent to Innovatica Systems LLC processing my personal data for the purpose of responding to my inquiry in accordance with the ",
+      "privacy_required": "Privacy Policy",
+      "checkbox_required": "You must accept the privacy policy",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    }
+  },
   "Product_ecosystem": {
     "title": "Product ecosystem",
     "products": {
@@ -46,7 +162,6 @@
   "Business": {
     "description": "Мы формируем основу для функционирования процессов, от которых зависит устойчивость бизнеса и систем государства"
   },
-
   "CareerHero": {
     "title": "Проектируйте архитектуру решений для мира Big Data и AI",
     "description": "Мы объединяем специалистов в области Big Data, машинного обучения, аналитики, разработки и дизайна для создания систем, работающих в условиях высокой сложности"
@@ -69,7 +184,6 @@
       "description": "Командная среда, основанная на взаимной поддержке, вовлеченности и уважении к рабочему ритму человека"
     }
   },
-
   "Products": {
     "title": "Products",
     "Product_item1": {

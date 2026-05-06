@@ -5,12 +5,7 @@ import Image from "next/image";
 // import KBGU from "@/public//images/partners/kbgu.png";
 // import KBR from "@/public//images/partners/kbr.png";
 // import Roskosmos from "@/public//images/partners/roskosmos.png";
-import AG from "@/public/icons/ag.svg";
-import Gazprombank from "@/public/icons/gazprombank.svg";
-import MFTI from "@/public/icons/mfti.svg";
-import KBGU from "@/public/icons/kbgu.svg";
-import KBR from "@/public/icons/kbr.svg";
-import Roskosmos from "@/public/icons/roskosmos.svg";
+import { useTranslations } from "next-intl";
 // import LogoPartners from "@/public/icons/partnersLogo.svg";
 // import GradientPartners from "@/public/icons/gradient_partners_desk_tablet.svg";
 
@@ -24,11 +19,13 @@ const partnersIcon = [
   "/icons/ag.svg",
 ];
 export const Partners = () => {
+  const t = useTranslations("Home");
+
   return (
     <section className="container mb-20 md:mb-41 lg:mb-30">
       <div className="text-center w-full  md:hidden">
         <h2 className="text-[24px] leading-[150%] text-center font-semibold mb-11  gradient-text inline-block">
-          Наши партнеры
+          {t("Our_partners")}
         </h2>
       </div>
       <div className="md:flex md:justify-between md:items-start md:gap-8 lg:gap-10 ">
@@ -44,9 +41,7 @@ export const Partners = () => {
           </div>
           <div className="text-left absolute left-0 md:bottom-[40px] lg:bottom-[100px]">
             <h3 className="md:text-[80px] lg:text-[115px] leading-[100%] font-semibold gradient-text whitespace-pre-line text-left block md:opacity-40">
-              Наши
-              <br />
-              партнеры
+              {t("Our_partners")}
             </h3>
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -15,6 +16,8 @@ type FormValues = {
 };
 
 export default function ContactsForm() {
+  const t = useTranslations("Home");
+
   const {
     register,
     handleSubmit,
@@ -92,22 +95,21 @@ export default function ContactsForm() {
   };
 
   return (
-
     <section id="contact-form" className="bg-neutral-black-elbrus">
       <div className="max-w-216 w-full mx-auto px-6 text-white">
-
-
         <h2 className="mb-12 bg-title-gradient bg-clip-text text-2xl font-semibold text-transparent text-center md:text-[40px] md:mb-24">
-          Ответим на ваши вопросы
+          {t("answer_your_questions.title")}
         </h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-wrap gap-4 mb-4 md:gap-6 md:mb-6">
             <div className="w-full md:w-[calc(50%-12px)]">
               <input
                 type="text"
-                placeholder="Имя"
+                placeholder={t("answer_your_questions.name")}
                 className={`w-full h-12 px-4 border border-accent-5 rounded-xl focus:border-white placeholder:text-accent-6 ${errors.name && "border-red-700"}`}
-                {...register("name", { required: "Name is required" })}
+                {...register("name", {
+                  required: t("answer_your_questions.name_required"),
+                })}
               />
               {errors.name && (
                 <p className="text-red-700 text-xs px-4">
@@ -120,7 +122,7 @@ export default function ContactsForm() {
               <input
                 type="text"
                 className={`w-full h-12 px-4 border border-accent-5 rounded-xl focus:border-white placeholder:text-accent-6  ${errors.name && "border-red-700"}`}
-                placeholder="Организация"
+                placeholder={t("answer_your_questions.organization")}
                 {...register("organization")}
               />
             </div>
@@ -129,9 +131,9 @@ export default function ContactsForm() {
               <input
                 type="tel"
                 className={`w-full h-12 px-4 border border-accent-5 rounded-xl focus:border-white placeholder:text-accent-6  ${errors.name && "border-red-700"}`}
-                placeholder="Телефон"
+                placeholder={t("answer_your_questions.phone")}
                 {...register("phone", {
-                  required: "Phone is required",
+                  required: t("answer_your_questions.phone_required"),
                 })}
               />
               {errors.phone && (
@@ -145,12 +147,12 @@ export default function ContactsForm() {
               <input
                 type="email"
                 className={`w-full h-12 px-4 border border-accent-5 rounded-xl focus:border-white placeholder:text-accent-6  ${errors.name && "border-red-700"}`}
-                placeholder="Email"
+                placeholder={t("answer_your_questions.email")}
                 {...register("email", {
-                  required: "Email is required",
+                  required: t("answer_your_questions.email_required"),
                   pattern: {
                     value: /^\S+@\S+$/i,
-                    message: "Invalid email",
+                    message: t("answer_your_questions.invalid_email"),
                   },
                 })}
               />
@@ -165,7 +167,7 @@ export default function ContactsForm() {
           {/* Message */}
           <div>
             <textarea
-              placeholder="Ваше сообщение"
+              placeholder={t("answer_your_questions.message")}
               className="w-full h-24 mb-6 py-2 px-4 border border-accent-5 rounded-xl resize-none focus:border-white placeholder:text-accent-6"
               {...register("message")}
             />
@@ -190,9 +192,12 @@ export default function ContactsForm() {
                   ) : (
                     <>
                       <span className="hidden md:inline">
-                        Перенесите файл сюда или
+                        {t("answer_your_questions.attach_file") ||
+                          t("answer_your_questions.attached_file")}
                       </span>{" "}
-                      <span className="text-primary-4">прикрепите его</span>
+                      <span className="text-primary-4">
+                        {t("answer_your_questions.attach_file")}
+                      </span>
                     </>
                   )}
                 </p>
@@ -216,17 +221,15 @@ export default function ContactsForm() {
                     type="checkbox"
                     className="w-0 h-0 peer opacity-0"
                     {...register("privacy", {
-                      required: "You must accept the privacy policy",
+                      required: t("answer_your_questions.checkbox_required"),
                     })}
                   />
                   <span className="flex justify-center items-center w-4 h-4 border border-accent-7 rounded-sm before:content-[''] before:block before:h-3 before:w-2 before:border-primary-4 before:border-0 before:border-r-2 before:border-b-2 before:rotate-45 before:opacity-0 peer-checked:before:opacity-100"></span>
                 </div>
                 <p className="text-xs">
-                  Я даю ООО «Инноватика Systems» согласие на обработку
-                  персональных данных в целях получения консультаций в
-                  соответствии с{" "}
+                  {t("answer_your_questions.privacy_policy")}
                   <Link href="#privacy-policy" className="text-primary-4">
-                    политикой конфиденциальности
+                    {t("answer_your_questions.privacy_required")}
                   </Link>
                 </p>
               </label>
@@ -247,7 +250,7 @@ export default function ContactsForm() {
               }`}
               disabled={isSubmitting || !isValid}
             >
-              {isSubmitting ? "Submitting..." : "Submit"}
+              {isSubmitting ? t("answer_your_questions.submitting") : t("answer_your_questions.submit")}
             </button>
           </div>
         </form>
