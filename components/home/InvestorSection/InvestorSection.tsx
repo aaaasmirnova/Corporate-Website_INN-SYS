@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "../../UI/Button";
 import { statistics, reports } from "./data";
 import { Statistics } from "./Statistics";
@@ -8,9 +9,10 @@ import { TabletReport } from "./TabletReport";
 import { DesktopReport } from "./DesktopReport";
 import { MobileReport } from "./MobileReport";
 import Download from "@/public/icons/download.svg";
-import Link from "next/link";
 
 export const InvestorSection = () => {
+  const t = useTranslations("Home");
+
   const [activeYearIndex, setActiveYearIndex] = useState(0);
 
   const showNextYear = () => {
@@ -38,7 +40,7 @@ export const InvestorSection = () => {
     <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-20 md:mb-32 lg:mb-42">
       <div className="text-center w-full">
         <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-11 md:mb-18 lg:mb-24 text-center font-semibold gradient-text">
-          Для инвесторов
+          {t("For_investors.title")}
         </h2>
       </div>
 
@@ -51,26 +53,24 @@ export const InvestorSection = () => {
       <DesktopReport info={reports} />
 
       <p className="text-[10px] md:text-[11px] lg:text-[12px] leading-[150%] font-regular text-neutral-500 mt-4  mx-auto mb-10 text-center order-1 md:order-2 lg:order-1">
-        Отчеты обновляются ежегодно после публикации
-        <br className="block md:hidden" />
-        официальной отчетности
+        {t("For_investors.reports")}
       </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-2 order-2 md:order-1 lg:order-2 md:mt-12">
         <Button
-          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 w-[297px] md:w-[204px] lg:w-[207px] whitespace-nowrap"
+          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 whitespace-nowrap"
           onClick={scrollToForm}
         >
-          Связаться с нами
+          {t("For_investors.button_contact")}
         </Button>
 
         <a
           href=""
           target="_blank"
           download
-          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 w-[297px] md:w-[204px] lg:w-[207px] whitespace-nowrap"
+          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 whitespace-nowrap"
         >
-          Устав компании
+          {t("For_investors.button_constitution")}
           <Download className="w-4 h-4" />
         </a>
       </div>
