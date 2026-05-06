@@ -18,16 +18,16 @@ export const Contacts = () => {
     }
   };
   return (
-    <section className="container text-white bg-neutral-black-elbrus relative md:md:min-h-194">
+    <section className="container text-white bg-neutral-black-elbrus relative md:min-h-194">
       <div className="text-center w-full">
         <h3 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] mb-12 md:mb-24 text-center font-semibold gradient-text">
           {t("contacts.title")}
         </h3>
       </div>
 
-      <div className="flex items-center md:justify-start lg:mb-50 lg:w-screen">
-        <div className="flex flex-col max-w-87 w-[22%]">
-          <p className="text-neutral-bright-beginning font-medium text-[16px] lg:text-[18px]  leading-5 lg:leading-6 text-center md:text-left mb-8">
+      <div className="flex items-center md:justify-start lg:mb-50 md:w-screen">
+        <div className="flex flex-col mb-26 md:max-w-87 lg:w-[22%] mf:mt-0">
+          <p className="text-neutral-bright-beginning font-medium lg:text-[18px]  leading-5 lg:leading-6 md:text-center md:text-left mb-8">
             {t("contacts.address")}
           </p>
           <a
@@ -62,7 +62,14 @@ export const Contacts = () => {
               alt={t("contacts.map_alt")}
               width={1412}
               height={776}
-              className="w-full h-auto mx-auto max-w-353"
+              className="hidden w-full max-w-353 lg:block"
+            />
+            <Image
+              src="/images/map.png"
+              alt={t("contacts.map_alt")}
+              width={1179}
+              height={648}
+              className="hidden w-full max-w-294.75 sm:block lg:hidden sm:-translate-x-[5%]"
             />
             <div className="absolute w-3 h-3 rounded-full bg-brand-400 bottom-[22%] left-[5.5%] shadow-[0_0_0_4px_rgba(38,199,255,0.3)] animate-pulse"></div>
           </div>
