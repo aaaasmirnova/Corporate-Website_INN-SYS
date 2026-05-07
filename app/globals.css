@@ -77,7 +77,8 @@ body {
 
   --color-brand-400: #26c7ff;
 
-  --gradient-surface: linear-gradient(0deg, #1a191a 0%, #1a191a 100%);
+  --background-image-gradient-surface: linear-gradient(360deg, rgba(26, 25, 26, 0) -9.81%, #1A191A 62.93%);
+;
   --background-image-gradient-title: radial-gradient(50% 50% at 50% 50%, #F8F7F7 0%, #807E7E 100%);
 
   --color-neutral-black-elbrus-20: rgba(13, 12, 12, 0.2);
