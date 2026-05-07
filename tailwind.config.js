@@ -8,6 +8,9 @@ module.exports = {
         md: "768px",
         lg: "1024px",
         xl: "1440px",
+        // sm: "375px",
+        // md: "834px",
+        // xl: "1440px",
       },
       fontFamily: {
         "open-sans": ["var(--font-open-sans)", "sans-serif"],

@@ -1,0 +1,232 @@
+{
+  "Header": {
+    "title": "products"
+  },
+  "Home": {
+    "title": "Innovatica Systems",
+    "description": "We design, implement, and support comprehensive IT solutions for government and corporate organizations. Our mission is to make data understandable, processes manageable, and results predictable",
+    "button": "Discuss Project",
+    "section1": {
+      "description1": "A technology company that helps government and corporate organizations transform data into a management tool",
+      "description2": "We develop analysis, forecasting, and data protection systems that allow users to see patterns, identify risks early, and make decisions based on objective analytics"
+    },
+    "key_metrics": {
+      "key_metric1": {
+        "value": "+50%",
+        "description": "Improved forecasting accuracy using machine learning models and scenario analysis"
+      },
+      "key_metric2": {
+        "value": "+60%",
+        "description": "Faster decision-making through automated analytics and data integration"
+      },
+      "key_metric3": {
+        "value": "+70%",
+        "description": "Reduction in manual data processing thanks to AI agents and automated analytical processes"
+      },
+      "key_metric4": {
+        "value": "x4",
+        "description": "Faster detection of anomalies and risks through intelligent data monitoring"
+      }
+    },
+    "Our_partners": "Our Partners",
+    "For_investors": {
+      "title": "For Investors",
+      "gagr": "CAGR",
+      "revenue": "Revenue",
+      "gross_profit": "Gross Profit",
+      "ebitda": "EBITDA",
+      "profitability": "Profitability",
+      "fresh_cash_flow": "Free Cash Flow",
+      "reports": "Reports are updated annually following the publication of official financial statements",
+      "button_contact": "Contact",
+      "button_constitution": "Company charter",
+      "dates": {
+        "date1": {
+          "date": "2024",
+          "info1": "Report for 2024",
+          "info2": "IR Presentation"
+        },
+        "date2": {
+          "date": "2025",
+          "info1": "Report for 2025",
+          "info2": "IR Presentation"
+        }
+      }
+    },
+    "career_block": {
+      "title": "Career",
+      "block1": {
+        "title": "Flexible Work Format",
+        "description": "Office-based or remote work aligned with Moscow time — at your discretion"
+      },
+      "block2": {
+        "title": "Healthcare Benefits",
+        "description": "Private medical insurance, telemedicine, and health check-ups"
+      },
+      "block3": {
+        "title": "Professional Growth",
+        "description": "Mentorship, team events, and opportunities for career development"
+      },
+      "block4": {
+        "title": "Strong Start",
+        "description": "Internship programs, early career tracks, and training for IT professions"
+      }
+    },
+    "filters": {
+      "all_vacancies": "All Vacancies",
+      "all_cities": "All Cities",
+      "remote": "Remote",
+      "nalchik": "Nalchik",
+      "moscow": "Moscow",
+      "all_categories": "All specializations",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "designer": "Designer",
+      "data": "Data",
+      "dev": "Dev",
+      "ml": "ML",
+      "design": "Design",
+      "full-time": "Full-time",
+      "part-time": "Part-time"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
+      "email_1": "innovaticasystems@inbox.ru",
+      "email_2": "systemsinnovatica@gmail.com",
+      "discuss": "Discuss your project",
+      "our_resources": "Our Resources",
+      "map_alt": "Map"
+    },
+    "answer_your_questions": {
+      "title": "We will answer your questions",
+      "name": "Name",
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "phone_required": "Phone is required",
+      "invalid_email": "Invalid email",
+      "organization": "Organization",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Enter your message",
+      "attach_file": "attach one",
+      "attached_file": "File attached",
+      "privacy_policy": "I consent to Innovatica Systems LLC processing my personal data for the purpose of responding to my inquiry in accordance with the ",
+      "privacy_required": "Privacy Policy",
+      "checkbox_required": "You must accept the privacy policy",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    }
+  },
+  "Product_ecosystem": {
+    "title": "Product ecosystem",
+    "products": {
+      "cheget": {
+        "name": "Cheget",
+        "description": "Decision Support System"
+      },
+      "kuliev": {
+        "name": "Kuliev",
+        "description": "Intelligent Assistant for Data and Knowledge"
+      },
+      "baksan": {
+        "name": "Baksan",
+        "description": "Data Protection for AI Systems"
+      },
+      "elbrus_cortex": {
+        "name": "Elbrus Cortex",
+        "description": "Multi-Agent Platform for Intelligent Data Systems"
+      }
+    }
+  },
+  "About": {
+    "Substract": {
+      "substract1": {
+        "title": "Идея и прототип",
+        "description": "Формируется концепция компании. Определяются базовые принципы и ориентиры. Разрабатывается первый прототип, который становится отправной точкой для последующего развития"
+      },
+      "substract2": {
+        "title": "Формирование команды и подхода",
+        "description": "Компания формирует ядро команды и переходит к системной проработке продуктовой и технологической повестки. Закладываются ключевые принципы архитектуры и организационной модели, обеспечивающие дальнейшее масштабирование"
+      },
+      "substract3": {
+        "title": "Первый продукт",
+        "description": "Компания получает официальное юридическое оформление и начинает операционную деятельность. Выстраивается взаимодействие с госсектором и образовательными организациями, закладывается основа для стабильного развития"
+      },
+      "substract4": {
+        "title": "Масштабирование",
+        "description": "Компания достигает нового уровня организационной зрелости и переходит к дивизиональной модели управления. Фокус смещается на создание комплексных data-driven решений и формирование устойчивых конкурентных преимуществ"
+      }
+    }
+  },
+  "Business": {
+    "description": "Мы формируем основу для функционирования процессов, от которых зависит устойчивость бизнеса и систем государства"
+  },
+  "CareerHero": {
+    "title": "Проектируйте архитектуру решений для мира Big Data и AI",
+    "description": "Мы объединяем специалистов в области Big Data, машинного обучения, аналитики, разработки и дизайна для создания систем, работающих в условиях высокой сложности"
+  },
+  "CareerAdvantages": {
+    "advantage1": {
+      "title": "Гибкая рабочая среда",
+      "description": "Возможность выстраивать рабочий процесс с учётом задач и личных обстоятельств"
+    },
+    "advantage2": {
+      "title": "Развитие в профессии",
+      "description": "Менторство, командные мероприятия, условия роста"
+    },
+    "advantage3": {
+      "title": "Эффективный старт",
+      "description": "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям"
+    },
+    "advantage4": {
+      "title": "Поддерживающая профессиональная культура",
+      "description": "Командная среда, основанная на взаимной поддержке, вовлеченности и уважении к рабочему ритму человека"
+    }
+  },
+  "Products": {
+    "title": "Products",
+    "Product_item1": {
+      "link": "Cheget",
+      "description": "Cheget — аналитическая система нового поколения, которая помогает организациям принимать управленческие решения на основе данных. Платформа объединяет три уровня аналитики: оперативную аналитику текущих показателей, инструмент бизнес-аналитики для исследования данных и интеллектуальный слой прогнозирования. В системе используется ИИ-агент, который помогает интерпретировать данные, формировать аналитические выводы и предлагать возможные сценарии действий. Руководители получают не только отчёты о текущем состоянии процессов, но и прогнозы изменений на основе моделей анализа данных и сценарного моделирования. Cheget объединяет данные из разных информационных систем, формирует единую аналитическую среду и позволяет быстрее выявлять отклонения, риски и возможности для развития.",
+      "button": "Перейти к продукту (скоро)"
+    },
+    "Product_item2": {
+      "link": "Kuliev",
+      "description": "Kuliev — корпоративный ИИ-ассистент, который помогает сотрудникам быстро находить информацию, анализировать данные и получать ответы на рабочие вопросы. Система работает как интеллектуальный диалоговый интерфейс, объединяющий корпоративные данные, документы и аналитические системы. Ассистент способен объяснять показатели, помогать в анализе данных, формировать сводки и отвечать на сложные аналитические запросы на естественном языке. Это позволяет сократить время поиска информации и упростить доступ к аналитике для руководителей и специалистов. Kuliev может использоваться как единая точка взаимодействия с корпоративными знаниями, аналитикой и цифровыми сервисами организации.",
+      "button": "Перейти к продукту (скоро)"
+    },
+    "Product_item3": {
+      "link": "Baksan",
+      "description": "Baksan — решение для обеспечения безопасности данных при использовании систем искусственного интеллекта. Платформа помогает организациям контролировать доступ к данным, защищать конфиденциальную информацию и снижать риски при работе с ИИ-моделями. Система обеспечивает фильтрацию и контроль передаваемых данных, мониторинг взаимодействия с интеллектуальными сервисами и защиту чувствительной информации. Это позволяет организациям безопасно внедрять ИИ-решения и использовать аналитические системы без угрозы утечки или неконтролируемого доступа к данным. Baksan помогает выстроить безопасную архитектуру работы с искусственным интеллектом и соответствует требованиям корпоративной и государственной информационной безопасности.",
+      "button": "Перейти к продукту (скоро)"
+    },
+    "Product_item4": {
+      "link": "Elbrus Cortex",
+      "description": "Elbrus Cortex позволяет организациям создавать и управлять экосистемой интеллектуальных агентов, которые выполняют разные задачи: анализ данных, поиск закономерностей, генерацию отчётов, прогнозирование показателей и формирование рекомендаций для принятия решений. Платформа предоставляет единую рабочую среду для разработки, тестирования и запуска таких систем. Elbrus Cortex позволяет организациям создавать и управлять экосистемой интеллектуальных агентов, которые выполняют разные задачи: анализ данных, поиск закономерностей, генерацию отчётов, прогнозирование показателей и формирование рекомендаций для принятия решений. Платформа предоставляет единую рабочую среду для разработки, тестирования и запуска таких систем. Платформа также предоставляет инструменты контроля, мониторинга и управления ИИ-процессами. Это позволяет отслеживать работу агентов, управлять доступом к данным и обеспечивать прозрачность работы интеллектуальных систем — что особенно важно для корпоративной и государственной среды. Платформа также предоставляет инструменты контроля, мониторинга и управления ИИ-процессами. Это позволяет отслеживать работу агентов, управлять доступом к данным и обеспечивать прозрачность работы интеллектуальных систем — что особенно важно для корпоративной и государственной среды.",
+      "button": "Перейти к продукту (скоро)"
+    }
+  },
+  "CareerForm": {
+    "title": "Отправить резюме",
+    "name": "Имя",
+    "name_required": "Имя обязательно",
+    "surname": "Фамилия",
+    "surname_required": "Фамилия обязательна",
+    "email": "Email",
+    "email_required": "Email обязателен",
+    "email_pattern": "Некорректный email",
+    "vacancy": "Вакансия",
+    "vacancy_required": "Выберите вакансию",
+    "phone": "Телефон",
+    "phone_required": "Телефон обязателен",
+    "cover_letter": "Сопроводительное письмо",
+    "file_here": "Перенесите сюда резюме или ",
+    "attach_file": "Прикрепить файл",
+    "privacy_policy": "Я даю ООО «Инноватика Системс» согласие на обработку персональных данных в соответствии с ",
+    "privacy_confidentiality": "политикой конфиденциальности",
+    "privacy_required": "Необходимо согласие на обработку персональных данных",
+    "submit": "Отправить",
+    "Submitting": "Submitting..."
+  }
+}
