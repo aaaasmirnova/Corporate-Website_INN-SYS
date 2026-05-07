@@ -11,6 +11,19 @@
       "description1": "A technology company that helps government and corporate organizations transform data into a management tool",
       "description2": "We develop analysis, forecasting, and data protection systems that allow users to see patterns, identify risks early, and make decisions based on objective analytics"
     },
+    "header": {
+      "alt": "INNOVATICA",
+      "nav": {
+        "1": "ABOUT",
+        "2": "PRODUCTS",
+        "3": "EXPERTISE",
+        "4": "FOR INVESTORS",
+        "5": "CAREER",
+        "6": "CONTACTS",
+        "lang": "РУС"
+      },
+      "button": "CONTACT US"
+    },
     "key_metrics": {
       "title": "Key metrics",
       "key_metric1": {

@@ -1,9 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const Burger = () => {
+  const t = useTranslations("Home");
+
   const [isOpen, setOpen] = useState(false);
+
   const toggleBurger = () => {
     setOpen(!isOpen);
   };
@@ -14,7 +18,7 @@ export const Burger = () => {
         <Image
           className={`absolute top-5 left-10 opacity-0 transition-default ${isOpen ? "opacity-100" : ""}`}
           src="/assets/svg/innovatica-logo.svg"
-          alt="ИННОВАТИКА"
+          alt={t("header.alt")}
           width="24"
           height="32"
         />
@@ -26,16 +30,17 @@ export const Burger = () => {
       </div>
       <nav className="w-93.75 h-100svh flex flex-col text-neutral-bright-beginning text-[14px] font-normal">
         <ul className="flex flex-col text-neutral-bright-beginning text-[14px] font-nav font-normal">
-          <li className="px-12 py-4"><a href="#!" className="uppercase">ПРОДУКТЫ</a></li>
-          <li className="px-12 py-4"><a href="#!" className="uppercase">О КОМПАНИИ</a></li>
-          <li className="px-12 py-4"><a href="#!" className="uppercase">ЭКСПЕРТИЗА</a></li>
-          <li className="px-12 py-4"><a href="#!" className="uppercase">КАРЬЕРА</a></li>
-          <li className="px-12 py-4"><a href="#!" className="uppercase">ИНВЕСТОРАМ</a></li>
-          <li className="px-12 py-4"><a href="#!" className="uppercase">ENGLISH</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.1")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.2")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.3")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.4")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.5")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.6")}</a></li>
+          <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.lang")}</a></li>  
         </ul>
       </nav>
       <button className="cursor-pointer absolute bottom-16 mx-5 py-4.5 w-full bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase">
-        СВЯЗАТЬСЯ
+        {t("header.button")}
       </button>
     </div>
   );

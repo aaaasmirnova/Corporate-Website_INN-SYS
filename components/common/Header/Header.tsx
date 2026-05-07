@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Nav } from "./Nav"
 import { Burger } from "./Burger";
 
 export const Header = () => {
+  const t = useTranslations("Home");
+
   return (
     <header className="w-full  xl:w-auto fixed top-0 my-8 px-6 z-20 text-neutral-bright-beginning">
       <div className="relative w-full flex flex-row justify-between">
@@ -12,7 +15,7 @@ export const Header = () => {
             <Image
               className=""
               src="/assets/svg/innovatica-logo.svg"
-              alt="ИННОВАТИКА"
+              alt={t("header.alt")}
               width="24"
               height="32"
             />
