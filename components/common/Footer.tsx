@@ -125,7 +125,7 @@ export const Footer = () => {
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
                 Пользовательское соглашение
               </a>
-              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0 font-open-sans">
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0 font-open-sans md:text-center">
                 Политика обработки и защиты
                 <span className="hidden md:inline">
                   <br />
