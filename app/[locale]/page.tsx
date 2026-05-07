@@ -1,3 +1,4 @@
+import { Header } from "@/components/common/Header/Header";
 import { Footer } from "@/components/common/Footer";
 import { Career } from "@/components/home/Career/Career";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
@@ -6,10 +7,9 @@ import { Contacts } from "@/components/home/Contacts/Contacts";
 import { ProductEcosystem } from "@/components/home/ProductEcosystem/ProductEcosystem";
 import { Partners } from "@/components/home/Partners/Partners";
 import ContactsForm from "../components/ContactsForm/ContactsForm";
-import { AboutSection } from "@/components/AboutComponent/AboutSection";
-import { Header } from "@/components/Header/Header";
-import { HeroSection } from "@/components/HeroComponent/HeroSection";
-import { KeyIndicatorsSection } from "@/components/KeyIndicatorsComponent/KeyIndicatorsSection";
+import { AboutSection } from "@/components/home/AboutComponent/AboutSection";
+import { HeroSection } from "@/components/home/HeroComponent/HeroSection";
+import { KeyIndicatorsSection } from "@/components/home/KeyIndicatorsComponent/KeyIndicatorsSection";
 
 export default function Home() {
   return (
