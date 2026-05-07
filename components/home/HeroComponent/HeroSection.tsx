@@ -1,6 +1,19 @@
+"use client";
+
+import { Button } from "@/components/UI/Button";
 import React from "react";
 
 export const HeroSection = () => {
+  const scrollToForm = () => {
+    const formElement = document.getElementById("contact-form");
+    if (formElement) {
+      formElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -13,7 +26,13 @@ export const HeroSection = () => {
           Наша задача — сделать данные понятными, процессы — управляемыми, результаты — предсказуемыми
         </span>
       </p>
-      <button className="cursor-pointer my-16 py-3 px-8 bg-neutral-bright-beginning rounded-xl font-[16px] font-open-sans">Обсудить проект</button>
+      <Button
+        customClassName={"my-16 py-3 px-8 bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 rounded-xl font-[16px] font-open-sans"}
+        onClick={scrollToForm}
+      >
+        Обсудить проект
+      </Button>
+      {/* <button className="cursor-pointer my-16 py-3 px-8 bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 rounded-xl font-[16px] font-open-sans transition-250ms">Обсудить проект</button> */}
     </section>
   );
 };
