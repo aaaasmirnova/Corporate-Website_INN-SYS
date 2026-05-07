@@ -28,7 +28,7 @@ export const Burger = () => {
           <span id="burger-line-bottom" className={`${isOpen ? "-rotate-45 translate-xy-half" : ""} transition-default block w-4 h-px bg-neutral-bright-beginning`}></span>
         </div>
       </div>
-      <nav className="w-93.75 h-100svh flex flex-col text-neutral-bright-beginning text-[14px] font-normal">
+      <nav className="w-93.75 h-100svh min-h-full flex flex-col justify-between text-neutral-bright-beginning text-[14px] font-normal overflow-y-scroll">
         <ul className="flex flex-col text-neutral-bright-beginning text-[14px] font-nav font-normal">
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.1")}</a></li>
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.2")}</a></li>
@@ -38,10 +38,10 @@ export const Burger = () => {
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.6")}</a></li>
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.lang")}</a></li>  
         </ul>
+        <button className="cursor-pointer mt-5 mb-40 mx-5 py-4.5 w-auto bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase">
+          {t("header.button")}
+        </button>
       </nav>
-      <button className="cursor-pointer absolute bottom-16 mx-5 py-4.5 w-full bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase">
-        {t("header.button")}
-      </button>
     </div>
   );
 };
