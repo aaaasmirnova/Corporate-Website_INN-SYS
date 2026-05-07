@@ -33,7 +33,6 @@ export const HeroSection = () => {
       >
         {t("button")}
       </Button>
-      {/* <button className="cursor-pointer my-16 py-3 px-8 bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 rounded-xl font-[16px] font-open-sans transition-250ms">{t("button")}</button> */}
     </section>
   );
 };
