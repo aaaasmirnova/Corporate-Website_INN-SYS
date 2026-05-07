@@ -12,6 +12,16 @@ export const Burger = () => {
     setOpen(!isOpen);
   };
 
+  const scrollToForm = () => {
+    const formElement = document.getElementById("contact-form");
+    if (formElement) {
+      formElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div className={`flex flex-col justify-start items-start w-14 h-14 xl:hidden py-4 bg-neutral-black-elbrus/20 backdrop-blur-xs transition-250ms overflow-clip ${isOpen ? "fixed top-0 right-0 w-93.75 h-svh rounded-none" : "absolute top-0 right-0 rounded-xl"}`}>
       <div className={`relative ${isOpen ? "px-12 py-8" : "px-0 py-0"} xl:px-8 w-full flex flex-row ${isOpen ? "justify-end items-center" : "justify-center items-center"}`}>
@@ -38,7 +48,10 @@ export const Burger = () => {
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.6")}</a></li>
           <li className="px-12 py-4"><a href="#!" className="uppercase">{t("header.nav.lang")}</a></li>  
         </ul>
-        <button className="cursor-pointer mt-5 mb-40 mx-5 py-4.5 w-auto bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase">
+        <button
+          className="cursor-pointer mt-5 mb-40 mx-5 py-4.5 w-auto bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase"
+          onClick={scrollToForm}
+        >
           {t("header.button")}
         </button>
       </nav>
