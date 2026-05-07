@@ -4,26 +4,32 @@
   },
   "Home": {
     "title": "Innovatica Systems",
-    "description": "We design, implement, and support comprehensive IT solutions for government and corporate organizations. Our mission is to make data understandable, processes manageable, and results predictable",
+    "description1": "We design, implement, and support comprehensive IT solutions for government and corporate organizations.",
+    "description2": " Our mission is to make data understandable, processes manageable, and results predictable",
     "button": "Discuss Project",
     "section1": {
       "description1": "A technology company that helps government and corporate organizations transform data into a management tool",
       "description2": "We develop analysis, forecasting, and data protection systems that allow users to see patterns, identify risks early, and make decisions based on objective analytics"
     },
     "key_metrics": {
+      "title": "Key metrics",
       "key_metric1": {
+        "id": "1",
         "value": "+50%",
         "description": "Improved forecasting accuracy using machine learning models and scenario analysis"
       },
       "key_metric2": {
+        "id": "2",
         "value": "+60%",
         "description": "Faster decision-making through automated analytics and data integration"
       },
       "key_metric3": {
+        "id": "3",
         "value": "+70%",
         "description": "Reduction in manual data processing thanks to AI agents and automated analytical processes"
       },
       "key_metric4": {
+        "id": "4",
         "value": "x4",
         "description": "Faster detection of anomalies and risks through intelligent data monitoring"
       }
