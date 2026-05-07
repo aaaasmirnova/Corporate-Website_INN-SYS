@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "@/public/assets/svg/innovatica-logo.svg"
+// import Logo from "@/public/assets/svg/innovatica-logo.svg"
 
 export const Burger = () => {
   const [isOpen, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export const Burger = () => {
       <div className={`relative ${isOpen ? "px-12 py-8" : "px-0 py-0"} xl:px-8 w-full flex flex-row ${isOpen ? "justify-end items-center" : "justify-center items-center"}`}>
         <Image
           className={`absolute top-5 left-10 opacity-0 transition-default ${isOpen ? "opacity-100" : ""}`}
-          src={Logo}
+          src="/assets/svg/innovatica-logo.svg"
           alt="ИННОВАТИКА"
           width="24"
           height="32"

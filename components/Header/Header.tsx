@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/assets/svg/innovatica-logo.svg"
+// import Logo from "@/public/assets/svg/innovatica-logo.svg"
 import { Nav } from "./Nav"
 import { Burger } from "./Burger";
 
@@ -12,7 +12,7 @@ export const Header = () => {
           <div className="px-4 py-3 xl:px-8 xl:py-0">
             <Image
               className=""
-              src={Logo}
+              src="/assets/svg/innovatica-logo.svg"
               alt="ИННОВАТИКА"
               width="24"
               height="32"
