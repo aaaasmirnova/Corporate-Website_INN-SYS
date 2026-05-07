@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
+import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/common/Footer";
 import "../globals.css";
 import "../icomoon.css";
@@ -43,10 +44,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
 
-      <body className={`${montserrat.variable} antialiased`}>
+      <body className={`${montserrat.variable} antialiased flex flex-col items-center`}>
 
 
         <NextIntlClientProvider>
+          <Header />
           {children}
           <Footer />
         </NextIntlClientProvider>
