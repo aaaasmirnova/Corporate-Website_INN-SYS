@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
+import ArrowDown from "@/public/icons/career/arrowDown.svg";
 
 type FormValues = {
   firstName: string;
@@ -16,8 +17,22 @@ type FormValues = {
   privacy: boolean;
 };
 
+const vacanciesList = [
+  { value: "ux-ui", label: "UX/UI" },
+  { value: "analyst", label: "Аналитик" },
+  { value: "ml-engineer", label: "Инженер ML" },
+  { value: "info-security", label: "Информационная безопасность" },
+  { value: "marketing", label: "Маркетинг" },
+  { value: "management", label: "Менеджмент" },
+  { value: "dev", label: "Разработка" },
+  { value: "tester", label: "Тестировщик" },
+  { value: "other", label: "Другие вакансии" },
+];
+
 export default function CareerForm() {
   const t = useTranslations("CareerForm");
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedVacancyLabel, setSelectedVacancyLabel] = useState("");
 
   const {
     register,
@@ -69,6 +84,12 @@ export default function CareerForm() {
     }
   };
 
+  const handleSelectVacancy = (value: string, label: string) => {
+    setSelectedVacancyLabel(label);
+    setValue("vacancy", value);
+    setIsOpen(false);
+  };
+
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
       const formData = new FormData();
@@ -106,7 +127,7 @@ export default function CareerForm() {
         </h2>
 
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex flex-wrap gap-4 mb-4 md:gap-6 md:mb-6">
+          <div className="flex flex-wrap gap-2 mb-6  md:mb-6">
             {/* First Name */}
             <div className="w-full md:w-[calc(33%-16px)]">
               <input
@@ -123,7 +144,6 @@ export default function CareerForm() {
                 </p>
               )}
             </div>
-
             {/* Last Name */}
             <div className="w-full md:w-[calc(33%-12px)]">
               <input
@@ -140,34 +160,79 @@ export default function CareerForm() {
                 </p>
               )}
             </div>
+            {/* Кастомный селект Vacancy */}
+            <div className="flex-1 min-w-50 relative">
+              <div
+                className={`w-full h-12 px-4 border border-accent-5 flex items-center justify-between cursor-pointer bg-transparent transition-all ${
+                  isOpen
+                    ? "rounded-t-xl rounded-b-none border-b-0"
+                    : "rounded-xl"
+                } focus:border-white ${errors.vacancy && "border-red-700"} ${
+                  isOpen && !selectedVacancyLabel
+                    ? "after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[calc(100%-32px)] after:h-px after:bg-neutral-800"
+                    : ""
+                }`}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <span
+                  className={
+                    selectedVacancyLabel ? "text-white" : "text-accent-6"
+                  }
+                >
+                  {selectedVacancyLabel || t("vacancy")}
+                </span>
+                <svg
+                  className={`w-5 h-5 text-accent-6 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
 
-            {/* Vacancy Select */}
-            <div className="w-full md:w-[calc(33%-12px)]">
-              <select
-                defaultValue=""
-                className={`w-full h-12 px-4 border border-accent-5 rounded-xl focus:border-white text-accent-6 ${errors.vacancy && "border-red-700"}`}
+              {isOpen && (
+                <div className="absolute top-full left-0 right-0 bg-neutral-black-elbrus border border-accent-5 border-t-0 rounded-b-xl z-50 max-h-60 overflow-y-auto">
+                  {vacanciesList.map((vacancy, index) => (
+                    <div
+                      key={vacancy.value}
+                      className={`relative px-4 py-3 hover:underline cursor-pointer transition-colors text-neutral-0 ${
+                        index !== vacanciesList.length - 1
+                          ? "after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[calc(100%-32px)] after:h-px after:bg-neutral-800"
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSelectVacancy(vacancy.value, vacancy.label)
+                      }
+                    >
+                      {vacancy.label}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <input
+                type="hidden"
                 {...register("vacancy", {
                   required: t("vacancy_required"),
                 })}
-              >
-                <option value="" disabled>
-                  {t("vacancy")}
-                </option>
-                <option value="frontend">Frontend Developer</option>
-                <option value="backend">Backend Developer</option>
-                <option value="designer">UI/UX Designer</option>
-                <option value="qa">QA Engineer</option>
-              </select>
+              />
 
               {errors.vacancy && (
-                <p className="text-red-700 text-xs px-4">
+                <p className="text-red-700 text-xs px-4 mt-1">
                   {errors.vacancy.message}
                 </p>
               )}
             </div>
-
-            {/* Phone */}
-            <div className="w-full md:w-[calc(50%-12px)]">
+          </div>
+          {/* Phone */}{" "}
+          <div className="flex flex-wrap gap-2 md:gap-4 mb-6 md:mb-6">
+            <div className="flex-1 min-w-50">
               <input
                 type="tel"
                 placeholder={t("phone")}
@@ -182,7 +247,6 @@ export default function CareerForm() {
                 </p>
               )}
             </div>
-
             {/* Email */}
             <div className="w-full md:w-[calc(50%-12px)]">
               <input
@@ -204,14 +268,12 @@ export default function CareerForm() {
               )}
             </div>
           </div>
-
           {/* Message */}
           <textarea
             placeholder="Ваше сообщение"
             className="w-full h-24 mb-6 py-2 px-4 border border-accent-5 rounded-xl resize-none focus:border-white placeholder:text-accent-6"
             {...register("message")}
           />
-
           {/* File Upload */}
           <div className="mb-6">
             <label className="flex flex-col items-center justify-center h-24 px-4 border border-dashed border-accent-5 rounded-xl cursor-pointer">
@@ -235,7 +297,6 @@ export default function CareerForm() {
               />
             </label>
           </div>
-
           {/* Privacy */}
           <div className="mb-20 md:mb-28">
             <label className="flex items-center gap-3 mb-6">
