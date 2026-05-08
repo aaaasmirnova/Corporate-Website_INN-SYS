@@ -5,12 +5,12 @@ import Image from "next/image";
 // import KBGU from "@/public//images/partners/kbgu.png";
 // import KBR from "@/public//images/partners/kbr.png";
 // import Roskosmos from "@/public//images/partners/roskosmos.png";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 // import LogoPartners from "@/public/icons/partnersLogo.svg";
 // import GradientPartners from "@/public/icons/gradient_partners_desk_tablet.svg";
 
 // const partnersIcon = [AG, Gazprombank, MFTI, KBGU, KBR, Roskosmos];
-const partnersIcon = [
+const partnersIconRu = [
   "/icons/gazprombank.svg",
   "/icons/mfti.svg",
   "/icons/kbgu.svg",
@@ -18,8 +18,20 @@ const partnersIcon = [
   "/icons/roskosmos.svg",
   "/icons/ag.svg",
 ];
+
+const partnersIconEn = [
+  "/icons/gazprombank-eng.svg",
+  "/icons/mfti-eng.svg",
+  "/icons/kbgu.svg",
+  "/icons/kbr.svg",
+  "/icons/roskosmos-eng.svg",
+  "/icons/ag.svg",
+];
+
 export const Partners = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
+  const partnersIcon = locale === "ru" ? partnersIconRu : partnersIconEn;
 
   return (
     <section className="container mb-20 md:mb-41 lg:mb-30">
