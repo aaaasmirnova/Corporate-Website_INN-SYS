@@ -7,7 +7,7 @@ const contactTitle2 = "section_2.title";
 const contactSection_1 = [
   {
     id: 1,
-    title: "Вконтакте",
+    title: "section_1.vkontakte",
     link: "https://vk.com/inn_sys",
   },
   {
