@@ -228,5 +228,15 @@
     "privacy_required": "Необходимо согласие на обработку персональных данных",
     "submit": "Отправить",
     "Submitting": "Submitting..."
+  },
+  "Contact": {
+    "section_1": {
+      "title": "Информационное присутствие",
+      "vkontakte": "VK",
+      "info": "*owned by Meta, which is recognized as an extremist organization in Russia"
+    },
+    "section_2": {
+      "title": "Профессиональное присутствие"
+    }
   }
 }

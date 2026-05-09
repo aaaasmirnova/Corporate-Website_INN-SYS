@@ -58,7 +58,7 @@ export const Contacts = () => {
         <div className="hidden md:block relative max-w-353 w-[80%] z-0 pointer-events-none">
           <div className="mx-auto">
             <Image
-              src="/images/map-big.png"
+              src="/images/desktop-map.svg"
               alt={t("contacts.map_alt")}
               width={1412}
               height={776}
