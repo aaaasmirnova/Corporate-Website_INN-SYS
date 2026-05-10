@@ -32,7 +32,7 @@ export const AboutSubstract = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="flex flex-col w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw">
+    <section className="flex flex-col w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-17.5 md:mb-25.25 lg:mt-0">
       {substract.map((item, index) => (
         <article
           className={`flex max-w-187.5 w-[calc(100%-12px)] md:w-[70%] xl:w-1/2 ${styles[`substract_${index + 1}`]}`}
