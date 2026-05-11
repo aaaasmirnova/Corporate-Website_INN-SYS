@@ -107,7 +107,7 @@ export const ProductEcosystem = () => {
                         </h3>
                       </div>
                     </div>
-                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line mt-auto">
+                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium mt-auto">
                       {t(product.description)}
                     </p>
                   </div>

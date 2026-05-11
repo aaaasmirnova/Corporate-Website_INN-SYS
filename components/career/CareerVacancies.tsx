@@ -2,15 +2,8 @@
 import { useState } from "react";
 import { vacancies } from "./data";
 import { Pagination } from "./Pagination";
+import { useTranslations } from "next-intl";
 
-export const positions = [
-  { nameDisplay: "Все направления", nameFilter: "Все направления" },
-  { nameDisplay: "Дизайн", nameFilter: "Design" },
-  { nameDisplay: "Аналитика", nameFilter: "Analytics" },
-  { nameDisplay: "Backend", nameFilter: "Backend" },
-  { nameDisplay: "ML", nameFilter: "ML" },
-  { nameDisplay: "Другие вакансии", nameFilter: "Другие вакансии" },
-];
 const mainCategories = ["Design", "Analytics", "Backend", "ML"];
 const VACANCIES_PER_PAGE = 5;
 
@@ -20,6 +13,30 @@ export const CareerVacancies = () => {
   const [visibleVacancyId, setVisibleVacancyId] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
+  const t = useTranslations();
+  const positions = [
+    {
+      nameDisplay: t("Career.CareerVacancies.Filters.all"),
+      nameFilter: "Все направления",
+    },
+    {
+      nameDisplay: t("Career.CareerVacancies.Filters.design"),
+      nameFilter: "Design",
+    },
+    {
+      nameDisplay: t("Career.CareerVacancies.Filters.analytics"),
+      nameFilter: "Analytics",
+    },
+    {
+      nameDisplay: t("Career.CareerVacancies.Filters.backend"),
+      nameFilter: "Backend",
+    },
+    { nameDisplay: t("Career.CareerVacancies.Filters.ml"), nameFilter: "ML" },
+    {
+      nameDisplay: t("Career.CareerVacancies.Filters.other"),
+      nameFilter: "Другие вакансии",
+    },
+  ];
   const choosePosition = (position: string) => {
     setSelectedPosition(position);
     setCurrentPage(1);
@@ -110,13 +127,16 @@ export const CareerVacancies = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:flex-nowrap sm:justify-between ">
               <button
-                className="text-neutral-0 text-[16px] px-8 py-3 font-open-sans"
+                className=" bg-transparent text-neutral-0 text-[16px] px-8 py-3 font-open-sans hover:bg-opacity-40"
                 onClick={() => changeVisibilityOfText(vacancy.id)}
               >
-                {visibleVacancyId === vacancy.id ? "Скрыть текст" : "Подробнее"}
+                {visibleVacancyId === vacancy.id
+                  ? t("Career.CareerVacancies.Buttons.hide_text")
+                  : t("Career.CareerVacancies.Buttons.show_more")}
               </button>
+
               <button className="bg-button-secondary-default text-neutral-0 text-[16px] px-8 py-3 rounded-[12px] leading-[150%] hover:bg-button-secondary-active!">
-                Откликнуться
+                {t("Career.CareerVacancies.Buttons.apply")}
               </button>
             </div>
           </div>

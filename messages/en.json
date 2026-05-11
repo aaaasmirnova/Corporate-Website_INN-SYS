@@ -43,12 +43,12 @@
       "dates": {
         "date1": {
           "date": "2024",
-          "info1": "Report for 2024",
+          "info1": "Report for ",
           "info2": "IR Presentation"
         },
         "date2": {
           "date": "2025",
-          "info1": "Report for 2025",
+          "info1": "Report for ",
           "info2": "IR Presentation"
         }
       }
@@ -142,52 +142,86 @@
   "About": {
     "Substract": {
       "substract1": {
-        "title": "Идея и прототип",
-        "description": "Формируется концепция компании. Определяются базовые принципы и ориентиры. Разрабатывается первый прототип, который становится отправной точкой для последующего развития"
+        "title": "Concept and prototype",
+        "description": "The company concept takes shape. Core principles and directions are defined. The first prototype is developed, establishing the foundation for further development"
       },
       "substract2": {
-        "title": "Формирование команды и подхода",
-        "description": "Компания формирует ядро команды и переходит к системной проработке продуктовой и технологической повестки. Закладываются ключевые принципы архитектуры и организационной модели, обеспечивающие дальнейшее масштабирование"
+        "title": "Team and approach formation",
+        "description": "A core team is formed, and the company moves to a systematic development of its product and technology direction. Key architectural and organizational principles are established to support future scaling"
       },
       "substract3": {
-        "title": "Первый продукт",
-        "description": "Компания получает официальное юридическое оформление и начинает операционную деятельность. Выстраивается взаимодействие с госсектором и образовательными организациями, закладывается основа для стабильного развития"
+        "title": "First product",
+        "description": "The company is formally established and begins operational activity. Partnerships with the public sector and educational institutions are initiated, laying the foundation for sustainable growth"
       },
       "substract4": {
-        "title": "Масштабирование",
-        "description": "Компания достигает нового уровня организационной зрелости и переходит к дивизиональной модели управления. Фокус смещается на создание комплексных data-driven решений и формирование устойчивых конкурентных преимуществ"
+        "title": "Scaling",
+        "description": "The company reaches a new level of organizational maturity and transitions to a divisional management model. Focus shifts to comprehensive data-driven solutions and the development of  sustainable competitive advantages"
       }
     },
+<<<<<<< HEAD
     "Info": {
       "title_1": "Company Launch",
       "title_2": "Cities",
       "title_3": "Employees",
       "title_4": "Contracts"
+=======
+    "AboutHero": {
+      "title": "Innovatica Systems",
+      "description": "About the сompany",
+      "image_alt": "Innovatica Systems"
+    },
+    "AboutPhilosophy": {
+      "title": "Data defines reality",
+      "description1": "Decisions are made in an environment where the pace of change exceeds the ability to interpret it, and systems evolve faster than mechanisms of control are formed. This creates a gap between action and understanding",
+      "description2": "Uncertainty becomes a systemic risk factor. In these conditions, organizations operate at the center — between data flows and the need to make decisions. What matters is not the volume of information, but the ability to interpret it and control outcomes",
+      "description3": "At this point, the need for controlled and deliberate navigation emerges",
+      "title2": "We establish this navigation layer",
+      "description5": "Innovatica Systems is a technology company in the field of Big Data and machine learning, designing infrastructure for data analysis, forecasting, and protection"
+>>>>>>> 1ecc277 (fix: fix styles)
     }
   },
   "Business": {
-    "description": "Мы формируем основу для функционирования процессов, от которых зависит устойчивость бизнеса и систем государства"
+    "description": "We establish the foundation for processes that determine the stability of business and government systems"
   },
-  "CareerHero": {
-    "title": "Проектируйте архитектуру решений для мира Big Data и AI",
-    "description": "Мы объединяем специалистов в области Big Data, машинного обучения, аналитики, разработки и дизайна для создания систем, работающих в условиях высокой сложности"
-  },
-  "CareerAdvantages": {
-    "advantage1": {
-      "title": "Гибкая рабочая среда",
-      "description": "Возможность выстраивать рабочий процесс с учётом задач и личных обстоятельств"
+  "Career": {
+    "CareerHero": {
+      "title": "Design architectures for the world of Big Data and AI",
+
+      "description": "We bring together specialists in Big Data, machine learning, analytics, development and design to create systems that operate in highly complex environments"
     },
-    "advantage2": {
-      "title": "Развитие в профессии",
-      "description": "Менторство, командные мероприятия, условия роста"
+    "CareerAdvantages": {
+      "advantage1": {
+        "title": "Flexible work environment",
+        "description": "Ability to organize workflows around team objectives and individual working rhythms"
+      },
+      "advantage2": {
+        "title": "Professional growth",
+        "description": "Mentorship, team collaboration and conditions for continuous development"
+      },
+      "advantage3": {
+        "title": "Early-career programs",
+        "description": "Internship programs, early-career tracks and training in IT professions"
+      },
+      "advantage4": {
+        "title": "Supportive professional culture",
+        "description": "A team environment built on involvement, mutual support and respect for individual working dynamics"
+      }
     },
-    "advantage3": {
-      "title": "Эффективный старт",
-      "description": "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям"
-    },
-    "advantage4": {
-      "title": "Поддерживающая профессиональная культура",
-      "description": "Командная среда, основанная на взаимной поддержке, вовлеченности и уважении к рабочему ритму человека"
+
+    "CareerVacancies": {
+      "Filters": {
+        "all": "All directions",
+        "design": "Design",
+        "analytics": "Analytics",
+        "backend": "Backend",
+        "ml": "ML",
+        "other": "Other vacancies"
+      },
+      "Buttons": {
+        "show_more": "Learn more",
+        "hide_text": "Hide text",
+        "apply": "Apply"
+      }
     }
   },
   "Products": {
@@ -235,6 +269,7 @@
     "submit": "Отправить",
     "Submitting": "Submitting..."
   },
+<<<<<<< HEAD
   "Contact": {
     "section_1": {
       "title": "Информационное присутствие",
@@ -243,6 +278,53 @@
     },
     "section_2": {
       "title": "Профессиональное присутствие"
+=======
+
+  "Contacts": {
+    "title": "Contacts",
+    "description": "Technological partnership begins with communication"
+  },
+  "Footer": {
+    "Nav": {
+      "about": "About",
+      "products": "Products",
+      "expertise": "Expertise",
+      "investors": "For investors",
+      "career": "Career",
+      "contacts": "Contacts"
+    },
+    "Logo_alt": "Logo",
+    "Contacts": {
+      "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
+      "email_1": "innovaticasystems@inbox.ru",
+      "email_2": "systemsinnovatica@gmail.com"
+    },
+    "Policies": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "data_protection": "Personal Data Processing and Protection Policy"
+    },
+    "Copyright": "© Innovatica Systems {year}"
+  },
+  "Investors": {
+    "InvestorsHero": {
+      "title": "Инвесторам",
+      "description1": "Рынок Big Data и AI переходит к этапу формирования инфраструктуры управления",
+      "description2": "Рост сложности систем смещает фокус с обработки данных на их контроль и интерпретацию",
+      "description3": "Инноватика Системс развивается как компания, формирующая эту инфраструктуру",
+      "description4": "Фокус — на архитектуре решений, обеспечивающих наблюдаемость и управляемость"
+    },
+    "FinancialData": {
+      "description": "Финансовые показатели отражают масштабирование продуктовых направлений",
+      "titleReport": " Годовой отчет",
+      "descriptionReport": "В этом году продолжает наблюдаться стабильный рост без резких скачков",
+      "buttonReport": "Скачать отчет",
+      "presentation": "Смотреть презентацию",
+      "titleRule": "Устав компании",
+      "descriptionRule": "Контроль определяет устойчивость — мы работаем на уровне, где он формируется",
+      "readRuleButton": "Читать",
+      "downloadButton": "Скачать"
+>>>>>>> 1ecc277 (fix: fix styles)
     }
   }
 }

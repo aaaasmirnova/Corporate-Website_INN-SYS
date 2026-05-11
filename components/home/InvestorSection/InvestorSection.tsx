@@ -56,9 +56,9 @@ export const InvestorSection = () => {
         {t("For_investors.reports")}
       </p>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-2 order-2 md:order-1 lg:order-2 md:mt-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2.5 lg:gap-4 order-2 md:order-1 lg:order-2 md:mt-12">
         <Button
-          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-8 rounded-[12px] py-3 whitespace-nowrap"
+          customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300  text-[16px]  leading-150%  font-regular text-neutral-black-elbrus px-[67px] md:px-7.5 py-3  lg:px-8 rounded-[12px]  whitespace-nowrap"
           onClick={scrollToForm}
         >
           {t("For_investors.button_contact")}
@@ -68,7 +68,7 @@ export const InvestorSection = () => {
           href=""
           target="_blank"
           download
-          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 whitespace-nowrap"
+          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-15 md:px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 whitespace-nowrap"
         >
           {t("For_investors.button_constitution")}
           <Download className="w-4 h-4" />

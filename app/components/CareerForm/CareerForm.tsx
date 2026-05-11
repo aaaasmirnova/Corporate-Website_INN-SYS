@@ -163,7 +163,7 @@ export default function CareerForm() {
             {/* Кастомный селект Vacancy */}
             <div className="flex-1 min-w-50 relative">
               <div
-                className={`w-full h-12 px-4 border border-accent-5 flex items-center justify-between cursor-pointer bg-transparent transition-all ${
+                className={`w-full h-12 px-4 border border-accent-5 flex items-center justify-between cursor-pointer bg-transparent transition-all overflow-hidden  ${
                   isOpen
                     ? "rounded-t-xl rounded-b-none border-b-0"
                     : "rounded-xl"
@@ -175,9 +175,10 @@ export default function CareerForm() {
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <span
-                  className={
+                  className={`flex-1 truncate mr-2 ${
                     selectedVacancyLabel ? "text-white" : "text-accent-6"
-                  }
+                  }`}
+                  title={selectedVacancyLabel}
                 >
                   {selectedVacancyLabel || t("vacancy")}
                 </span>
@@ -197,7 +198,7 @@ export default function CareerForm() {
               </div>
 
               {isOpen && (
-                <div className="absolute top-full left-0 right-0 bg-neutral-black-elbrus border border-accent-5 border-t-0 rounded-b-xl z-50 max-h-60 overflow-y-auto">
+                <div className="absolute top-full left-0 right-0 bg-neutral-black-elbrus border border-accent-5 border-t-0 rounded-b-xl z-50 overflow-visible">
                   {vacanciesList.map((vacancy, index) => (
                     <div
                       key={vacancy.value}

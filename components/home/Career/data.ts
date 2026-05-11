@@ -6,13 +6,13 @@ export interface ICard {
   title: string;
   description: string;
   icon?: React.FC<React.SVGProps<SVGSVGElement>>;
+  iconClassName?: string;
 }
 
 export const cards: ICard[] = [
   {
     title: "career_block.block1.title",
-    description:
-      "career_block.block1.description",
+    description: "career_block.block1.description",
     icon: ComfortSupport,
   },
   {
@@ -31,7 +31,12 @@ export const cards: ICard[] = [
     icon: ArrowUp,
   },
 ];
-export const placeOfWorks = ["filters.all_cities", "filters.remote", "filters.nalchik", "filters.moscow"];
+export const placeOfWorks = [
+  "filters.all_cities",
+  "filters.remote",
+  "filters.nalchik",
+  "filters.moscow",
+];
 export const positions = [
   "filters.all_categories",
   "filters.backend",

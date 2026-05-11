@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const socialIcons = [
@@ -15,6 +16,7 @@ const socialIcons = [
 ];
 
 export const ContactsHero = () => {
+  const t = useTranslations();
   return (
     <section className="container relative flex flex-col items-center h-112.5 md:h-193.5 lg:h-237.25 mb-24 md:mb-42 lg:mb-60.5 overflow-visible">
       <Image
@@ -26,10 +28,10 @@ export const ContactsHero = () => {
         priority
       />
       <h1 className="absolute top-23.75 md:top-53 lg:top-66 gradient-text text-[24px] md:text-[40px] lg:text-[64px] leading-[150%] font-semibold">
-        Контакты
+        {t("Contacts.title")}
       </h1>
-      <p className="absolute top-38.75 md:top-76 lg:top-100.75 gradient-text text-[13px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold text-center">
-        Технологическое партнёрство<br></br> начинается с коммуникации
+      <p className="absolute top-38.75 md:top-76 lg:top-100.75 gradient-text text-[13px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold text-center w-53.5 md:w-98.75 lg:w-120">
+        {t("Contacts.description")}
       </p>
 
       <div className="absolute top-86.5 md:top-163.5 lg:top-214.75 left-0 right-0 overflow-visible">

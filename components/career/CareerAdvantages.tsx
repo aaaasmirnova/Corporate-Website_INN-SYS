@@ -7,32 +7,32 @@ import Condition from "@/public/icons/career/conditions.svg";
 
 const advantages = [
   {
-    title: "CareerAdvantages.advantage1.title",
-    description: "CareerAdvantages.advantage1.description",
+    title: "Career.CareerAdvantages.advantage1.title",
+    description: "Career.CareerAdvantages.advantage1.description",
     position:
       "md:-top-[19px] md:left-[190px] lg:top-[130px] lg:-left-[120px] md:-translate-x-10 lg:translate-x-0",
-    width: "max-w-[294px]",
+    // width: "max-w-[294px]",
     icon: Condition,
   },
   {
-    title: "CareerAdvantages.advantage2.title",
-    description: "CareerAdvantages.advantage2.description",
+    title: "Career.CareerAdvantages.advantage2.title",
+    description: "Career.CareerAdvantages.advantage2.description",
     position:
       "translate-0 md:top-[150px] md:-left-[210px] lg:top-[590px] lg:-left-[150px] transform lg:-translate-x-1/2 lg:-translate-y-1/2",
     width: "max-w-[294px]",
     icon: ArrowLeftRight,
   },
   {
-    title: "CareerAdvantages.advantage3.title",
-    description: "CareerAdvantages.advantage3.description",
+    title: "Career.CareerAdvantages.advantage3.title",
+    description: "Career.CareerAdvantages.advantage3.description",
     position:
       "md:top-[315px] md:left-[230px] lg:top-[450px] lg:left-[410px] md:translate-x-10 lg:translate-x-0",
     width: "max-w-[294px]",
     icon: ArrowUp,
   },
   {
-    title: "CareerAdvantages.advantage4.title",
-    description: "CareerAdvantages.advantage4.description",
+    title: "Career.CareerAdvantages.advantage4.title",
+    description: "Career.CareerAdvantages.advantage4.description",
     position:
       "translate-0 md:top-[440px] md:-left-[40px] lg:top-[720px] lg:left-[230px] transform lg:-translate-x-1/2",
     width: "max-w-[355px]",
