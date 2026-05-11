@@ -322,7 +322,9 @@
       "titleRule": "Устав компании",
       "descriptionRule": "Контроль определяет устойчивость — мы работаем на уровне, где он формируется",
       "readRuleButton": "Читать",
-      "downloadButton": "Скачать"
+      "downloadButton": "Скачать",
+      "descriptionAfterRule1": "Контроль определяет устойчивость",
+      "descriptionAfterRule2": "Мы работаем на уровне, где он формируется"
     }
   }
 }

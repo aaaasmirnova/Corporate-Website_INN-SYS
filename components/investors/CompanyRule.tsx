@@ -7,8 +7,8 @@ import Image from "next/image";
 export const CompanyRule = () => {
   const t = useTranslations();
   return (
-    <section className="container relative overflow-hidden">
-      <div className="bg-neutral-900 rounded-[24px] md:rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16">
+    <section className="container ">
+      <div className="relative  bg-neutral-900 rounded-[24px] md:rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16 overflow-hidden  mb-24 md:mb-45 lg:mb-59">
         <h3 className="text-primary-5 text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-[135px] md:mb-[77px] lg:mb-6">
           {t("Investors.FinancialData.titleRule")}
         </h3>
@@ -41,6 +41,14 @@ export const CompanyRule = () => {
           alt=""
           className="absolute bottom-0 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-10 lg:-bottom-10 lg:right-20 w-[238px] h-[310px] md:w-[300px] md:h-[335px] lg:w-[550px] lg:h-[550px] z-0"
         />
+      </div>
+      <div className="flex flex-col items-center">
+        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] md:w-[580px]">
+          {t("Investors.FinancialData.descriptionAfterRule1")}
+        </p>
+        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] ">
+          {t("Investors.FinancialData.descriptionAfterRule2")}
+        </p>
       </div>
     </section>
   );
