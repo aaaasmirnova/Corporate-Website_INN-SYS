@@ -37,6 +37,7 @@ body {
   --color-primary-2: #086190;
   --color-primary-3: #0771a2;
   --color-primary-4: #26c7ff;
+  --color-primary-5: #ffffff;
 
   --color-accent-1: #0490c7;
   --color-accent-2: #2dbff2;
@@ -75,12 +76,26 @@ body {
   --color-neutral-500: #565454;
   --color-neutral-700: #383737;
   --color-neutral-800: #292828;
+  --color-neutral-900: #1a191a;
 
   --color-brand-400: #26c7ff;
 
-  --background-image-gradient-surface: linear-gradient(360deg, rgba(26, 25, 26, 0) -9.81%, #1A191A 62.93%);
-;
-  --background-image-gradient-title: radial-gradient(50% 50% at 50% 50%, #F8F7F7 0%, #807E7E 100%);
+  --background-image-gradient-surface: linear-gradient(
+    360deg,
+    rgba(26, 25, 26, 0) -9.81%,
+    #1a191a 62.93%
+  );
+  --background-image-gradient-title: radial-gradient(
+    50% 50% at 50% 50%,
+    #f8f7f7 0%,
+    #807e7e 100%
+  );
+  --gradient-surface: linear-gradient(0deg, #292828 0%, #292828 100%);
+  --background-image-gradient-title: radial-gradient(
+    50% 50% at 50% 50%,
+    #f8f7f7 0%,
+    #807e7e 100%
+  );
 
   --color-neutral-black-elbrus-20: rgba(13, 12, 12, 0.2);
 
