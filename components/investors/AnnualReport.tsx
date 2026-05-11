@@ -45,8 +45,8 @@ export const AnnualReport = () => {
   }, [scrollToLast]);
 
   return (
-    <section className="flex flex-col items-center w-full">
-      <div className="container flex flex-col items-center">
+    <section className="container flex flex-col items-center w-full">
+      <div className=" flex flex-col items-center">
         <p className="text-neutral-bright-beginning text-[18px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold text-center w-[375px] md:w-[600px] lg:w-[803px] mb-8 lg:mb-12">
           {t("Investors.FinancialData.description")}
         </p>
@@ -56,15 +56,12 @@ export const AnnualReport = () => {
         ref={scrollContainerRef}
         className="w-full overflow-x-auto hide-scroll"
       >
-        <div className="flex gap-[27px] md:gap-[20px] lg:gap-[27px] pb-4">
-          {/* Отступ слева для первой карточки */}
-          <div className="w-[24px] flex-shrink-0 lg:w-[24px]" />
-
+        <div className="flex gap-[27px] md:gap-[20px] lg:gap-[40px] pb-4">
           {sortedReports.map((report, index) => (
             <div
               key={report.year}
               ref={index === sortedReports.length - 1 ? lastReportRef : null}
-              className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-3.5 lg:px-[80px] lg:py-[67px] flex-shrink-0 overflow-hidden relative w-[98%] md:w-[90%] lg:w-[87%]"
+              className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-3.5 lg:px-[80px] lg:py-[67px] flex-shrink-0 overflow-hidden relative w-full"
             >
               <div className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-4 lg:mb-6 relative z-10">
                 <h3 className="text-primary-5 text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold ">
@@ -108,9 +105,6 @@ export const AnnualReport = () => {
               </div>
             </div>
           ))}
-
-          {/* Отступ справа для последней карточки */}
-          <div className="w-[24px] flex-shrink-0 lg:w-[51px]" />
         </div>
       </div>
     </section>
