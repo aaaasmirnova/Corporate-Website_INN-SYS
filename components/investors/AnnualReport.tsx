@@ -94,12 +94,14 @@ export const AnnualReport = () => {
                   <OpenIcon className="w-4 h-4" />
                 </a>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 w-full h-full lg:h-[480px] z-0">
+              <div
+                className={`absolute ${report.imageParam} w-full h-full h-[307px]  z-0`}
+              >
                 <Image
                   src={report.imageUrl}
                   alt=""
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="100vw"
                 />
               </div>

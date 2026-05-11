@@ -11,13 +11,13 @@ export const reports: Report[] = [
     reportUrl: "",
     presentationUrl: "",
     imageUrl: "/images/investors/report2024.svg",
-    imageParam: "h-[580px]",
+    imageParam: "-bottom-37 md:-bottom-34 lg:-bottom-59 left-0 right-0",
   },
   {
     year: "2025",
     reportUrl: "",
     presentationUrl: "",
     imageUrl: "/images/investors/report2025.svg",
-    imageParam: "h-[380px]",
+    imageParam: "-bottom-30 md:-bottom-24 lg:-bottom-40 left-0 right-0",
   },
 ];
