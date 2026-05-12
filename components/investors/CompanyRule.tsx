@@ -7,7 +7,7 @@ import Image from "next/image";
 export const CompanyRule = () => {
   const t = useTranslations();
   return (
-    <section className="container ">
+    <section className="container mb-25.25 md:mb-50 lg:mb-59.5">
       <div className="relative  bg-neutral-900 rounded-[24px] md:rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16 overflow-hidden  mb-24 md:mb-45 lg:mb-59">
         <h3 className="text-primary-5 text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-[135px] md:mb-[77px] lg:mb-6">
           {t("Investors.FinancialData.titleRule")}
@@ -46,7 +46,7 @@ export const CompanyRule = () => {
         <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] md:w-[580px]">
           {t("Investors.FinancialData.descriptionAfterRule1")}
         </p>
-        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] ">
+        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] text-center">
           {t("Investors.FinancialData.descriptionAfterRule2")}
         </p>
       </div>

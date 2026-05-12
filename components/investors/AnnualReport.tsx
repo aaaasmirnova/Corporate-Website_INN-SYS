@@ -47,7 +47,7 @@ export const AnnualReport = () => {
   return (
     <section className="container flex flex-col items-center w-full">
       <div className=" flex flex-col items-center">
-        <p className="text-neutral-bright-beginning text-[16px] md:text-[24px] lg:text-[28px] leading-[150%] font-medium text-center w-[375px] md:w-[600px] lg:w-[803px] mb-8 lg:mb-12">
+        <p className="text-neutral-bright-beginning text-[16px] md:text-[24px] lg:text-[28px] leading-[150%] font-medium text-center w-[375px] md:w-[600px] lg:w-[803px] mb-24  md:mb-25 lg:mb-30">
           {t("Investors.FinancialData.description")}
         </p>
       </div>
@@ -56,7 +56,7 @@ export const AnnualReport = () => {
         ref={scrollContainerRef}
         className="w-full overflow-x-auto hide-scroll"
       >
-        <div className="flex gap-[27px] md:gap-[20px] lg:gap-[40px] pb-4 mb-24">
+        <div className="flex gap-[27px] md:gap-[20px] lg:gap-[40px] mb-8 md:mb-10 lg:mb-15">
           {sortedReports.map((report, index) => (
             <div
               key={report.year}
@@ -94,14 +94,12 @@ export const AnnualReport = () => {
                   <OpenIcon className="w-4 h-4" />
                 </a>
               </div>
-              <div
-                className={`absolute ${report.imageParam} w-full h-full h-[307px]  z-0`}
-              >
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                 <Image
                   src={report.imageUrl}
                   alt=""
                   fill
-                  className="object-contain"
+                  className="object-contain object-left-bottom"
                   sizes="100vw"
                 />
               </div>
