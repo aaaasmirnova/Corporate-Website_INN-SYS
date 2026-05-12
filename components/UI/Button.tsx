@@ -7,7 +7,7 @@ interface ButtonProps {
 export const Button = ({ children, customClassName, onClick }: ButtonProps) => {
   return (
     <button
-      className={`${customClassName} rounded-[16px] py-3`}
+      className={`${customClassName} rounded-2xl py-3 cursor-pointer transition-250ms`}
       onClick={onClick}
     >
       {children}

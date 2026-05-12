@@ -47,7 +47,9 @@ body {
   --color-accent-7: #474646;
 
   --color-neutral-black-elbrus: #0d0c0c;
+  --color-neutral-grey-300: #807e7e;
   --color-neutral-bright-beginning: #f8f7f7;
+  --color-neutral-bright-beginning-4: rgba(248 247 247 / 4%);
 
   --color-button-primary: #f8f7f7;
   --color-button-inactive: #969494;
@@ -105,6 +107,28 @@ p.text-secondary {
 
 a.text-secondary {
   color: var(--color-text-secondary);
+  --leading-h2: 20px;
+  --leading-h3: 20px;
+  --leading-h4: 20px;
+
+  --leading-body-mobile: 20px;
+  --leading-body-tablet: 24px;
+  --leading-body-desktop: 24px;
+
+  --paragraph-spacing-mobile: 8px;
+  --paragraph-spacing-tablet: 12px;
+  --paragraph-spacing-desktop: 12px;
+
+  /* Tailwind Base Replacement */
+
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+}
+
+/* Классы для размеров текста */
+.text-mega-mobile {
+  font-size: var(--text-mega-mobile);
+  line-height: var(--leading-mega-mobile);
 }
 
 .btn-default {
@@ -244,3 +268,67 @@ a.text-secondary {
   color: transparent;
   display: inline-block;
 }
+
+.font-nav {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+}
+
+.font-paragraph {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+}
+.card-1 {
+  transform: translate(20%, -10%);
+}
+.card-2 {
+  transform: translate(20%, 20%);
+}
+.card-3 {
+  transform: translate(-5%, -50%);
+}
+.card-4 {
+  transform: translate(-10%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .card-1 {
+    transform: translate(0, 10%);
+  }
+  .card-2 {
+    transform: translate(0, -10%);
+  }
+  .card-3 {
+    transform: translate(0, 10%);
+  }
+  .card-4 {
+    transform: translate(0, -10%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-1 {
+    transform: translate(0, 0);
+  }
+  .card-2 {
+    transform: translate(0, 0);
+  }
+  .card-3 {
+    transform: translate(0, 0);
+  }
+  .card-4 {
+    transform: translate(0, 0);
+  }
+}
+
+.translate-xy-half {
+  transform: translate(8px, -8px);
+}
+
+.transition-default {
+  transition: all ease-in-out 0.4s;
+}
+.transition-250ms {
+  transition: all ease-in-out 0.25s;
+}
+
