@@ -2,21 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const nav = [
-  "О компании",
-  "Продукты",
-  "Экспертиза",
-  "Инвесторам",
-  "Карьера",
-  "Контакты",
-];
 const navItems = [
   { key: "about", href: "/about" },
   { key: "products", href: "/products" },
   { key: "expertise", href: "/expertise" },
   { key: "investors", href: "/investors" },
   { key: "career", href: "/career" },
-  { key: "contacts", href: "/contacts" },
+  { key: "contacts", href: "/contact" },
 ];
 
 export const Footer = () => {

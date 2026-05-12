@@ -4,16 +4,20 @@ import Image from "next/image";
 export const InvestorsHero = () => {
   const t = useTranslations();
   return (
-    <section className="container flex flex-col items-center mb-24 md:mb-45 lg:mb-59">
-      <h1 className="gradient-text text-[24px] leading-[150%] md:text-[40px] lg:text-[64px] lg:leading-18 font-semibold mt-57.75 md:mt-40 lg:mt-65 mb-139.5 md:mb-87 lg:mb-141.5">
-        {t("Investors.InvestorsHero.title")}
-      </h1>
-      <Image
-        src="/images/investors/investors_hero_desktop.svg"
-        alt=""
-        fill
-        className="object-contain mt-[155px] md:mt-[89px] lg:mt-[155px]"
-      />
+    <section className="flex flex-col items-center mb-24 md:mb-45 lg:mb-59 w-full">
+      <div className="flex flex-col items-center">
+        <h1 className="gradient-text text-[24px] leading-[150%] md:text-[40px] lg:text-[64px] lg:leading-18 font-semibold mt-57.75 md:mt-40 lg:mt-65 mb-38.75 md:mb-22.25 lg:mb-38.75">
+          {t("Investors.InvestorsHero.title")}
+        </h1>
+      </div>
+      <div className="relative w-full h-[200px] md:h-[300px] lg:h-[400px] mb-8 md:mb-12 lg:mb-16">
+        <Image
+          src="/images/investors/investors_hero_desktop.svg"
+          alt=""
+          fill
+          className="object-contain"
+        />
+      </div>
       <p className="text-neutral-bright-beginning text-[18px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold text-center md:max-w-[600px] lg:max-w-[736px] mb-24 md:mb-35 lg:mb-45">
         {t("Investors.InvestorsHero.description1")}
       </p>
