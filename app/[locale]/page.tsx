@@ -14,7 +14,7 @@ import { KeyIndicatorsSection } from "@/components/home/KeyIndicatorsComponent/K
 export default function Home() {
   return (
     <MainLayout>
-      {/* <Header /> */}
+      <Header hasButton={false} />
       <HeroSection />
       <AboutSection />
       <KeyIndicatorsSection />

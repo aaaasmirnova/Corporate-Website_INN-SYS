@@ -48,7 +48,6 @@ export default async function LocaleLayout({
 
 
         <NextIntlClientProvider>
-          <Header />
           {children}
           <Footer />
         </NextIntlClientProvider>
