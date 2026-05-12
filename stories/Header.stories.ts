@@ -1,8 +1,8 @@
-import { HeaderPlaceholder } from "../components/HeaderPlaceholder";
+import { Header } from "../components/common/Header/Header";
 
 const meta = {
-  title: "Layout/HeaderPlaceholder ",
-  component: HeaderPlaceholder,
+  title: "Layout/Header ",
+  component: Header,
 };
 
 export default meta;
