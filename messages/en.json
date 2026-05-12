@@ -158,13 +158,12 @@
         "description": "The company reaches a new level of organizational maturity and transitions to a divisional management model. Focus shifts to comprehensive data-driven solutions and the development of  sustainable competitive advantages"
       }
     },
-<<<<<<< HEAD
     "Info": {
       "title_1": "Company Launch",
       "title_2": "Cities",
       "title_3": "Employees",
       "title_4": "Contracts"
-=======
+    },
     "AboutHero": {
       "title": "Innovatica Systems",
       "description": "About the сompany",
@@ -177,7 +176,6 @@
       "description3": "At this point, the need for controlled and deliberate navigation emerges",
       "title2": "We establish this navigation layer",
       "description5": "Innovatica Systems is a technology company in the field of Big Data and machine learning, designing infrastructure for data analysis, forecasting, and protection"
->>>>>>> 1ecc277 (fix: fix styles)
     }
   },
   "Business": {
@@ -269,7 +267,7 @@
     "submit": "Отправить",
     "Submitting": "Submitting..."
   },
-<<<<<<< HEAD
+
   "Contact": {
     "section_1": {
       "title": "Информационное присутствие",
@@ -278,8 +276,8 @@
     },
     "section_2": {
       "title": "Профессиональное присутствие"
-=======
-
+    }
+  },
   "Contacts": {
     "title": "Contacts",
     "description": "Technological partnership begins with communication"
@@ -323,14 +321,9 @@
       "titleRule": "Устав компании",
       "descriptionRule": "Контроль определяет устойчивость — мы работаем на уровне, где он формируется",
       "readRuleButton": "Читать",
-<<<<<<< HEAD
-      "downloadButton": "Скачать"
->>>>>>> 1ecc277 (fix: fix styles)
-=======
       "downloadButton": "Скачать",
       "descriptionAfterRule1": "Контроль определяет устойчивость",
       "descriptionAfterRule2": "Мы работаем на уровне, где он формируется"
->>>>>>> 6f4e6bf (fix: fix investors)
     }
   }
 }
