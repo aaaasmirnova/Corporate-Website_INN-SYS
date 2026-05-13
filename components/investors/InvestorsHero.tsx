@@ -15,7 +15,7 @@ export const InvestorsHero = () => {
           src="/images/investors/investors_hero_desktop.svg"
           alt=""
           fill
-          className="object-contain"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-black-elbrus via-transparent to-transparent pointer-events-none" />
       </div>
