@@ -5,44 +5,39 @@ import { reports } from "./data";
 import Download from "@/public/icons/download.svg";
 import OpenIcon from "@/public/icons/investors/open.svg";
 import Image from "next/image";
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef } from "react";
 
 export const AnnualReport = () => {
   const t = useTranslations();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const lastReportRef = useRef<HTMLDivElement>(null);
+  const hasScrolledRef = useRef(false);
 
-  // Сортировка по возрастанию года (2024 → 2025)
   const sortedReports = [...reports].sort(
     (a, b) => parseInt(a.year) - parseInt(b.year),
   );
 
-  // Функция скролла к последнему элементу
-  const scrollToLast = useCallback(() => {
-    if (lastReportRef.current) {
-      lastReportRef.current.scrollIntoView({
-        behavior: "auto",
-        block: "nearest",
-        inline: "start",
-      });
-    } else if (scrollContainerRef.current) {
-      const scrollWidth = scrollContainerRef.current.scrollWidth;
-      const clientWidth = scrollContainerRef.current.clientWidth;
-      scrollContainerRef.current.scrollLeft = scrollWidth - clientWidth;
+  useEffect(() => {
+    // Отключаем восстановление скролла браузером
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
     }
-  }, []);
 
-  // Скролл к последнему элементу при загрузке и после рендера
-  useEffect(() => {
-    const timer = setTimeout(scrollToLast, 100);
+    // Небольшая задержка, чтобы DOM полностью загрузился
+    const timer = setTimeout(() => {
+      // Прокручиваем страницу вверх
+      window.scrollTo(0, 0);
+
+      // Прокручиваем контейнер к правому краю (показываем 2025)
+      if (scrollContainerRef.current && !hasScrolledRef.current) {
+        const scrollWidth = scrollContainerRef.current.scrollWidth;
+        const clientWidth = scrollContainerRef.current.clientWidth;
+        scrollContainerRef.current.scrollLeft = scrollWidth - clientWidth;
+        hasScrolledRef.current = true;
+      }
+    }, 50);
+
     return () => clearTimeout(timer);
-  }, [scrollToLast]);
-
-  // Дополнительный скролл при изменении размера окна
-  useEffect(() => {
-    window.addEventListener("resize", scrollToLast);
-    return () => window.removeEventListener("resize", scrollToLast);
-  }, [scrollToLast]);
+  }, []);
 
   return (
     <section className="container flex flex-col items-center w-full">
@@ -60,7 +55,6 @@ export const AnnualReport = () => {
           {sortedReports.map((report, index) => (
             <div
               key={report.year}
-              ref={index === sortedReports.length - 1 ? lastReportRef : null}
               className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-[80px] lg:py-[67px] flex-shrink-0 overflow-hidden relative w-full"
             >
               <div className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-4 lg:mb-6 relative z-10">
@@ -77,7 +71,7 @@ export const AnnualReport = () => {
               <div className="flex flex-col gap-4 relative z-20">
                 <a
                   href={report.reportUrl}
-                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-button-primary text-neutral-black-elbrus rounded-[12px] py-3 text-center whitespace-nowrap w-[281px] md:w-[281px] font-open-sans"
+                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-button-primary hover:bg-button-primary-hover active:bg-neutral-300 text-neutral-black-elbrus rounded-[12px] py-3 text-center whitespace-nowrap w-[281px] md:w-[281px] font-open-sans"
                   target="_blank"
                   download
                 >
@@ -86,7 +80,7 @@ export const AnnualReport = () => {
                 </a>
                 <a
                   href={report.presentationUrl}
-                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3 text-neutral-bright-beginning rounded-[12px] py-3 px-8 text-center w-[279px] md:w-[281px] font-open-sans"
+                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3  hover:bg-button-secondary-hover active:bg-button-secondary-active text-neutral-bright-beginning rounded-[12px] py-3 px-8 text-center w-[279px] md:w-[281px] font-open-sans"
                   target="_blank"
                   download
                 >

@@ -266,26 +266,38 @@
     }
   },
   "CareerForm": {
-    "title": "Отправить резюме",
-    "name": "Имя",
-    "name_required": "Имя обязательно",
-    "surname": "Фамилия",
-    "surname_required": "Фамилия обязательна",
+    "title": "Submit Resume",
+    "name": "First Name",
+    "name_required": "First name is required",
+    "surname": "Last Name",
+    "surname_required": "Last name is required",
     "email": "Email",
-    "email_required": "Email обязателен",
-    "email_pattern": "Некорректный email",
-    "vacancy": "Вакансия",
-    "vacancy_required": "Выберите вакансию",
-    "phone": "Телефон",
-    "phone_required": "Телефон обязателен",
-    "cover_letter": "Сопроводительное письмо",
-    "file_here": "Перенесите сюда резюме или ",
-    "attach_file": "Прикрепить файл",
-    "privacy_policy": "Я даю ООО «Инноватика Системс» согласие на обработку персональных данных в соответствии с ",
-    "privacy_confidentiality": "политикой конфиденциальности",
-    "privacy_required": "Необходимо согласие на обработку персональных данных",
-    "submit": "Отправить",
-    "Submitting": "Submitting..."
+    "email_required": "Email is required",
+    "email_pattern": "Invalid email address",
+    "vacancy": "Position",
+    "vacancy_required": "Please select a position",
+    "phone": "Phone",
+    "phone_required": "Phone number is required",
+    "cover_letter": "Cover Letter",
+    "file_here": "Drag and drop your resume here or ",
+    "attach_file": "Attach File",
+    "privacy_policy": "I give Innovatica Systems LLC consent to process my personal data in accordance with the ",
+    "privacy_confidentiality": "privacy policy",
+    "privacy_required": "Consent to personal data processing is required",
+    "submit": "Submit",
+    "Submitting": "Submitting...",
+    "placeholder": "Enter your message"
+  },
+  "CareerFormVacanciesList": {
+    "label1": "UX/UI",
+    "label2": "Analyst",
+    "label3": "ML Engineer",
+    "label4": "Information Security",
+    "label5": "Marketing",
+    "label6": "Management",
+    "label7": "Development",
+    "label8": "QA Engineer",
+    "label9": "Other Vacancies"
   },
 
   "Contact": {
@@ -326,24 +338,24 @@
   },
   "Investors": {
     "InvestorsHero": {
-      "title": "Инвесторам",
-      "description1": "Рынок Big Data и AI переходит к этапу формирования инфраструктуры управления",
-      "description2": "Рост сложности систем смещает фокус с обработки данных на их контроль и интерпретацию",
-      "description3": "Инноватика Системс развивается как компания, формирующая эту инфраструктуру",
-      "description4": "Фокус — на архитектуре решений, обеспечивающих наблюдаемость и управляемость"
+      "title": "For Investors",
+      "description1": "The Big Data and AI market is moving to the stage of building a management infrastructure",
+      "description2": "Increasing system complexity shifts focus from data processing to control and interpretation",
+      "description3": "Innovatica Systems is developing as a company shaping this infrastructure",
+      "description4": "Focus — on solution architecture that ensures observability and manageability"
     },
     "FinancialData": {
-      "description": "Финансовые показатели отражают масштабирование продуктовых направлений",
-      "titleReport": " Годовой отчет",
-      "descriptionReport": "В этом году продолжает наблюдаться стабильный рост без резких скачков",
-      "buttonReport": "Скачать отчет",
-      "presentation": "Смотреть презентацию",
-      "titleRule": "Устав компании",
-      "descriptionRule": "Контроль определяет устойчивость — мы работаем на уровне, где он формируется",
-      "readRuleButton": "Читать",
-      "downloadButton": "Скачать",
-      "descriptionAfterRule1": "Контроль определяет устойчивость",
-      "descriptionAfterRule2": "Мы работаем на уровне, где он формируется"
+      "description": "Financial results reflect the scaling of product lines",
+      "titleReport": "Annual report",
+      "descriptionReport": "This year continues to show steady growth without sharp fluctuations",
+      "buttonReport": "Download report",
+      "presentation": "View presentation",
+      "titleRule": "Company Charter",
+      "descriptionRule": "Control determines stability — we operate at the level where it is formed",
+      "readRuleButton": "Read",
+      "downloadButton": "Download",
+      "descriptionAfterRule1": "Control determines stability",
+      "descriptionAfterRule2": "We operate at the level where it is formed"
     }
   }
 }

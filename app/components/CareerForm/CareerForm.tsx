@@ -17,22 +17,23 @@ type FormValues = {
   privacy: boolean;
 };
 
-const vacanciesList = [
-  { value: "ux-ui", label: "UX/UI" },
-  { value: "analyst", label: "Аналитик" },
-  { value: "ml-engineer", label: "Инженер ML" },
-  { value: "info-security", label: "Информационная безопасность" },
-  { value: "marketing", label: "Маркетинг" },
-  { value: "management", label: "Менеджмент" },
-  { value: "dev", label: "Разработка" },
-  { value: "tester", label: "Тестировщик" },
-  { value: "other", label: "Другие вакансии" },
-];
-
 export default function CareerForm() {
   const t = useTranslations("CareerForm");
+  const tVacancies = useTranslations("CareerFormVacanciesList");
   const [isOpen, setIsOpen] = useState(false);
   const [selectedVacancyLabel, setSelectedVacancyLabel] = useState("");
+
+  const vacanciesList = [
+    { value: "ux-ui", label: tVacancies("label1") },
+    { value: "analyst", label: tVacancies("label2") },
+    { value: "ml-engineer", label: tVacancies("label3") },
+    { value: "info-security", label: tVacancies("label4") },
+    { value: "marketing", label: tVacancies("label5") },
+    { value: "management", label: tVacancies("label6") },
+    { value: "dev", label: tVacancies("label7") },
+    { value: "tester", label: tVacancies("label8") },
+    { value: "other", label: tVacancies("label9") },
+  ];
 
   const {
     register,
@@ -271,7 +272,7 @@ export default function CareerForm() {
           </div>
           {/* Message */}
           <textarea
-            placeholder="Ваше сообщение"
+            placeholder={t("placeholder")}
             className="w-full h-24 mb-6 py-2 px-4 border border-accent-5 rounded-xl resize-none focus:border-white placeholder:text-accent-6"
             {...register("message")}
           />

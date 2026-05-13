@@ -19,14 +19,14 @@ export const CompanyRule = () => {
         <div className="relative z-10 flex flex-col gap-4  items-center md:items-start">
           <Link
             href=""
-            className="flex items-center justify-center gap-2 bg-button-primary text-neutral-black-elbrus px-[68px] py-3 md:px-[52px] w-[280px] md:w-[192px] rounded-[12px]"
+            className="flex items-center justify-center gap-2 bg-button-primary  hover:bg-button-primary-hover active:bg-neutral-300 text-neutral-black-elbrus px-[68px] py-3 md:px-[52px] w-[280px] md:w-[192px] rounded-[12px]"
           >
             {t("Investors.FinancialData.readRuleButton")}
             <OpenIcon className="w-4 h-4" fill="#0d0c0c" />
           </Link>
           <a
             href=""
-            className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3 text-neutral-bright-beginning rounded-[12px] px-8 py-3 md:px-12 w-[280px] md:w-[192px] text-center font-open-sans"
+            className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3 hover:bg-button-secondary-hover active:bg-button-secondary-active text-neutral-bright-beginning rounded-[12px] px-8 py-3 md:px-12 w-[280px] md:w-[192px] text-center font-open-sans"
             target="_blank"
             download
           >
@@ -43,7 +43,7 @@ export const CompanyRule = () => {
         />
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] md:w-[580px]">
+        <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] md:w-[580px] text-center">
           {t("Investors.FinancialData.descriptionAfterRule1")}
         </p>
         <p className="text-neutral-bright-beginning text-[16px] md:text-[28px] leading-[150%] font-medium md:font-semibold min-w-[280px] text-center">

@@ -281,7 +281,7 @@ a.text-secondary {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .font-nav {
@@ -346,4 +346,3 @@ a.text-secondary {
 .transition-250ms {
   transition: all ease-in-out 0.25s;
 }
-
