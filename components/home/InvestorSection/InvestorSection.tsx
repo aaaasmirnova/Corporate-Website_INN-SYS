@@ -68,7 +68,7 @@ export const InvestorSection = () => {
           href=""
           target="_blank"
           download
-          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-15 md:px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 whitespace-nowrap"
+          className="bg-button-secondary-default hover:bg-button-secondary-hover active:bg-button-secondary-active  text-[16px]  leading-150%  font-regular text-white px-15 md:px-7  lg:px-6 rounded-[12px] py-3 flex items-center justify-center  gap-2 whitespace-nowrap "
         >
           {t("For_investors.button_constitution")}
           <Download className="w-4 h-4" />

@@ -13,7 +13,7 @@ export const ReportLinks = ({ report }: ReportLinksProps) => {
     <div className="flex flex-col md:flex-row gap-4 md:gap-[10px] items-center -mt-10 md:mt-0 lg:gap-4 lg:mt-1">
       <a
         href={report.reportUrl}
-        className="flex items-center justify-center gap-2  text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] px-8 py-3 text-center whitespace-nowrap w-[279px] md:w-[204px] lg:w-[207px] font-open-sans"
+        className="flex items-center justify-center gap-2  text-[16px] leading-[150%] bg-surface-3 hover:bg-surface-2 active:bg-button-secondary-active rounded-[12px] px-8 py-3 text-center whitespace-nowrap w-[279px] md:w-[204px] font-open-sans"
         target="_blank"
         download
       >
