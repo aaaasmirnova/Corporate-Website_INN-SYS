@@ -72,7 +72,7 @@ export const CareerVacancies = () => {
   return (
     <section
       id="vacancies-section"
-      className="lg:max-w-[1036px] w-full mb-[100px] md:mb-[176px] lg:mb-[208px]"
+      className="lg:max-w-259 w-full mb-25 md:mb-44 lg:mb-52"
     >
       <div className="relative mb-15.5 md:mb-22 lg:mb-30">
         <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0">
@@ -80,10 +80,10 @@ export const CareerVacancies = () => {
             <div className="bg-surface-1 p-1 rounded-[18px] flex gap-1">
               {positions.map((position, index) => (
                 <button
-                  className={` text-[14px] md:text-[16px] leading-[150%] font-open-sans flex-shrink-0 whitespace-nowrap min-w-max hover:text-button-primary  hover: bg-button-secondary-active ${
+                  className={` text-[14px] md:text-[16px] leading-[150%] font-open-sans shrink-0 whitespace-nowrap min-w-max hover:text-button-primary  hover: bg-button-secondary-active ${
                     selectedPosition === position.nameFilter
-                      ? "bg-surface-3 text-button-primary font-normal px-6 py-3 rounded-[12px]"
-                      : "bg-surface-1 text-neutral-300 hover:bg-surface-2 px-4 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-[12px]"
+                      ? "bg-surface-3 text-button-primary font-normal px-6 py-3 rounded-xl"
+                      : "bg-surface-1 text-neutral-300 hover:bg-surface-2 px-4 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-xl"
                   }`}
                   onClick={() => choosePosition(position.nameFilter)}
                   key={index}
@@ -135,7 +135,7 @@ export const CareerVacancies = () => {
                   : t("Career.CareerVacancies.Buttons.show_more")}
               </button>
 
-              <button className="bg-button-secondary-default text-neutral-0 text-[16px] px-8 py-3 rounded-[12px] leading-[150%] hover:bg-button-secondary-active!">
+              <button className="bg-button-secondary-default text-neutral-0 text-[16px] px-8 py-3 rounded-xl leading-[150%] hover:bg-button-secondary-active!">
                 {t("Career.CareerVacancies.Buttons.apply")}
               </button>
             </div>

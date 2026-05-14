@@ -10,50 +10,6 @@ export const AboutPhilosophy = () => {
 
   const t = useTranslations();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const documentHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercentage = (scrollPosition / documentHeight) * 100;
-
-      if (scrollPercentage >= 25 && videoRef.current) {
-        // Если видео закончилось, перематываем на начало и сбрасываем флаг
-        if (videoRef.current.ended || hasEndedRef.current) {
-          videoRef.current.currentTime = 0;
-          hasEndedRef.current = false;
-          isPlayingRef.current = false;
-        }
-
-        // Запускаем видео, если оно не играет
-        if (!isPlayingRef.current && !videoRef.current.ended) {
-          const playPromise = videoRef.current.play();
-          if (playPromise !== undefined) {
-            playPromise
-              .then(() => {
-                isPlayingRef.current = true;
-              })
-              .catch((error) => {
-                console.log("Playback prevented:", error);
-                isPlayingRef.current = false;
-              });
-          }
-        }
-      } else if (
-        scrollPercentage < 25 &&
-        videoRef.current &&
-        isPlayingRef.current
-      ) {
-        // Ставим на паузу только если видео играет
-        videoRef.current.pause();
-        isPlayingRef.current = false;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section className="container flex flex-col items-center text-white bg-neutral-black-elbrus">
       <h2 className="gradient-text text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-8 md:mb-12 lg:mb-8 text-center ">
@@ -79,29 +35,15 @@ export const AboutPhilosophy = () => {
         {t("About.AboutPhilosophy.description3")}
       </p>
 
-      <div className="relative w-full flex justify-center px-4 md:px-8 lg:px-0 ">
-        <div className="w-full max-w-[1440px]">
-          <video
-            ref={videoRef}
-            className="w-full h-auto"
-            poster="/icons/about-philosophy-block.svg"
-            muted
-            playsInline
-            onEnded={() => {
-              hasEndedRef.current = true;
-              isPlayingRef.current = false;
-            }}
-            onPause={() => {
-              isPlayingRef.current = false;
-            }}
-            onPlay={() => {
-              isPlayingRef.current = true;
-              hasEndedRef.current = false;
-            }}
-          >
-            <source src="/videos/lines1440.mp4" type="video/mp4" />
-          </video>
-        </div>
+      <div className="w-full px-4 md:px-8 lg:px-0">
+        <Image
+          src="/images/about/about_philosophy.png"
+          alt="Philosophy illustration"
+          width={1440}
+          height={600}
+          className="w-full h-auto"
+          priority
+        />
       </div>
       <h2 className="gradient-text text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold mb-8 md:mb-12 lg:mb-8 text-center mt-[21] md:mt-[19] lg:mt-10">
         {t("About.AboutPhilosophy.title2")}

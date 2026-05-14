@@ -66,7 +66,6 @@ export const Pagination = ({
 
   return (
     <div className="flex items-center justify-center gap-2 mt-8">
-      {/* Стрелка влево */}
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
@@ -79,7 +78,6 @@ export const Pagination = ({
         <ArrowLeft />
       </button>
 
-      {/* Номера страниц */}
       <div className="flex items-center gap-1">
         {getPageNumbers().map((page, index) =>
           page === "..." ? (
@@ -102,7 +100,6 @@ export const Pagination = ({
         )}
       </div>
 
-      {/* Стрелка вправо */}
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}

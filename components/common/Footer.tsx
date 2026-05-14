@@ -75,19 +75,13 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        {/* <Image
-          src="/icons/gradient_footer_desk_tablet.svg"
-          alt="Gradient"
-          width={1440}
-          height={928}
-        /> */}
       </div>
 
       <div className="bg-neutral-black-elbrus pb-8">
         <div className="mx-auto">
           <div className="">
             <address className="flex flex-col md:flex-row  md:justify-between not-italic pt-10">
-              <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-[270px] mb-[22px] font-medium">
+              <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-67.5 mb-5.5 font-medium">
                 {t("Footer.Contacts.address")}
               </p>
               <div className="hidden md:block">
@@ -98,7 +92,7 @@ export const Footer = () => {
                   height={53}
                 />
               </div>
-              <div className="flex flex-col gap-[23px] md:gap-[5px] space-y-1 text-left md:text-right mb-11.75 md:mb-24">
+              <div className="flex flex-col gap-5.75 md:gap-1.25 space-y-1 text-left md:text-right mb-11.75 md:mb-24">
                 <a
                   href="mailto:innovaticasystems@inbox.ru"
                   className="block text-[14px]  md:text-[16px] lg:text-[18px] text-brand-400 hover:text-link-hover active:text-link-active font-medium"
@@ -123,7 +117,7 @@ export const Footer = () => {
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
                 {t("Footer.Policies.terms")}
               </a>
-              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0 font-open-sans md:text-center md:w-[201px]">
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-11.25 md:mb-0 font-open-sans md:text-center md:w-50.25">
                 {t("Footer.Policies.data_protection")}{" "}
               </a>
             </div>

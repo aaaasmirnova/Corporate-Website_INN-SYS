@@ -1,9 +1,11 @@
+// "use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Support from "@/public/icons/career/support.svg";
 import ArrowLeftRight from "@/public/icons/arrow-left-right.svg";
 import ArrowUp from "@/public/icons/arrow-up.svg";
 import Condition from "@/public/icons/career/conditions.svg";
+// import { useRef } from "react";
 
 const advantages = [
   {
@@ -49,9 +51,10 @@ const circles = [
 
 export const CareerAdvantages = () => {
   const t = useTranslations();
+  // const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <section className="relative min-h-[579px]  md:min-h-[654px] lg:min-h-[1007px] mb-24.75 md:mb-54.75 lg:mb-50">
+    <section className="relative min-h-144.75  md:min-h-163.5 lg:min-h-251.75 mb-24.75 md:mb-54.75 lg:mb-50">
       <div className="">
         {circles.map((circle, index) => (
           <div
@@ -59,7 +62,19 @@ export const CareerAdvantages = () => {
             key={index}
           ></div>
         ))}
-      </div>
+      </div>{" "}
+      {/* <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[610px] h-[610px] md:w-[610px] md:h-[610px] lg:w-[916px] lg:h-[916px] rounded-full overflow-hidden pointer-events-none z-5">
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover scale-110"
+        >
+          <source src="/videos/circle.mp4" type="video/mp4" />
+        </video>
+      </div> */}
       <div className="w-full">
         <Image
           src="/images/ellipses.png"
@@ -74,7 +89,7 @@ export const CareerAdvantages = () => {
             key={index}
             className={`flex flex-col items-center md:absolute ${advantage.position} ${advantage.width} w-full z-20`}
           >
-            <advantage.icon className=" text-brand-400 mb-3  md:w-8 md:h-8 flex-shrink-0" />
+            <advantage.icon className=" text-brand-400 mb-3  md:w-8 md:h-8 shrink-0" />
             <h3 className="text-neutral-0 text-[16px] md:text-[20px] lg:text-[22px] leading-[150%] text-center mb-2 md:mb-3 font-semibold max-w- md:max-w-[355px]">
               {t(advantage.title)}
             </h3>

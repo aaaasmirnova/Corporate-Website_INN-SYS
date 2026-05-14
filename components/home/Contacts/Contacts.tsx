@@ -42,7 +42,7 @@ export const Contacts = () => {
           >
             {t("contacts.email_2")}
           </a>
-          <div className="flex flex-col items-center  md:items-start w-[197px] ">
+          <div className="flex flex-col items-center  md:items-start w-49.25 ">
             <Button
               customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-8 rounded-[12px] py-3 mb-5 md:mb-4 lg:mb-8 font-open-sans"
               onClick={scrollToForm}

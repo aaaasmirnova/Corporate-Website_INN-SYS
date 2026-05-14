@@ -10,7 +10,7 @@ export const VacancyCard = ({ info }: VacancyCardProps) => {
 
   return (
     <div
-      className=" bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-8 rounded-[24px] h-full flex flex-col"
+      className=" bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-8 rounded-3xl h-full flex flex-col"
       key={info.id}
     >
       <h3 className="text-[18px] md:text-[22px] leading-[150%] mb-3 font-semibold">
