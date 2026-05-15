@@ -357,5 +357,13 @@
       "descriptionAfterRule1": "Control determines stability",
       "descriptionAfterRule2": "We operate at the level where it is formed"
     }
+  },
+  "Expertise": {
+    "title": "Expertise",
+    "description": "The company's practice is formed through projects related to critical infrastructure, management systems, and corporate AI environments"
+  },
+  "Page404": {
+    "description": "We couldn't find this page",
+    "buttonToMain": "Back to homepage"
   }
 }

@@ -39,7 +39,7 @@ export const Nav = () => {
           </Link>
         </li>
         <li className="px-6 py-4">
-          <Link className="uppercase" href="/contact">
+          <Link className="uppercase" href="/contacts">
             {t("header.nav.6")}
           </Link>
         </li>
