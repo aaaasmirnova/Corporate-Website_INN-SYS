@@ -1,16 +1,18 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const nav = [
-  "О компании",
-  "Продукты",
-  "Экспертиза",
-  "Инвесторам",
-  "Карьера",
-  "Контакты",
+const navItems = [
+  { key: "about", href: "/about" },
+  { key: "products", href: "/products" },
+  { key: "expertise", href: "/expertise" },
+  { key: "investors", href: "/investors" },
+  { key: "career", href: "/career" },
+  { key: "contacts", href: "/contact" },
 ];
+
 export const Footer = () => {
+  const t = useTranslations();
   const currentYear = new Date().getFullYear();
   return (
     <footer className="container text-white relative">
@@ -51,46 +53,36 @@ export const Footer = () => {
       <div className="nav-glow pt-12 relative z-10">
         <div className="mx-auto">
           <div className="flex justify-start mb-6 md:hidden">
-            <Image src="/icons/Logo.svg" alt="Логотип" width={40} height={53} />
+            <Image
+              src="/icons/Logo.svg"
+              alt={t("Footer.Logo_alt")}
+              width={40}
+              height={53}
+            />
           </div>
           <div className="">
             <ul className="grid grid-cols-2 gap-4 text-left md:flex md:flex-row md:flex-wrap md:gap-9 lg:gap-20 justify-center mb-10">
-              {nav.map((elem, index) => (
-                <li key={index}>
-                  <a className="text-[14px] lg:text-[16px] hover:text-accent-2 transition-colors">
-                    {elem}
-                  </a>
+              {navItems.map((elem) => (
+                <li key={elem.key}>
+                  <Link
+                    href={elem.href}
+                    className="text-[14px] lg:text-[16px] hover:text-accent-2 transition-colors"
+                  >
+                    {t(`Footer.Nav.${elem.key}`)}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        {/* <Image
-          src="/icons/gradient_footer_desk_tablet.svg"
-          alt="Gradient"
-          width={1440}
-          height={928}
-        /> */}
       </div>
 
       <div className="bg-neutral-black-elbrus pb-8">
         <div className="mx-auto">
           <div className="">
             <address className="flex flex-col md:flex-row  md:justify-between not-italic pt-10">
-              <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-[270px] mb-[22px] ">
-                <span className="inline md:hidden">
-                  РФ, Кабардино-Балкарская Республика,
-                  <br />
-                  ул. Ленина 32А, г. Нальчик
-                </span>
-
-                <span className="hidden md:inline">
-                  РФ, Кабардино-Балкарская
-                  <br />
-                  Республика, г. Нальчик,
-                  <br />
-                  ул. Ленина, 32А
-                </span>
+              <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-67.5 mb-5.5 font-medium">
+                {t("Footer.Contacts.address")}
               </p>
               <div className="hidden md:block">
                 <Image
@@ -100,18 +92,18 @@ export const Footer = () => {
                   height={53}
                 />
               </div>
-              <div className="flex flex-col gap-[23px] md:gap-[5px] space-y-1 text-left md:text-right mb-11.75 md:mb-24">
+              <div className="flex flex-col gap-5.75 md:gap-1.25 space-y-1 text-left md:text-right mb-11.75 md:mb-24">
                 <a
                   href="mailto:innovaticasystems@inbox.ru"
-                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-brand-400 hover:text-link-hover active:text-link-active"
+                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-brand-400 hover:text-link-hover active:text-link-active font-medium"
                 >
-                  innovaticasystems@inbox.ru
+                  {t("Footer.Contacts.email_1")}
                 </a>
                 <a
                   href="mailto:systemsinnovatica@gmail.com"
-                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-neutral-200 hover:text-link-hover active:text-link-active"
+                  className="block text-[14px]  md:text-[16px] lg:text-[18px] text-neutral-200 hover:text-link-hover active:text-link-active font-medium"
                 >
-                  systemsinnovatica@gmail.com
+                  {t("Footer.Contacts.email_2")}
                 </a>
               </div>
             </address>
@@ -120,22 +112,17 @@ export const Footer = () => {
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row flex-wrap justify-between gap-4 md:gap-6">
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
-                Политика конфиденциальности
+                {t("Footer.Policies.privacy")}
               </a>
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
-                Пользовательское соглашение
+                {t("Footer.Policies.terms")}
               </a>
-              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-[45px] md:mb-0 font-open-sans">
-                Политика обработки и защиты
-                <span className="hidden md:inline">
-                  <br />
-                </span>
-                <span className="inline md:hidden"> </span>
-                персональных данных
+              <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-11.25 md:mb-0 font-open-sans md:text-center md:w-50.25">
+                {t("Footer.Policies.data_protection")}{" "}
               </a>
             </div>
             <div className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 mt-4">
-              © Инноватика Системс {currentYear}
+              {t("Footer.Copyright", { year: currentYear })}
             </div>
           </div>
         </div>

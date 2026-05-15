@@ -16,6 +16,7 @@ import { VacancyCard } from "./VacancyCard";
 import { SendResumeCard } from "./SendResumeCard";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 interface FiltersState {
   selectedLocations: string[];
@@ -119,7 +120,7 @@ export const Career = () => {
       </div>
       <div className="relative scroll-gradient-container">
         <div className="overflow-x-auto hide-scroll pb-4 -mx-4 px-4 md:overflow-x-visible md:mx-0 md:px-0">
-          <div className="flex md:gap-y-10 md:gap-x-20 lg:gap-x-6 lg:gap-y-0 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-6.5 md:mb-7.5 lg:mb-12">
+          <div className="flex md:gap-y-10 md:gap-x-20 lg:gap-x-6 lg:gap-y-10 min-w-max md:min-w-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-6.5 md:mb-7.5 lg:mb-12">
             {cards.map((card, index) => (
               <Card info={card} key={index} />
             ))}
@@ -171,10 +172,12 @@ export const Career = () => {
           ))}
         </div>
         <div className="md:order-last lg:order-0 lg:ml-auto">
-          <FiltersButton
-            text={"filters.all_vacancies"}
-            customClassName={"btn-default"}
-          />
+          <Link href="/career">
+            <FiltersButton
+              text={"filters.all_vacancies"}
+              customClassName={"btn-default"}
+            />
+          </Link>
         </div>
         {/* </div> */}
       </div>

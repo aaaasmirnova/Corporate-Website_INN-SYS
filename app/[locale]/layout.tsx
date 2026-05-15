@@ -43,11 +43,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-
-      <body className={`${montserrat.variable} antialiased flex flex-col items-center`}>
-
-
+      <body
+        className={`${montserrat.variable} antialiased flex flex-col items-center`}
+      >
         <NextIntlClientProvider>
+          {/* <Header hasButton={true} /> */}
           {children}
           <Footer />
         </NextIntlClientProvider>

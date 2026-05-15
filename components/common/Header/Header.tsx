@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Nav } from "./Nav"
+import { Nav } from "./Nav";
 import { Burger } from "./Burger";
 import Link from "next/link";
 
@@ -33,7 +33,7 @@ export const Header = (props: IHeader) => {
           <Burger />
         </div>
         <button
-          className={`cursor-pointer py-4.5 px-10 w-auto bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase hidden ${props.hasButton ? 'xl:block' : ''}`}
+          className={`cursor-pointer py-4.5 px-10 w-auto bg-neutral-black-elbrus/20 rounded-2xl backdrop-blur-xs font-nav text-[16px] uppercase hidden ${props.hasButton ? "xl:block" : ""}`}
         >
           {t("header.button")}
         </button>
