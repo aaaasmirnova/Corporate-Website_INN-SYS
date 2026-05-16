@@ -63,12 +63,12 @@
       "dates": {
         "date1": {
           "date": "2024",
-          "info1": "Report for 2024",
+          "info1": "Report for ",
           "info2": "IR Presentation"
         },
         "date2": {
           "date": "2025",
-          "info1": "Report for 2025",
+          "info1": "Report for ",
           "info2": "IR Presentation"
         }
       }
@@ -162,20 +162,20 @@
   "About": {
     "Substract": {
       "substract1": {
-        "title": "Идея и прототип",
-        "description": "Формируется концепция компании. Определяются базовые принципы и ориентиры. Разрабатывается первый прототип, который становится отправной точкой для последующего развития"
+        "title": "Concept and prototype",
+        "description": "The company concept takes shape. Core principles and directions are defined. The first prototype is developed, establishing the foundation for further development"
       },
       "substract2": {
-        "title": "Формирование команды и подхода",
-        "description": "Компания формирует ядро команды и переходит к системной проработке продуктовой и технологической повестки. Закладываются ключевые принципы архитектуры и организационной модели, обеспечивающие дальнейшее масштабирование"
+        "title": "Team and approach formation",
+        "description": "A core team is formed, and the company moves to a systematic development of its product and technology direction. Key architectural and organizational principles are established to support future scaling"
       },
       "substract3": {
-        "title": "Первый продукт",
-        "description": "Компания получает официальное юридическое оформление и начинает операционную деятельность. Выстраивается взаимодействие с госсектором и образовательными организациями, закладывается основа для стабильного развития"
+        "title": "First product",
+        "description": "The company is formally established and begins operational activity. Partnerships with the public sector and educational institutions are initiated, laying the foundation for sustainable growth"
       },
       "substract4": {
-        "title": "Масштабирование",
-        "description": "Компания достигает нового уровня организационной зрелости и переходит к дивизиональной модели управления. Фокус смещается на создание комплексных data-driven решений и формирование устойчивых конкурентных преимуществ"
+        "title": "Scaling",
+        "description": "The company reaches a new level of organizational maturity and transitions to a divisional management model. Focus shifts to comprehensive data-driven solutions and the development of  sustainable competitive advantages"
       }
     },
     "Info": {
@@ -183,31 +183,63 @@
       "title_2": "Cities",
       "title_3": "Employees",
       "title_4": "Contracts"
+    },
+    "AboutHero": {
+      "title": "Innovatica Systems",
+      "description": "About the сompany",
+      "image_alt": "Innovatica Systems"
+    },
+    "AboutPhilosophy": {
+      "title": "Data defines reality",
+      "description1": "Decisions are made in an environment where the pace of change exceeds the ability to interpret it, and systems evolve faster than mechanisms of control are formed. This creates a gap between action and understanding",
+      "description2": "Uncertainty becomes a systemic risk factor. In these conditions, organizations operate at the center — between data flows and the need to make decisions. What matters is not the volume of information, but the ability to interpret it and control outcomes",
+      "description3": "At this point, the need for controlled and deliberate navigation emerges",
+      "title2": "We establish this navigation layer",
+      "description5": "Innovatica Systems is a technology company in the field of Big Data and machine learning, designing infrastructure for data analysis, forecasting, and protection"
     }
   },
   "Business": {
-    "description": "Мы формируем основу для функционирования процессов, от которых зависит устойчивость бизнеса и систем государства"
+    "description": "We establish the foundation for processes that determine the stability of business and government systems"
   },
-  "CareerHero": {
-    "title": "Проектируйте архитектуру решений для мира Big Data и AI",
-    "description": "Мы объединяем специалистов в области Big Data, машинного обучения, аналитики, разработки и дизайна для создания систем, работающих в условиях высокой сложности"
-  },
-  "CareerAdvantages": {
-    "advantage1": {
-      "title": "Гибкая рабочая среда",
-      "description": "Возможность выстраивать рабочий процесс с учётом задач и личных обстоятельств"
+  "Career": {
+    "CareerHero": {
+      "title": "Design architectures for the world of Big Data and AI",
+
+      "description": "We bring together specialists in Big Data, machine learning, analytics, development and design to create systems that operate in highly complex environments"
     },
-    "advantage2": {
-      "title": "Развитие в профессии",
-      "description": "Менторство, командные мероприятия, условия роста"
+    "CareerAdvantages": {
+      "advantage1": {
+        "title": "Flexible work environment",
+        "description": "Ability to organize workflows around team objectives and individual working rhythms"
+      },
+      "advantage2": {
+        "title": "Professional growth",
+        "description": "Mentorship, team collaboration and conditions for continuous development"
+      },
+      "advantage3": {
+        "title": "Early-career programs",
+        "description": "Internship programs, early-career tracks and training in IT professions"
+      },
+      "advantage4": {
+        "title": "Supportive professional culture",
+        "description": "A team environment built on involvement, mutual support and respect for individual working dynamics"
+      }
     },
-    "advantage3": {
-      "title": "Эффективный старт",
-      "description": "Стажёрские программы, программы карьерного старта, обучение ИТ-профессиям"
-    },
-    "advantage4": {
-      "title": "Поддерживающая профессиональная культура",
-      "description": "Командная среда, основанная на взаимной поддержке, вовлеченности и уважении к рабочему ритму человека"
+
+    "CareerVacancies": {
+      "Filters": {
+        "all": "All directions",
+        "design": "Design",
+        "analytics": "Analytics",
+        "backend": "Backend",
+        "ml": "ML",
+        "other": "Other vacancies"
+      },
+      "Buttons": {
+        "show_more": "Learn more",
+        "hide_text": "Hide text",
+        "apply": "Apply"
+      }
     }
   },
   "Products": {
@@ -234,27 +266,40 @@
     }
   },
   "CareerForm": {
-    "title": "Отправить резюме",
-    "name": "Имя",
-    "name_required": "Имя обязательно",
-    "surname": "Фамилия",
-    "surname_required": "Фамилия обязательна",
+    "title": "Submit Resume",
+    "name": "First Name",
+    "name_required": "First name is required",
+    "surname": "Last Name",
+    "surname_required": "Last name is required",
     "email": "Email",
-    "email_required": "Email обязателен",
-    "email_pattern": "Некорректный email",
-    "vacancy": "Вакансия",
-    "vacancy_required": "Выберите вакансию",
-    "phone": "Телефон",
-    "phone_required": "Телефон обязателен",
-    "cover_letter": "Сопроводительное письмо",
-    "file_here": "Перенесите сюда резюме или ",
-    "attach_file": "Прикрепить файл",
-    "privacy_policy": "Я даю ООО «Инноватика Системс» согласие на обработку персональных данных в соответствии с ",
-    "privacy_confidentiality": "политикой конфиденциальности",
-    "privacy_required": "Необходимо согласие на обработку персональных данных",
-    "submit": "Отправить",
-    "Submitting": "Submitting..."
+    "email_required": "Email is required",
+    "email_pattern": "Invalid email address",
+    "vacancy": "Position",
+    "vacancy_required": "Please select a position",
+    "phone": "Phone",
+    "phone_required": "Phone number is required",
+    "cover_letter": "Cover Letter",
+    "file_here": "Drag and drop your resume here or ",
+    "attach_file": "Attach File",
+    "privacy_policy": "I give Innovatica Systems LLC consent to process my personal data in accordance with the ",
+    "privacy_confidentiality": "privacy policy",
+    "privacy_required": "Consent to personal data processing is required",
+    "submit": "Submit",
+    "Submitting": "Submitting...",
+    "placeholder": "Enter your message"
   },
+  "CareerFormVacanciesList": {
+    "label1": "UX/UI",
+    "label2": "Analyst",
+    "label3": "ML Engineer",
+    "label4": "Information Security",
+    "label5": "Marketing",
+    "label6": "Management",
+    "label7": "Development",
+    "label8": "QA Engineer",
+    "label9": "Other Vacancies"
+  },
+
   "Contact": {
     "section_1": {
       "title": "Информационное присутствие",

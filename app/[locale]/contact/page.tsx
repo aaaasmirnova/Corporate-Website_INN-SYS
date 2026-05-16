@@ -1,5 +1,8 @@
 import { MainLayout } from "@/components/MainLayout/MainLayout";
 import ContactInformation from "@/app/components/ContactInformation/ContactInformation";
+import { ContactsHero } from "@/components/contacts/ContactsHero";
+import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
+import { Header } from "@/components/common/Header/Header";
 
 const contactTitle1 = "section_1.title";
 const contactTitle2 = "section_2.title";
@@ -69,8 +72,11 @@ const contactSection_2 = [
 export default function Contact() {
   return (
     <MainLayout>
+      <Header hasButton={true} />
+      <ContactsHero />
       <ContactInformation title={contactTitle1} data={contactSection_1} />
       <ContactInformation title={contactTitle2} data={contactSection_2} />
+      <ContactsForm />
     </MainLayout>
   );
 }

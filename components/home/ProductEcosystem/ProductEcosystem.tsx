@@ -8,7 +8,7 @@ export const ProductEcosystem = () => {
   const [mainProduct, ...otherProducts] = products;
 
   return (
-    <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-[107px]">
+    <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-26.75">
       <div className="text-center w-full">
         <h2 className="text-[24px] md:text-[32px]  lg:text-[40px]  leading-[150%] text-center font-semibold mb-11 md:mb-18 lg:mb-24 gradient-text inline-block">
           {t("Product_ecosystem.title")}
@@ -17,11 +17,11 @@ export const ProductEcosystem = () => {
 
       <div className="mx-auto">
         <div className="hidden lg:block mb-6 group">
-          <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-8 rounded-[24px] overflow-hidden relative lg:h-[272px]">
+          <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-8 rounded-3xl overflow-hidden relative lg:h-68">
             <h3 className="text-[24px] lg:text-[28px] leading-[150%] font-semibold mb-28">
               {t(mainProduct.name)}
             </h3>
-            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line  lg:max-w-[300px]">
+            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line  lg:max-w-75">
               {t(mainProduct.description)}
             </p>
 
@@ -107,7 +107,7 @@ export const ProductEcosystem = () => {
                         </h3>
                       </div>
                     </div>
-                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line mt-auto">
+                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium mt-auto">
                       {t(product.description)}
                     </p>
                   </div>
