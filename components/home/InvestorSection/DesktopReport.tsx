@@ -16,10 +16,10 @@ export const DesktopReport = ({ info }: DesktopReportProps) => {
       {info.map((report) => (
         <div
           key={report.year}
-          className="flex flex-col items-center gap-12 flex-shrink-0"
+          className="flex flex-col items-center gap-12 shrink-0"
         >
           <div className="text-center">
-            <div className="h-[114px] flex items-start justify-start">
+            <div className="h-28.5 flex items-start justify-start">
               <div className="text-year-report text-[150px] leading-[104%]">
                 {report.year}
               </div>

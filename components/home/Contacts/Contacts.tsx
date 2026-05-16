@@ -32,19 +32,19 @@ export const Contacts = () => {
           </p>
           <a
             href="mailto:innovaticasystems@inbox.ru"
-            className="text-brand-400 hover:text-link-hover active:text-link-active mb-4 md:mb-2 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
+            className="text-brand-400 hover:text-link-hover active:text-link-active mb-4 md:mb-2 text-[16px] lg:text-[18px]  leading-5 lg:leading-6 font-medium"
           >
             {t("contacts.email_1")}
           </a>
           <a
             href="mailto:systemsinnovatica@gmail.com"
-            className="text-neutral-200 hover:text-link-hover active:text-link-active mb-9 md:mb-4 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6"
+            className="text-neutral-200 hover:text-link-hover active:text-link-active mb-9 md:mb-4 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6 font-medium"
           >
             {t("contacts.email_2")}
           </a>
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center  md:items-start w-49.25 ">
             <Button
-              customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-6 rounded-[12px] py-3 mb-6 font-open-sans"
+              customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-8 rounded-[12px] py-3 mb-5 md:mb-4 lg:mb-8 font-open-sans"
               onClick={scrollToForm}
             >
               {t("contacts.discuss")}
