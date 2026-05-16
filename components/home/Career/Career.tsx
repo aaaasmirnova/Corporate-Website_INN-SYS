@@ -14,7 +14,6 @@ import { Card } from "./Card";
 import { FiltersButton } from "./FiltersButton";
 import { VacancyCard } from "./VacancyCard";
 import { SendResumeCard } from "./SendResumeCard";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 interface FiltersState {
