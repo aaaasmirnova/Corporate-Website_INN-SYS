@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
-import { Header } from "@/components/common/Header/Header";
+// import { Header } from "@/components/common/Header/Header";
 import { Footer } from "@/components/common/Footer";
 import "../globals.css";
 import "../icomoon.css";

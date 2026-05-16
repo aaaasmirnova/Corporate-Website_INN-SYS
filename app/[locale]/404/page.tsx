@@ -1,4 +1,4 @@
-import { Header } from "@/components/common/Header/Header";
+// import { Header } from "@/components/common/Header/Header";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
 import { Page404 } from "@/components/page404/Page404";
 
