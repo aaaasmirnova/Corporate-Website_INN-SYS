@@ -50,13 +50,13 @@ export const ExpertiseTabNornikel = () => {
               </div>
             </div>
             <div className="h-full p-px rounded-3xl bg-[linear-gradient(258.1deg,#26C7FF_-4.47%,#FF4D5D_85.07%,#0F4D81_102.14%)]">
-              <div className="h-full px-8 py-8 rounded-3xl bg-black sm:py-10 lg:px-9">
+              <div className="flex h-full px-8 py-8 rounded-3xl bg-black sm:py-10 lg:px-9">
                 <Image
                   src="/images/expertise/cube.png"
                   alt="nornikel"
                   width={400}
                   height={400}
-                  className="max-w-full mx-auto object-contain"
+                  className="max-w-full m-auto object-contain"
                 />
               </div>
             </div>

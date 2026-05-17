@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 export const Footer = () => {
-  const t = useTranslations();
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
   return (
     <footer className="container text-white relative">
@@ -122,7 +122,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 mt-4">
-              {t("Footer.Copyright", { year: currentYear })}
+              {t("Copyright", { year: currentYear })}
             </div>
           </div>
         </div>
