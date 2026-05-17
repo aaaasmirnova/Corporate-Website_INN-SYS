@@ -14,7 +14,7 @@ export const ExpertiseTabNornikel = () => {
           src="/images/expertise/nornikel-bg-mobile.svg"
           alt="nornikel"
           fill
-          className="w-full h-auto object-contain sm:hidden"
+          className="w-full h-auto object-cover sm:hidden"
         />
         <Image
           src="/images/expertise/nornikel-bg-tablet.svg"
