@@ -2,9 +2,9 @@
 import { Header } from "@/components/common/Header/Header";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
 import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
-import { InvestorsHero } from "@/components/investors/InvestorsHero";
-import { AnnualReport } from "@/components/investors/AnnualReport";
-import { CompanyRule } from "@/components/investors/CompanyRule";
+import { InvestorsHero } from "@/components/Investors/InvestorsHero";
+import { AnnualReport } from "@/components/Investors/AnnualReport";
+import { CompanyRule } from "@/components/Investors/CompanyRule";
 
 export default function ProductsPage() {
   return (
