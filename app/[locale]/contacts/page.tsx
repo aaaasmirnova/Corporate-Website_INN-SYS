@@ -1,6 +1,6 @@
 import { MainLayout } from "@/components/MainLayout/MainLayout";
 import ContactInformation from "@/app/components/ContactInformation/ContactInformation";
-import { ContactsHero } from "@/components/contacts/ContactsHero";
+import { ContactsHero } from "@/components/Contacts/ContactsHero";
 import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
 import { Header } from "@/components/common/Header/Header";
 
