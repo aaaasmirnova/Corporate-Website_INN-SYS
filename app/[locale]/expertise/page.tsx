@@ -1,14 +1,14 @@
-import { ExpertiseHero } from "@/components/Expertise/ExpertiseHero";
+import { ExpertiseComponent } from "@/components/ExpertiseComponent/ExpertiseComponent";
 import { Header } from "@/components/common/Header/Header";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
-import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
+import { ExpertiseTabs } from "@/app/components/ExpertiseTabs/ExpertiseTabs";
 
 export default function ExpertisePage() {
   return (
     <MainLayout>
       <Header hasButton={true} />
-      <ExpertiseHero />
-      <ContactsForm />
+      <ExpertiseComponent />
+      <ExpertiseTabs />
     </MainLayout>
   );
 }

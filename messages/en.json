@@ -311,60 +311,81 @@
       "title": "Профессиональное присутствие"
     }
   },
-  "Contacts": {
-    "title": "Contacts",
-    "description": "Technological partnership begins with communication"
-  },
-  "Footer": {
-    "Nav": {
-      "about": "About",
-      "products": "Products",
-      "expertise": "Expertise",
-      "investors": "For investors",
-      "career": "Career",
-      "contacts": "Contacts"
-    },
-    "Logo_alt": "Logo",
-    "Contacts": {
-      "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
-      "email_1": "innovaticasystems@inbox.ru",
-      "email_2": "systemsinnovatica@gmail.com"
-    },
-    "Policies": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Use",
-      "data_protection": "Personal Data Processing and Protection Policy"
-    },
-    "Copyright": "© Innovatica Systems {year}"
-  },
-  "Investors": {
-    "InvestorsHero": {
-      "title": "For Investors",
-      "description1": "The Big Data and AI market is moving to the stage of building a management infrastructure",
-      "description2": "Increasing system complexity shifts focus from data processing to control and interpretation",
-      "description3": "Innovatica Systems is developing as a company shaping this infrastructure",
-      "description4": "Focus — on solution architecture that ensures observability and manageability"
-    },
-    "FinancialData": {
-      "description": "Financial results reflect the scaling of product lines",
-      "titleReport": "Annual report",
-      "descriptionReport": "This year continues to show steady growth without sharp fluctuations",
-      "buttonReport": "Download report",
-      "presentation": "View presentation",
-      "titleRule": "Company Charter",
-      "descriptionRule": "Control determines stability — we operate at the level where it is formed",
-      "readRuleButton": "Read",
-      "downloadButton": "Download",
-      "descriptionAfterRule1": "Control determines stability",
-      "descriptionAfterRule2": "We operate at the level where it is formed"
-    }
-  },
   "Expertise": {
-    "title": "Expertise",
-    "description": "The company's practice is formed through projects related to critical infrastructure, management systems, and corporate AI environments"
-  },
-  "Page404": {
-    "description": "We couldn't find this page",
-    "buttonToMain": "Back to homepage"
+    "tabs": {
+      "tab_1": "The largest bank in Russia",
+      "tab_2": "Roscosmos",
+      "tab_3": "Nornickel"
+    },
+    "info_tab_1": {
+      "title": "Development of the SalesScript platform for Nornickel’s sales departments.",
+      "item_1": {
+        "title": "Context",
+        "description_1": "It was necessary to establish a unified framework.",
+        "description_2": "to support communication and sales scenarios.",
+        "description_3": "Key objective:",
+        "description_4": "Creation of a platform capable of increasing the efficiency of sales departments without losing control over corporate data and AI interactions."
+      },
+      "item_2": {
+        "title": "Implementation",
+        "description_1": "The SalesScript platform is an intelligent sales support system designed to create communication scenarios and process customer requests.",
+        "description_2": "To ensure the security of the AI infrastructure, the Baksan platform was integrated into the project.",
+        "description_3": "The solution architecture provided:",
+        "description_4": "creation of unified sales scenarios",
+        "description_5": "AI-powered communication support",
+        "description_6": "control over interactions with AI services",
+        "description_7": "filtering of sensitive information",
+        "description_8": "monitoring of operations within AI environments"
+      },
+      "item_3": {
+        "title": "Technological approach",
+        "description_1": "At the core of the project:",
+        "description_2": "AI tools for communication support",
+        "description_3": "mechanisms for protecting corporate data",
+        "description_4": "system for controlling and observing AI processes",
+        "description_5": "filtering and auditing of transmitted information",
+        "description_6": "integration with the corporate security environment"
+      },
+      "item_4": {
+        "title": "Result",
+        "description_1": "The project enabled the integration of AI-powered sales support tools and data control mechanisms into a unified, centrally managed infrastructure.",
+        "description_2": "The use of AI within the corporate environment became secure and observable.",
+        "description_3": "and embedded into the company’s processes."
+      }
+    },
+    "info_tab_2": {
+      "title": "Creation of an automated KPI assessment system for the top management of Roscosmos.",
+      "item_1": {
+        "title": "Context",
+        "description_1": "For a large management structure, it was necessary to establish a unified framework for evaluating and interpreting KPI metrics.",
+        "description_2": "Fragmentation of data reduced the speed of analysis and complicated managerial control.",
+        "description_3": "The key objective was to automate analytics and support data-driven decision-making."
+      },
+      "item_2": {
+        "title": "Implementation",
+        "description_1": "As part of the project, an automated KPI assessment system was developed, integrating BI analytics, data analytics, and AI components into a unified analytical framework.",
+        "description_2": "The solution architecture provided:",
+        "description_3": "consolidation of corporate data",
+        "description_4": "automated KPI calculation",
+        "description_5": "AI-powered communication support",
+        "description_6": "visualization of metrics in management dashboards",
+        "description_7": "monitoring of dynamics and deviations",
+        "description_8": "AI-based analysis of anomalies and risk areas"
+      },
+      "item_3": {
+        "title": "Analytical approach",
+        "description_1": "Analytical approach",
+        "description_2": "data processing and normalization",
+        "description_3": "mapping of KPI metrics from different sources",
+        "description_4": "BI visualization tools",
+        "description_5": "AI models for detecting deviations",
+        "description_6": "scenario analysis and support for managerial decision-making"
+      },
+      "item_4": {
+        "title": "Result",
+        "description_1": "The project established a unified system for evaluating the effectiveness of management processes.",
+        "description_2": "Management received a tool for regular KPI monitoring, deviation analysis, and decision-making based on up-to-date data and analytical models."
+      }
+    }
   }
 }
