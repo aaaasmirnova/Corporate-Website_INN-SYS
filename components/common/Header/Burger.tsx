@@ -29,10 +29,10 @@ export const Burger = () => {
 
   return (
     <div
-      className={`flex flex-col justify-start items-start w-14 h-14 xl:hidden py-4 bg-neutral-black-elbrus/20 backdrop-blur-xs transition-250ms overflow-clip ${isOpen ? "fixed top-0 right-0 w-93.75 h-svh rounded-none" : "absolute top-0 right-0 rounded-xl"}`}
+      className={`flex flex-col justify-start items-start w-14 h-14 lg:hidden py-4 bg-neutral-black-elbrus/20 backdrop-blur-xs transition-250ms overflow-clip ${isOpen ? "fixed top-0 right-0 w-93.75 h-svh rounded-none" : "absolute top-0 right-0 rounded-xl"}`}
     >
       <div
-        className={`relative ${isOpen ? "px-12 py-8" : "px-0 py-0"} xl:px-8 w-full flex flex-row ${isOpen ? "justify-end items-center" : "justify-center items-center"}`}
+        className={`relative ${isOpen ? "px-12 py-8" : "px-0 py-0"} lg:px-8 w-full flex flex-row ${isOpen ? "justify-end items-center" : "justify-center items-center"}`}
       >
         <Link className="uppercase" href="/">
           <Image
