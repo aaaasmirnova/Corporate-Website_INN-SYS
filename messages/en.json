@@ -23,7 +23,8 @@
         "lang": "РУС",
         "lang_burger": "РУССКИЙ ЯЗЫК"
       },
-      "button": "CONTACT US"
+      "button": "CONTACT US",
+      "envelope": "\u2709\uFE0F"
     },
     "key_metrics": {
       "title": "Key metrics",
