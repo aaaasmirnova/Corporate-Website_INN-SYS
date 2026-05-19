@@ -46,34 +46,28 @@ export const ExpertiseTabRoskosmos = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full px-8 py-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] sm:py-10 lg:px-9">
+            <div className="h-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
               <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
-                {t("info_tab_2.item_2.title")}
+                {t("info_tab_2.item_3.title")}
               </h5>
-              <div className="flex flex-col gap-2 lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_1")}
+              <div className="flex flex-col gap-2 font-open-sans lg:gap-4">
+                <p className="text-sm leading-[150%] sm:leading-[200%]">
+                  {t("info_tab_2.item_3.description_1")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_2")}
+                  {t("info_tab_2.item_3.description_2")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_3")}
+                  {t("info_tab_2.item_3.description_3")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_4")}
+                  {t("info_tab_2.item_3.description_4")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_5")}
+                  {t("info_tab_2.item_3.description_5")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_6")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_7")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_2.description_8")}
+                  {t("info_tab_2.item_3.description_6")}
                 </p>
               </div>
             </div>
@@ -110,44 +104,18 @@ export const ExpertiseTabRoskosmos = () => {
                 </p>
               </div>
             </div>
-
-            <div className="h-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
+            <div className="w-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
               <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
-                {t("info_tab_2.item_3.title")}
+                {t("info_tab_2.item_4.title")}
               </h5>
-              <div className="flex flex-col gap-2 font-open-sans lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%]">
-                  {t("info_tab_2.item_3.description_1")}
+              <div className="flex flex-col gap-2 lg:gap-4">
+                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                  {t("info_tab_2.item_4.description_1")}
                 </p>
                 <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_3.description_2")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_3.description_3")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_3.description_4")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_3.description_5")}
-                </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                  {t("info_tab_2.item_3.description_6")}
+                  {t("info_tab_2.item_4.description_2")}
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="w-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
-            <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
-              {t("info_tab_2.item_4.title")}
-            </h5>
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                {t("info_tab_2.item_4.description_1")}
-              </p>
-              <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
-                {t("info_tab_2.item_4.description_2")}
-              </p>
             </div>
           </div>
         </div>
