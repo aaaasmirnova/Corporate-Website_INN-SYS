@@ -2,7 +2,7 @@ import { MainLayout } from "@/components/MainLayout/MainLayout";
 import ContactInformation from "@/app/components/ContactInformation/ContactInformation";
 import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
 import { Header } from "@/components/common/Header/Header";
-import { ContactsHero } from "@/components/Contacts/ContactsHero";
+import { ContactsHero } from "@/components/ContactsHero/ContactsHero";
 
 const contactTitle1 = "section_1.title";
 const contactTitle2 = "section_2.title";
