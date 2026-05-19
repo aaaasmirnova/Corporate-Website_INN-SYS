@@ -79,8 +79,9 @@ export const CareerAdvantages = () => {
         <Image
           src="/images/ellipses.png"
           fill
-          alt="background circle"
+          alt=""
           className="block max-h-144.75 h-screen md:hidden object-cover"
+          aria-hidden="true"
         />
       </div>
       <div className="relative z-10 flex flex-col gap-12 items-center justify-center pt-17.25 w-88.75 md:gap-13 md:pt-0">

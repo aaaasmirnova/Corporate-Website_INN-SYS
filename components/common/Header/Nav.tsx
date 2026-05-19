@@ -38,8 +38,8 @@ export const Nav = () => {
             {t("header.nav.5")}
           </Link>
         </li>
-        <li className="px-4 lgxl:px-6 py-4">
-          <Link className="uppercase" href="/contacts">
+        <li className="px-6 py-4">
+          <Link className="uppercase" href="/contact">
             {t("header.nav.6")}
           </Link>
         </li>

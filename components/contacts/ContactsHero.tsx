@@ -2,36 +2,68 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const socialIcons = [
-  { src: "/icons/contacts/youtube.svg", url: "https://youtube.com" },
-  { src: "/icons/contacts/instagram.svg", url: "https://instagram.com" },
-  { src: "/icons/contacts/twitter.svg", url: "https://twitter.com" },
-  { src: "/icons/contacts/tiktok.svg", url: "https://tiktok.com" },
-  { src: "/icons/contacts/vk.svg", url: "https://vk.com" },
-  { src: "/icons/contacts/habr.svg", url: "https://habr.com" },
-  { src: "/icons/contacts/linkedln.svg", url: "https://linkedin.com" },
-  { src: "/icons/contacts/github.svg", url: "https://github.com" },
-  { src: "/icons/contacts/union.svg", url: "https://dribbble.com" },
-  { src: "/icons/contacts/dprofile.svg", url: "https://dprofile.org" },
-  { src: "/icons/contacts/be.svg", url: "https://behance.net" },
+  {
+    src: "/icons/contacts/youtube.svg",
+    url: "https://youtube.com",
+    key: "youtube",
+  },
+  {
+    src: "/icons/contacts/instagram.svg",
+    url: "https://instagram.com",
+    key: "instagram",
+  },
+  {
+    src: "/icons/contacts/twitter.svg",
+    url: "https://twitter.com",
+    key: "twitter",
+  },
+  {
+    src: "/icons/contacts/tiktok.svg",
+    url: "https://tiktok.com",
+    key: "tiktok",
+  },
+  { src: "/icons/contacts/vk.svg", url: "https://vk.com", key: "vk" },
+  { src: "/icons/contacts/habr.svg", url: "https://habr.com", key: "habr" },
+  {
+    src: "/icons/contacts/linkedln.svg",
+    url: "https://linkedin.com",
+    key: "linkedin",
+  },
+  {
+    src: "/icons/contacts/github.svg",
+    url: "https://github.com",
+    key: "github",
+  },
+  {
+    src: "/icons/contacts/union.svg",
+    url: "https://dribbble.com",
+    key: "dribbble",
+  },
+  {
+    src: "/icons/contacts/dprofile.svg",
+    url: "https://dprofile.org",
+    key: "dprofile",
+  },
+  { src: "/icons/contacts/be.svg", url: "https://behance.net", key: "behance" },
 ];
 
 export const ContactsHero = () => {
-  const t = useTranslations();
+  const t = useTranslations("Contacts");
   return (
     <section className="container relative flex flex-col items-center h-112.5 md:h-193.5 lg:h-237.25 mb-24 md:mb-42 lg:mb-60.5 overflow-visible">
       <Image
         src="/images/contacts/logo_desktop.png"
-        alt="Инноватика Системс"
+        alt={t("contacts_logo")}
         width={375}
         height={415}
         className="w-93.75 h-103.75 md:w-175 md:h-193.5 lg:w-214.5 lg:h-237.25"
         priority
       />
       <h1 className="absolute top-23.75 md:top-53 lg:top-66 gradient-text text-[24px] md:text-[40px] lg:text-[64px] leading-[150%] font-semibold">
-        {t("Contacts.title")}
+        {t("title")}
       </h1>
       <p className="absolute top-38.75 md:top-76 lg:top-100.75 gradient-text text-[13px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold text-center w-53.5 md:w-98.75 lg:w-120">
-        {t("Contacts.description")}
+        {t("description")}
       </p>
 
       <div className="absolute top-86.5 md:top-163.5 lg:top-214.75 left-0 right-0 overflow-visible">
@@ -46,7 +78,7 @@ export const ContactsHero = () => {
                   src={icon.src}
                   width={40}
                   height={40}
-                  alt=""
+                  alt={t(`social.${icon.key}`)}
                   className="w-10 h-10 lg:w-14 lg:h-14 neutral-500 hover:neutral-bright-beginning hover:invert"
                 />
               </a>

@@ -13,8 +13,8 @@ export const statistics: Statistic[] = [
   { name: "For_investors.revenue", percent: "0" },
   { name: "For_investors.gross_profit", percent: "0" },
   { name: "For_investors.fresh_cash_flow", percent: "0" },
-  { name: "For_investors.ebitda", percent: "+70%" },
-  { name: "For_investors.profitability", percent: "+70%" },
+  { name: "For_investors.ebitda", percent: "0" },
+  { name: "For_investors.profitability", percent: "0" },
 ];
 
 export const reports: Report[] = [

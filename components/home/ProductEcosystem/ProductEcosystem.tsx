@@ -95,14 +95,6 @@ export const ProductEcosystem = () => {
                         }
                       >
                         <h3 className="text-[18px] md:text-[24px]  lg:text-[28px] leading-[150%] font-semibold">
-                          {/* {isElbrusCortes ? (
-                            <div className="group-hover:flex group-hover:flex-col">
-                              <span>Elbrus </span>
-                              <span>Cortex</span>
-                            </div>
-                          ) : (
-                            product.name
-                          )} */}
                           {t(product.name)}
                         </h3>
                       </div>

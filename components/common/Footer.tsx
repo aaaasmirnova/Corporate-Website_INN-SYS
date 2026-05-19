@@ -55,7 +55,7 @@ export const Footer = () => {
           <div className="flex justify-start mb-6 md:hidden">
             <Image
               src="/icons/Logo.svg"
-              alt={t("Footer.Logo_alt")}
+              alt={t("Logo_alt")}
               width={40}
               height={53}
             />
@@ -68,7 +68,7 @@ export const Footer = () => {
                     href={elem.href}
                     className="text-[14px] lg:text-[16px] hover:text-accent-2 transition-colors"
                   >
-                    {t(`Footer.Nav.${elem.key}`)}
+                    {t(`Nav.${elem.key}`)}
                   </Link>
                 </li>
               ))}
@@ -82,12 +82,12 @@ export const Footer = () => {
           <div className="">
             <address className="flex flex-col md:flex-row  md:justify-between not-italic pt-10">
               <p className="text-[14px]  md:text-[16px] lg:text-[18px] leading-[150%] text-neutral-200 w-67.5 mb-5.5 font-medium">
-                {t("Footer.Contacts.address")}
+                {t("Contacts.address")}
               </p>
               <div className="hidden md:block">
                 <Image
                   src="/icons/Logo.svg"
-                  alt="Логотип"
+                  alt={t("Logo_alt")}
                   width={40}
                   height={53}
                 />
@@ -97,13 +97,13 @@ export const Footer = () => {
                   href="mailto:innovaticasystems@inbox.ru"
                   className="block text-[14px]  md:text-[16px] lg:text-[18px] text-brand-400 hover:text-link-hover active:text-link-active font-medium"
                 >
-                  {t("Footer.Contacts.email_1")}
+                  {t("Contacts.email_1")}
                 </a>
                 <a
                   href="mailto:systemsinnovatica@gmail.com"
                   className="block text-[14px]  md:text-[16px] lg:text-[18px] text-neutral-200 hover:text-link-hover active:text-link-active font-medium"
                 >
-                  {t("Footer.Contacts.email_2")}
+                  {t("Contacts.email_2")}
                 </a>
               </div>
             </address>
@@ -112,13 +112,13 @@ export const Footer = () => {
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row flex-wrap justify-between gap-4 md:gap-6">
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
-                {t("Footer.Policies.privacy")}
+                {t("Policies.privacy")}
               </a>
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active font-open-sans">
-                {t("Footer.Policies.terms")}
+                {t("Policies.terms")}
               </a>
               <a className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 hover:text-link-hover active:text-link-active mb-11.25 md:mb-0 font-open-sans md:text-center md:w-50.25">
-                {t("Footer.Policies.data_protection")}{" "}
+                {t("Policies.data_protection")}{" "}
               </a>
             </div>
             <div className="text-[10px] md:text-[11px] lg:text-[12px] text-neutral-200 mt-4">
