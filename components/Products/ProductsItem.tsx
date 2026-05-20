@@ -37,7 +37,7 @@ export const ProductsItem = ({
           ></i>
         </h3>
         <p
-          className={`mb-7 text-sm leading-[200%] bg-white/0 backdrop-blur overflow-hidden md:text-base ${styles.productItem_text} ${isTextOpen && styles.productItem_text_opened}`}
+          className={`mb-7 text-sm leading-[200%] bg-white/0 backdrop-blur overflow-hidden md:text-base lg:rounded-2xl ${styles.productItem_text} ${isTextOpen && styles.productItem_text_opened}`}
         >
           {t(description)}
         </p>

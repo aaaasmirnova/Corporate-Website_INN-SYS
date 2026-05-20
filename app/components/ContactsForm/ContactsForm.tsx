@@ -192,7 +192,7 @@ export default function ContactsForm() {
                   ) : (
                     <>
                       <span className="hidden md:inline">
-                        {t("answer_your_questions.attach_file") ||
+                        {t("answer_your_questions.file") ||
                           t("answer_your_questions.attached_file")}
                       </span>{" "}
                       <span className="text-primary-4">
@@ -250,7 +250,9 @@ export default function ContactsForm() {
               }`}
               disabled={isSubmitting || !isValid}
             >
-              {isSubmitting ? t("answer_your_questions.submitting") : t("answer_your_questions.submit")}
+              {isSubmitting
+                ? t("answer_your_questions.submitting")
+                : t("answer_your_questions.submit")}
             </button>
           </div>
         </form>
