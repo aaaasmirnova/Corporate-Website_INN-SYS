@@ -1,13 +1,8 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 
 export const AboutPhilosophy = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const isPlayingRef = useRef(false);
-  const hasEndedRef = useRef(false);
-
   const t = useTranslations("About");
 
   return (

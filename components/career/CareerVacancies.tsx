@@ -97,7 +97,7 @@ export const CareerVacancies = () => {
       </div>
 
       <div className="flex flex-col">
-        {paginatedVacancies.map((vacancy, index) => (
+        {paginatedVacancies.map((vacancy) => (
           <div
             key={vacancy.id}
             className={`relative pb-12 ${"max-lg:after:absolute max-lg:after:bottom-6 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-px max-lg:after:bg-neutral-700"} ${

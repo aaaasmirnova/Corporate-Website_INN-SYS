@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Button } from "../../UI/Button";
-import Link from "next/link";
 
 export const Contacts = () => {
   const t = useTranslations("Home");

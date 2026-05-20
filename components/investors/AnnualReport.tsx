@@ -52,7 +52,7 @@ export const AnnualReport = () => {
         className="w-full overflow-x-auto hide-scroll"
       >
         <div className="flex gap-6.75 md:gap-5 lg:gap-10 mb-8 md:mb-10 lg:mb-15">
-          {sortedReports.map((report, index) => (
+          {sortedReports.map((report) => (
             <div
               key={report.year}
               className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16.75 shrink-0 overflow-hidden relative w-full"

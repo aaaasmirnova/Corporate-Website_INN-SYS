@@ -15,8 +15,7 @@ export const ExpertiseTabBank = () => {
           {t("info_tab_3.title")}
         </h2>
 
-        {/* Мобильная и планшетная версия */}
-        <div className="block lg:hidden  pt-24 md:pt-17">
+        <div className="block lg:hidden">
           <div className="relative flex flex-col gap-2 pb-39.5 bg-cover bg-center bg-no-repeat">
             <Image
               src="/images/expertise/bank-tablet-bg.svg"
@@ -64,7 +63,7 @@ export const ExpertiseTabBank = () => {
                 <ExpertiseTabBankItem3 />
 
                 <div className="flex-1 relative z-10 p-px rounded-3xl bg-[linear-gradient(258.1deg,#26C7FF_-4.47%,#FF4D5D_85.07%,#0F4D81_102.14%)]">
-                  <div className="flex h-full  px-8 py-8 rounded-3xl bg-black md:py-10 lg:px-9">
+                  <div className="flex items-center h-full  px-8 py-8 rounded-3xl bg-black md:py-10 lg:px-9">
                     <Image
                       src="/images/Cube.svg"
                       alt=""

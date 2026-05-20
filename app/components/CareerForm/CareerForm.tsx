@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
-import ArrowDown from "@/public/icons/career/arrowDown.svg";
 
 type FormValues = {
   firstName: string;

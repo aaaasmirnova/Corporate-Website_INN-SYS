@@ -36,7 +36,7 @@ export const ExpertiseHero = () => {
       <h1 className="gradient-text text-[24px] leading-[150%] md:text-[40px] lg:text-[64px] lg:leading-18 font-semibold mt-57.75 md:mt-76.5 lg:mt-87 mb-120.25 md:mb-109.75 lg:mb-144.5">
         {t("title")}
       </h1>
-      <p className="text-neutral-bright-beginning text-[14px] md:text-[20px] lg:text-[22px] leading-[150%] font-semibold text-center max-w-81.75 md:max-w-184">
+      <p className="text-neutral-bright-beginning text-[14px] md:text-[20px] lg:text-[22px] leading-[150%] font-semibold text-center max-w-81.75 md:max-w-184 mb-24 md:mb-17 lg:mb-28">
         {t("description")}
       </p>
     </section>

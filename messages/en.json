@@ -51,7 +51,7 @@
     },
     "Our_partners": "Our Partners",
     "For_investors": {
-      "title": "For Investors",
+      "title": "for Investors",
       "gagr": "CAGR",
       "revenue": "Revenue",
       "gross_profit": "Gross Profit",
@@ -451,7 +451,7 @@
       "about": "About",
       "products": "Products",
       "expertise": "Expertise",
-      "investors": "For investors",
+      "investors": "for investors",
       "career": "Career",
       "contacts": "Contacts"
     },
@@ -470,7 +470,7 @@
   },
   "Investors": {
     "InvestorsHero": {
-      "title": "For Investors",
+      "title": "for Investors",
       "description1": "The Big Data and AI market is moving to the stage of building a management infrastructure",
       "description2": "Increasing system complexity shifts focus from data processing to control and interpretation",
       "description3": "Innovatica Systems is developing as a company shaping this infrastructure",
