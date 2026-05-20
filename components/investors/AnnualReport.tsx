@@ -1,11 +1,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { reports } from "../Investors/data";
+
 import Download from "@/public/icons/download.svg";
 import OpenIcon from "@/public/icons/investors/open.svg";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { reports } from "../Investors/data";
 
 export const AnnualReport = () => {
   const t = useTranslations("Investors");
