@@ -83,7 +83,6 @@ export const ExpertiseTabBank = () => {
           </div>
         </div>
       </div>
-      //{" "}
     </div>
   );
 };
