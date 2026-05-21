@@ -10,19 +10,19 @@ const substract = [
   },
   {
     id: 2,
-    year: "2023",
+    year: "2024",
     title: "Substract.substract2.title",
     description: "Substract.substract2.description",
   },
   {
     id: 3,
-    year: "2023",
+    year: "2025",
     title: "Substract.substract3.title",
     description: "Substract.substract3.description",
   },
   {
     id: 4,
-    year: "2023",
+    year: "2026",
     title: "Substract.substract4.title",
     description: "Substract.substract4.description",
   },
@@ -32,7 +32,7 @@ export const AboutSubstract = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="flex flex-col w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-17.5 md:mb-25.25 lg:mt-0">
+    <section className="container flex flex-col w-screen relative mb-17.5 md:mb-25.25 lg:mt-0">
       {substract.map((item, index) => (
         <article
           className={`flex max-w-187.5 w-[calc(100%-12px)] md:w-[70%] xl:w-1/2 ${styles[`substract_${index + 1}`]}`}

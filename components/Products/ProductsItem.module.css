@@ -1,10 +1,11 @@
 .productItem_text {
-  max-height: 90px;
+  max-height: 106px;
+  padding-block: 8px;
   transition: max-height 0.4s linear;
 }
 
 .productItem_text_opened {
-  max-height: 300px;
+  max-height: 316px;
 }
 
 .icon_less {

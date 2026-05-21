@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 export const AnnualReport = () => {
-  const t = useTranslations();
+  const t = useTranslations("Investors");
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const hasScrolledRef = useRef(false);
 
@@ -43,7 +43,7 @@ export const AnnualReport = () => {
     <section className="container flex flex-col items-center w-full">
       <div className=" flex flex-col items-center">
         <p className="text-neutral-bright-beginning text-[16px] md:text-[24px] lg:text-[28px] leading-[150%] font-medium text-center w-[375px] md:w-[600px] lg:w-[803px] mb-24  md:mb-25 lg:mb-30">
-          {t("Investors.FinancialData.description")}
+          {t("FinancialData.description")}
         </p>
       </div>
 
@@ -59,14 +59,14 @@ export const AnnualReport = () => {
             >
               <div className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-4 lg:mb-6 relative z-10">
                 <h3 className="text-primary-5 text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold ">
-                  {t("Investors.FinancialData.titleReport")}
+                  {t("FinancialData.titleReport")}
                 </h3>
                 <span className="inline-flex items-center justify-center text-neutral-bright-beginning bg-neutral-800 text-[12px] md:text-[28px] lg:text-[32px] md:leading-[normal] px-4 py-1.5 md:px-7 md:py-4 lg:px-8 lg:py-4 font-medium rounded-[16px] md:rounded-[999px]">
                   {report.year}
                 </span>
               </div>
               <p className="text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium min-w-[280px] md:w-[560px] mb-12 md:mb-11  lg:mb-[159px]">
-                {t("Investors.FinancialData.descriptionReport")}
+                {t("FinancialData.descriptionReport")}
               </p>
               <div className="flex flex-col gap-4 relative z-20">
                 <a
@@ -75,7 +75,7 @@ export const AnnualReport = () => {
                   target="_blank"
                   download
                 >
-                  {t("Investors.FinancialData.buttonReport")}
+                  {t("FinancialData.buttonReport")}
                   <Download className="w-4 h-4" fill="#0d0c0c" />
                 </a>
                 <a
@@ -84,7 +84,7 @@ export const AnnualReport = () => {
                   target="_blank"
                   download
                 >
-                  {t("Investors.FinancialData.presentation")}
+                  {t("FinancialData.presentation")}
                   <OpenIcon className="w-4 h-4" />
                 </a>
               </div>
@@ -93,7 +93,7 @@ export const AnnualReport = () => {
                   src={report.imageUrl}
                   alt=""
                   fill
-                  className="object-contain object-left-bottom"
+                  className="object-contain object-bottom-left"
                   sizes="100vw"
                 />
               </div>
