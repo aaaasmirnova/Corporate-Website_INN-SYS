@@ -191,7 +191,7 @@ export default function ContactsForm() {
                     </p>
                   ) : (
                     <>
-                      <span className="">
+<span className="hidden md:inline">
                         {t("answer_your_questions.file") ||
                           t("answer_your_questions.attached_file")}
                       </span>{" "}

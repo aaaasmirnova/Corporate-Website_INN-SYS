@@ -3,10 +3,10 @@
   margin-left: auto;
 }
 
-.substract_1 div,
+/* .substract_1 div,
 .substract_3 div {
   margin-left: auto;
-}
+} */
 
 @media (min-width: 360px) {
   .substract_1 {
@@ -59,12 +59,16 @@
   }
 
   .substract_3 {
+    max-width: 780px;
+    width: 73%;
     margin-top: -125px;
     padding-block: 167px 121px;
     background-image: url("/images/about/about-tablet-subtract3.png");
   }
 
   .substract_4 {
+    max-width: 750px;
+    width: 70%;
     margin-top: -70px;
     padding-block: 127px 64px;
     background-image: url("/images/about/about-tablet-subtract4.png");

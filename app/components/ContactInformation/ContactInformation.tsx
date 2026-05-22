@@ -23,8 +23,8 @@ export default function ContactInformation({ title, data }: ContactInformationPr
       <div className="flex flex-col items-center gap-16 sm:gap-28 lg:gap-32">
         {data.map((item) => (
           <div key={item.id}>
-            <h4 className="text-[56px] font-extrabold leading-10 font-italic text-italic bg-clip-text bg-gradient-surface text-transparent text-center sm:text-[120px] sm:leading-26 lg:text-[150px]">
-              {item.title}
+            <h4 className="text-[56px] font-extrabold leading-10 font-italic text-italic bg-clip-text bg-gradient-surface text-transparent text-center sm:text-[120px] sm:leading-34 lg:text-[150px]">
+              { item.id === 1 ? t(item.title) : item.title }
             </h4>
             <a
               href={item.link}

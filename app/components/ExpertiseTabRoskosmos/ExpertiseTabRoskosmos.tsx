@@ -14,7 +14,7 @@ export const ExpertiseTabRoskosmos = () => {
           src="/images/expertise/roskosmos-bg-mobile.svg"
           alt="roskosmos"
           fill
-          className="w-full h-auto object-contain md:hidden"
+          className="w-full h-auto object-cover md:hidden"
         /> */}
         <Image
           src="/images/expertise/bank-tablet-bg.svg"

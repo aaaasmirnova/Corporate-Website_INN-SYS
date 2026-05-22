@@ -249,23 +249,23 @@
     "title": "Products",
     "Product_item1": {
       "link": "Cheget",
-      "description": "Cheget — аналитическая система нового поколения, которая помогает организациям принимать управленческие решения на основе данных. Платформа объединяет три уровня аналитики: оперативную аналитику текущих показателей, инструмент бизнес-аналитики для исследования данных и интеллектуальный слой прогнозирования. В системе используется ИИ-агент, который помогает интерпретировать данные, формировать аналитические выводы и предлагать возможные сценарии действий. Руководители получают не только отчёты о текущем состоянии процессов, но и прогнозы изменений на основе моделей анализа данных и сценарного моделирования. Cheget объединяет данные из разных информационных систем, формирует единую аналитическую среду и позволяет быстрее выявлять отклонения, риски и возможности для развития.",
-      "button": "Перейти к продукту (скоро)"
+      "description": "Cheget is a next-generation analytics system that helps organizations make management decisions based on data. The platform combines three levels of analytics: operational analytics for current performance indicators, a business intelligence tool for data exploration, and an intelligent forecasting layer. The system includes an AI agent that helps interpret data, generate analytical insights, and suggest possible courses of action. Managers receive not only reports on the current state of processes but also forecasts based on data analysis models and scenario modeling. Cheget integrates data from various information systems, creates a unified analytical environment, and enables faster identification of deviations, risks, and growth opportunities.",
+      "button": "Go to product (coming soon)"
     },
     "Product_item2": {
       "link": "Kuliev",
-      "description": "Kuliev — корпоративный ИИ-ассистент, который помогает сотрудникам быстро находить информацию, анализировать данные и получать ответы на рабочие вопросы. Система работает как интеллектуальный диалоговый интерфейс, объединяющий корпоративные данные, документы и аналитические системы. Ассистент способен объяснять показатели, помогать в анализе данных, формировать сводки и отвечать на сложные аналитические запросы на естественном языке. Это позволяет сократить время поиска информации и упростить доступ к аналитике для руководителей и специалистов. Kuliev может использоваться как единая точка взаимодействия с корпоративными знаниями, аналитикой и цифровыми сервисами организации.",
-      "button": "Перейти к продукту (скоро)"
+      "description": "Kuliev is a corporate AI assistant that helps employees quickly find information, analyze data, and receive answers to work-related questions. The system operates as an intelligent conversational interface, integrating corporate data, documents, and analytical systems. The assistant can explain metrics, support data analysis, generate summaries, and respond to complex analytical queries in natural language. This helps reduce the time spent searching for information and simplifies access to analytics for managers and specialists. Kuliev can serve as a unified access point for corporate knowledge, analytics, and the organization’s digital services.",
+      "button": "Go to product (coming soon)"
     },
     "Product_item3": {
       "link": "Baksan",
-      "description": "Baksan — решение для обеспечения безопасности данных при использовании систем искусственного интеллекта. Платформа помогает организациям контролировать доступ к данным, защищать конфиденциальную информацию и снижать риски при работе с ИИ-моделями. Система обеспечивает фильтрацию и контроль передаваемых данных, мониторинг взаимодействия с интеллектуальными сервисами и защиту чувствительной информации. Это позволяет организациям безопасно внедрять ИИ-решения и использовать аналитические системы без угрозы утечки или неконтролируемого доступа к данным. Baksan помогает выстроить безопасную архитектуру работы с искусственным интеллектом и соответствует требованиям корпоративной и государственной информационной безопасности.",
-      "button": "Перейти к продукту (скоро)"
+      "description": "Baksan is a data security solution designed for the use of artificial intelligence systems. The platform helps organizations control data access, protect confidential information, and reduce risks associated with AI models. The system provides filtering and control of transmitted data, monitoring of interactions with intelligent services, and protection of sensitive information. This enables organizations to safely implement AI solutions and use analytical systems without the risk of data leaks or unauthorized access. Baksan helps establish a secure architecture for working with artificial intelligence and complies with corporate and government information security requirements.",
+      "button": "Go to product (coming soon)"
     },
     "Product_item4": {
       "link": "Elbrus Cortex",
-      "description": "Elbrus Cortex позволяет организациям создавать и управлять экосистемой интеллектуальных агентов, которые выполняют разные задачи: анализ данных, поиск закономерностей, генерацию отчётов, прогнозирование показателей и формирование рекомендаций для принятия решений. Платформа предоставляет единую рабочую среду для разработки, тестирования и запуска таких систем. Elbrus Cortex позволяет организациям создавать и управлять экосистемой интеллектуальных агентов, которые выполняют разные задачи: анализ данных, поиск закономерностей, генерацию отчётов, прогнозирование показателей и формирование рекомендаций для принятия решений. Платформа предоставляет единую рабочую среду для разработки, тестирования и запуска таких систем. Платформа также предоставляет инструменты контроля, мониторинга и управления ИИ-процессами. Это позволяет отслеживать работу агентов, управлять доступом к данным и обеспечивать прозрачность работы интеллектуальных систем — что особенно важно для корпоративной и государственной среды. Платформа также предоставляет инструменты контроля, мониторинга и управления ИИ-процессами. Это позволяет отслеживать работу агентов, управлять доступом к данным и обеспечивать прозрачность работы интеллектуальных систем — что особенно важно для корпоративной и государственной среды.",
-      "button": "Перейти к продукту (скоро)"
+      "description": "Elbrus Cortex enables organizations to create and manage an ecosystem of intelligent agents that perform various tasks, including data analysis, pattern detection, report generation, KPI forecasting, and recommendation generation for decision-making. The platform provides a unified environment for developing, testing, and deploying such systems. The platform also includes tools for controlling, monitoring, and managing AI processes. This allows organizations to track agent activity, manage data access, and ensure transparency in the operation of intelligent systems — an especially important requirement for corporate and government environments.",
+      "button": "Go to product (coming soon)"
     }
   },
   "CareerForm": {
@@ -302,7 +302,6 @@
     "label8": "QA Engineer",
     "label9": "Other Vacancies"
   },
-
   "Contact": {
     "section_1": {
       "title": "Информационное присутствие",
@@ -448,28 +447,6 @@
       "behance": "Behance"
     }
   },
-  "Footer": {
-    "Nav": {
-      "about": "About",
-      "products": "Products",
-      "expertise": "Expertise",
-      "investors": "For investors",
-      "career": "Career",
-      "contacts": "Contacts"
-    },
-    "Logo_alt": "Logo",
-    "Contacts": {
-      "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
-      "email_1": "innovaticasystems@inbox.ru",
-      "email_2": "systemsinnovatica@gmail.com"
-    },
-    "Policies": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Use",
-      "data_protection": "Personal Data Processing and Protection Policy"
-    },
-    "Copyright": "© Innovatica Systems {year}"
-  },
   "Investors": {
     "InvestorsHero": {
       "title": "For investors",
@@ -495,5 +472,66 @@
   "Page404": {
     "description": "We couldn't find this page",
     "buttonToMain": "Back to homepage"
+  },
+  "InvestorsNumbers": {
+    "cagr": "CAGR",
+    "revenue": "Revenue",
+    "ebitda": "EBITDA",
+    "profitability": "Profitability",
+    "gross_profit": "Gross profit",
+    "free_cash_flow": "Free cash flow",
+    "finance": {
+      "title": "Financial indicators reflect the scaling of product lines.",
+      "button": "Contact us",
+      "cagr": "CAGR of the Russian cybersecurity market for Russian vendors.",
+      "mln": "mln ₽",
+      "year": "y."
+    }
+  },
+  "For_investors": {
+    "title": "For Investors",
+    "gagr": "CAGR",
+    "revenue": "Revenue",
+    "gross_profit": "Gross Profit",
+    "ebitda": "EBITDA",
+    "profitability": "Profitability",
+    "fresh_cash_flow": "Free Cash Flow",
+    "reports": "Reports are updated annually following the publication of official financial statements",
+    "button_contact": "Contact",
+    "button_constitution": "Company charter",
+    "dates": {
+      "date1": {
+        "date": "2024",
+        "info1": "Report for ",
+        "info2": "IR Presentation"
+      },
+      "date2": {
+        "date": "2025",
+        "info1": "Report for ",
+        "info2": "IR Presentation"
+      }
+    }
+  },
+  "Footer": {
+    "Nav": {
+      "about": "About",
+      "products": "Products",
+      "expertise": "Expertise",
+      "investors": "for investors",
+      "career": "Career",
+      "contacts": "Contacts"
+    },
+    "Logo_alt": "Logo",
+    "Contacts": {
+      "address": "Kabardino-Balkarian Republic32A Lenina Street, Nalchik",
+      "email_1": "innovaticasystems@inbox.ru",
+      "email_2": "systemsinnovatica@gmail.com"
+    },
+    "Policies": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "data_protection": "Personal Data Processing and Protection Policy"
+    },
+    "Copyright": "© Innovatica Systems {year}"
   }
 }
