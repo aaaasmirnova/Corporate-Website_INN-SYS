@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "../../UI/Button";
 
 export const Contacts = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
+  const isRussian = locale === "ru";
 
   const scrollToForm = () => {
     const formElement = document.getElementById("contact-form");
@@ -36,12 +38,21 @@ export const Contacts = () => {
             {t("contacts.email_1")}
           </a>
           <a
-            href="mailto:systemsinnovatica@gmail.com"
-            className="text-neutral-200 hover:text-link-hover active:text-link-active mb-9 md:mb-4 lg:mb-8 text-[16px] lg:text-[18px]  leading-5 lg:leading-6 font-medium"
+            href={
+              isRussian
+                ? "mailto:innsys@inbox.ru"
+                : "mailto:systemsinnovatica@gmail.com"
+            }
+            className={`${isRussian ? "text-neutral-bright-beginning" : "text-neutral-200"}  hover:text-link-hover active:text-link-active ${isRussian ? "mb-0 md:mb-0 lg:mb-0" : "mb-9 md:mb-4 lg:mb-8 "}text-[16px] lg:text-[18px]  leading-5 lg:leading-6 font-medium`}
           >
             {t("contacts.email_2")}
           </a>
-          <div className="flex flex-col items-center  md:items-start w-49.25 ">
+          {isRussian && (
+            <span className="text-[12px] font-open-sans leading-[150%] text-neutral-grey-300 mb-9 md:mb-4 lg:mb-8 w-[150px]">
+              {t("contacts.description_email_2")}
+            </span>
+          )}
+          <div className="flex flex-col items-center  md:items-start w-53.75 ">
             <Button
               customClassName="bg-neutral-bright-beginning hover:bg-button-primary-hover active:bg-neutral-300 text-[16px] leading-6 text-neutral-black-elbrus px-8 rounded-[12px] py-3 mb-5 md:mb-4 lg:mb-8 font-open-sans"
               onClick={scrollToForm}

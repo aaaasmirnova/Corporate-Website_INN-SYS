@@ -1,4 +1,4 @@
-import ComfortSupport from "@/public/icons/comfort-support.svg";
+import ComfortSupport from "@/public/icons/handspraying.svg";
 import Check from "@/public/icons/check.svg";
 import ArrowLeftRight from "@/public/icons/arrow-left-right.svg";
 import ArrowUp from "@/public/icons/arrow-up.svg";

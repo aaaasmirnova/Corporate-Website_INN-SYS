@@ -56,7 +56,7 @@ export const AnnualReport = () => {
           {sortedReports.map((report) => (
             <div
               key={report.year}
-              className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16.75 shrink-0 overflow-hidden relative w-full"
+              className="bg-neutral-900 rounded-[50px] px-6 py-6 md:px-8 md:py-8 lg:px-20 lg:py-16.75 shrink-0 overflow-hidden relative w-[87%]"
             >
               <div className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-4 lg:mb-6 relative z-10">
                 <h3 className="text-primary-5 text-[24px] md:text-[32px] lg:text-[40px] leading-[150%] font-semibold ">
@@ -69,24 +69,27 @@ export const AnnualReport = () => {
               <p className="text-neutral-bright-beginning text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium min-w-70 md:w-140 mb-12 md:mb-11  lg:mb-39.75">
                 {t("FinancialData.descriptionReport")}
               </p>
-              <div className="flex flex-col gap-4 relative z-20">
+              <div className="flex flex-col gap-4 relative z-20 items-center md:items-start">
                 <a
                   href={report.reportUrl}
-                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-button-primary hover:bg-button-primary-hover active:bg-neutral-300 text-neutral-black-elbrus rounded-xl py-3 text-center whitespace-nowrap w-70.25 md:w-70.25 font-open-sans"
+                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-button-primary hover:bg-button-primary-hover active:bg-neutral-300 text-neutral-black-elbrus rounded-xl py-3 text-center whitespace-nowrap  w-55 md:w-70.25 font-open-sans"
                   target="_blank"
                   download
                 >
                   {t("FinancialData.buttonReport")}
-                  <Download className="w-4 h-4" fill="#0d0c0c" />
+                  <Download
+                    className="hidden md:block  w-4 h-4"
+                    fill="#0d0c0c"
+                  />
                 </a>
                 <a
                   href={report.presentationUrl}
-                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3  hover:bg-button-secondary-hover active:bg-button-secondary-active text-neutral-bright-beginning rounded-xl py-3 px-8 text-center w-69.75 md:w-70.25 font-open-sans"
+                  className="flex items-center justify-center gap-2 text-[16px] leading-[150%] bg-surface-3  hover:bg-button-secondary-hover active:bg-button-secondary-active text-neutral-bright-beginning rounded-xl py-3 px-3 md:px-8 text-center w-55 md:w-70.25 font-open-sans"
                   target="_blank"
                   download
                 >
                   {t("FinancialData.presentation")}
-                  <OpenIcon className="w-4 h-4" />
+                  <OpenIcon className=" hidden md:block  w-4 h-4" />
                 </a>
               </div>
               <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">

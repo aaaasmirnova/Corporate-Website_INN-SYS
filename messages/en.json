@@ -51,7 +51,7 @@
     },
     "Our_partners": "Our Partners",
     "For_investors": {
-      "title": "for Investors",
+      "title": "For investors",
       "gagr": "CAGR",
       "revenue": "Revenue",
       "gross_profit": "Gross Profit",
@@ -115,6 +115,7 @@
       "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
       "email_1": "innovaticasystems@inbox.ru",
       "email_2": "systemsinnovatica@gmail.com",
+      "description_email_2": "",
       "discuss": "Discuss your project",
       "our_resources": "Our Resources",
       "map_alt": "Map"
@@ -130,7 +131,8 @@
       "phone": "Phone",
       "email": "Email",
       "message": "Enter your message",
-      "attach_file": "attach one",
+      "file": "Drag and drop a file here or ",
+      "attach_file": "attach a file",
       "attached_file": "File attached",
       "privacy_policy": "I consent to Innovatica Systems LLC processing my personal data for the purpose of responding to my inquiry in accordance with the ",
       "privacy_required": "Privacy Policy",
@@ -281,7 +283,7 @@
     "phone_required": "Phone number is required",
     "cover_letter": "Cover Letter",
     "file_here": "Drag and drop your resume here or ",
-    "attach_file": "Attach File",
+    "attach_file": "attach a file",
     "privacy_policy": "I give Innovatica Systems LLC consent to process my personal data in accordance with the ",
     "privacy_confidentiality": "privacy policy",
     "privacy_required": "Consent to personal data processing is required",
@@ -451,7 +453,7 @@
       "about": "About",
       "products": "Products",
       "expertise": "Expertise",
-      "investors": "for investors",
+      "investors": "For investors",
       "career": "Career",
       "contacts": "Contacts"
     },
@@ -470,7 +472,7 @@
   },
   "Investors": {
     "InvestorsHero": {
-      "title": "for Investors",
+      "title": "For investors",
       "description1": "The Big Data and AI market is moving to the stage of building a management infrastructure",
       "description2": "Increasing system complexity shifts focus from data processing to control and interpretation",
       "description3": "Innovatica Systems is developing as a company shaping this infrastructure",

@@ -29,14 +29,14 @@ const products = [
     description: "Product_item4.description",
     image: "/images/products/ring.png",
     button: "Product_item4.button",
-  }
+  },
 ];
 
 export const ProductsList = () => {
   const t = useTranslations("Products");
 
   return (
-    <section className="max-w-324 w-full mx-auto mb-43.75 px-6">
+    <section className="max-w-324 w-full mx-auto mb-43.75 px-6 mt-39 md:mt-40 lg:mt-56">
       <h2 className="mb-14 text-[40px] font-semibold bg-clip-text bg-gradient-title text-transparent text-center md:mb-20 xl:mb-32 md:text-[50px] xl:text-[64px]">
         {t("title")}
       </h2>

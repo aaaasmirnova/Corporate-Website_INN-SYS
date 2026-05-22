@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { products } from "./data";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const ProductEcosystem = () => {
   const t = useTranslations();
+  const locale = useLocale();
 
   const [mainProduct, ...otherProducts] = products;
+  const isRussian = locale === "ru";
 
   return (
     <section className="container flex flex-col text-white bg-neutral-black-elbrus w-full mb-26.75">
@@ -15,13 +17,13 @@ export const ProductEcosystem = () => {
         </h2>
       </div>
 
-      <div className="mx-auto">
+      <div className="">
         <div className="hidden lg:block mb-6 group">
           <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-8 rounded-3xl overflow-hidden relative lg:h-68">
             <h3 className="text-[24px] lg:text-[28px] leading-[150%] font-semibold mb-28">
               {t(mainProduct.name)}
             </h3>
-            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line  lg:max-w-75">
+            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line lg:max-w-75">
               {t(mainProduct.description)}
             </p>
 
@@ -43,7 +45,7 @@ export const ProductEcosystem = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="block lg:hidden group">
-            <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 rounded-[24px] relative overflow-hidden h-[189px] md:h-[216px] lg:h-[272px] flex flex-col justify-between">
+            <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 rounded-[24px] relative overflow-hidden h-[189px] md:h-[216px] lg:h-[272px] flex flex-col justify-between w-full">
               {mainProduct.images?.map((img, idx) => (
                 <div
                   key={idx}
@@ -61,7 +63,7 @@ export const ProductEcosystem = () => {
               <h3 className="relative z-10 text-[18px] md:text-[24px] lg:text-[28px] leading-[150%] font-semibold ">
                 {t(mainProduct.name)}
               </h3>
-              <p className="relative z-10  text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium whitespace-pre-line max-w-[300px] md:max-w-[252px] ">
+              <p className="relative z-10 text-[14px] md:text-[16px] leading-[150%] font-medium whitespace-pre-line max-w-[300px] md:max-w-[252px]">
                 {t(mainProduct.description)}
               </p>
               {/* </div> */}
@@ -73,8 +75,8 @@ export const ProductEcosystem = () => {
             const isElbrusCortes = product.name === "Elbrus Cortex";
 
             return (
-              <div key={index} className="group">
-                <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 lg:py-8 lg:px-12 rounded-[24px] relative overflow-hidden md:h-[216px] lg:h-[320px] flex flex-col justify-between">
+              <div key={index} className="group w-full">
+                <div className="bg-surface-1 hover:bg-surface-2 active:bg-surface-3 p-6 lg:py-8 lg:px-12 rounded-[24px] relative overflow-hidden md:h-[216px] lg:h-[320px] flex flex-col justify-between w-full">
                   <div
                     className={`${product.imageClassName} absolute overflow-hidden rounded-lg transition-all duration-500`}
                   >
@@ -99,7 +101,7 @@ export const ProductEcosystem = () => {
                         </h3>
                       </div>
                     </div>
-                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium mt-auto">
+                    <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-[150%] font-medium mt-auto w-full md:max-w-[80%] lg:max-w-[304px]">
                       {t(product.description)}
                     </p>
                   </div>
