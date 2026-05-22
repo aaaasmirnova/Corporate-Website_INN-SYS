@@ -87,7 +87,7 @@ export const Footer = () => {
               <div className="hidden md:block">
                 <Image
                   src="/icons/Logo.svg"
-                  alt="Логотип"
+                  alt={t("Logo_alt")}
                   width={40}
                   height={53}
                 />

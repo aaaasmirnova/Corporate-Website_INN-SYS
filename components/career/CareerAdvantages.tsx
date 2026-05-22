@@ -5,14 +5,13 @@ import Support from "@/public/icons/career/support.svg";
 import ArrowLeftRight from "@/public/icons/arrow-left-right.svg";
 import ArrowUp from "@/public/icons/arrow-up.svg";
 import Condition from "@/public/icons/career/conditions.svg";
-// import { useRef } from "react";
 
 const advantages = [
   {
     title: "Career.CareerAdvantages.advantage1.title",
     description: "Career.CareerAdvantages.advantage1.description",
     position:
-      "md:-top-[19px] md:left-[190px] lg:top-[130px] lg:-left-[120px] md:-translate-x-10 lg:translate-x-0",
+      "top-[90px] md:-top-[19px] md:left-[190px] lg:top-[130px] lg:-left-[120px] md:-translate-x-10 lg:translate-x-0",
     // width: "max-w-[294px]",
     icon: Condition,
   },
@@ -20,7 +19,7 @@ const advantages = [
     title: "Career.CareerAdvantages.advantage2.title",
     description: "Career.CareerAdvantages.advantage2.description",
     position:
-      "translate-0 md:top-[150px] md:-left-[210px] lg:top-[590px] lg:-left-[150px] transform lg:-translate-x-1/2 lg:-translate-y-1/2",
+      "top-[250px] md:top-[150px] md:-left-[210px] lg:top-[590px] lg:-left-[150px] transform lg:-translate-x-1/2 lg:-translate-y-1/2",
     width: "max-w-[294px]",
     icon: ArrowLeftRight,
   },
@@ -28,7 +27,7 @@ const advantages = [
     title: "Career.CareerAdvantages.advantage3.title",
     description: "Career.CareerAdvantages.advantage3.description",
     position:
-      "md:top-[315px] md:left-[230px] lg:top-[450px] lg:left-[410px] md:translate-x-10 lg:translate-x-0",
+      "top-[400px] md:top-[315px] md:left-[230px] lg:top-[450px] lg:left-[410px] md:translate-x-10 lg:translate-x-0",
     width: "max-w-[294px]",
     icon: ArrowUp,
   },
@@ -36,7 +35,7 @@ const advantages = [
     title: "Career.CareerAdvantages.advantage4.title",
     description: "Career.CareerAdvantages.advantage4.description",
     position:
-      "translate-0 md:top-[440px] md:-left-[40px] lg:top-[720px] lg:left-[230px] transform lg:-translate-x-1/2",
+      "top-[570px] md:top-[440px] md:-left-[40px] lg:top-[720px] lg:left-[230px] transform lg:-translate-x-1/2",
     width: "max-w-[355px]",
     icon: Support,
   },
@@ -51,10 +50,9 @@ const circles = [
 
 export const CareerAdvantages = () => {
   const t = useTranslations();
-  // const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <section className="relative min-h-144.75  md:min-h-163.5 lg:min-h-251.75 mb-24.75 md:mb-54.75 lg:mb-50">
+    <section className="relative min-h-180  md:min-h-163.5 lg:min-h-251.75 mb-24.75 md:mb-54.75 lg:mb-50">
       <div className="">
         {circles.map((circle, index) => (
           <div
@@ -62,32 +60,21 @@ export const CareerAdvantages = () => {
             key={index}
           ></div>
         ))}
-      </div>{" "}
-      {/* <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[610px] h-[610px] md:w-[610px] md:h-[610px] lg:w-[916px] lg:h-[916px] rounded-full overflow-hidden pointer-events-none z-5">
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover scale-110"
-        >
-          <source src="/videos/circle.mp4" type="video/mp4" />
-        </video>
-      </div> */}
+      </div>
       <div className="w-full">
         <Image
           src="/images/ellipses.png"
           fill
-          alt="background circle"
+          alt=""
           className="block max-h-144.75 h-screen md:hidden object-cover"
+          aria-hidden="true"
         />
       </div>
       <div className="relative z-10 flex flex-col gap-12 items-center justify-center pt-17.25 w-88.75 md:gap-13 md:pt-0">
         {advantages.map((advantage, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center md:absolute ${advantage.position} ${advantage.width} w-full z-20`}
+            className={`flex flex-col items-center absolute ${advantage.position} ${advantage.width} w-full z-20`}
           >
             <advantage.icon className=" text-brand-400 mb-3  md:w-8 md:h-8 shrink-0" />
             <h3 className="text-neutral-0 text-[16px] md:text-[20px] lg:text-[22px] leading-[150%] text-center mb-2 md:mb-3 font-semibold max-w- md:max-w-[355px]">

@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const InvestorsHero = () => {
-  const t = useTranslations("For_investors");
+  const t = useTranslations("Investors");
   return (
     <section className="flex flex-col items-center mb-24 md:mb-45 lg:mb-59 w-full">
       <div className="flex flex-col items-center">
@@ -16,6 +16,7 @@ export const InvestorsHero = () => {
           alt=""
           fill
           className="object-cover"
+          aria-hidden="true"
         />
         <div className="absolute inset-0 bg-linear-to-t from-neutral-black-elbrus via-transparent to-transparent pointer-events-none" />
       </div>

@@ -13,27 +13,27 @@ export const CareerVacancies = () => {
   const [visibleVacancyId, setVisibleVacancyId] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const t = useTranslations();
+  const t = useTranslations("Career");
   const positions = [
     {
-      nameDisplay: t("Career.CareerVacancies.Filters.all"),
+      nameDisplay: t("CareerVacancies.Filters.all"),
       nameFilter: "Все направления",
     },
     {
-      nameDisplay: t("Career.CareerVacancies.Filters.design"),
+      nameDisplay: t("CareerVacancies.Filters.design"),
       nameFilter: "Design",
     },
     {
-      nameDisplay: t("Career.CareerVacancies.Filters.analytics"),
+      nameDisplay: t("CareerVacancies.Filters.analytics"),
       nameFilter: "Analytics",
     },
     {
-      nameDisplay: t("Career.CareerVacancies.Filters.backend"),
+      nameDisplay: t("CareerVacancies.Filters.backend"),
       nameFilter: "Backend",
     },
-    { nameDisplay: t("Career.CareerVacancies.Filters.ml"), nameFilter: "ML" },
+    { nameDisplay: t("CareerVacancies.Filters.ml"), nameFilter: "ML" },
     {
-      nameDisplay: t("Career.CareerVacancies.Filters.other"),
+      nameDisplay: t("CareerVacancies.Filters.other"),
       nameFilter: "Другие вакансии",
     },
   ];
@@ -97,7 +97,7 @@ export const CareerVacancies = () => {
       </div>
 
       <div className="flex flex-col">
-        {paginatedVacancies.map((vacancy, index) => (
+        {paginatedVacancies.map((vacancy) => (
           <div
             key={vacancy.id}
             className={`relative pb-12 ${"max-lg:after:absolute max-lg:after:bottom-6 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-px max-lg:after:bg-neutral-700"} ${
@@ -127,16 +127,16 @@ export const CareerVacancies = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:flex-nowrap sm:justify-between ">
               <button
-                className=" bg-transparent text-neutral-0 text-[16px] px-8 py-3 font-open-sans hover:bg-opacity-40"
+                className=" bg-neutral-black-elbrus text-neutral-0 text-[16px] px-8 py-3 font-open-sans hover:bg-button-secondary-active active:bg-neutral-black-elbrus/40 rounded-xl "
                 onClick={() => changeVisibilityOfText(vacancy.id)}
               >
                 {visibleVacancyId === vacancy.id
-                  ? t("Career.CareerVacancies.Buttons.hide_text")
-                  : t("Career.CareerVacancies.Buttons.show_more")}
+                  ? t("CareerVacancies.Buttons.hide_text")
+                  : t("CareerVacancies.Buttons.show_more")}
               </button>
 
               <button className="bg-button-secondary-default text-neutral-0 text-[16px] px-8 py-3 rounded-xl leading-[150%] hover:bg-button-secondary-active!">
-                {t("Career.CareerVacancies.Buttons.apply")}
+                {t("CareerVacancies.Buttons.apply")}
               </button>
             </div>
           </div>

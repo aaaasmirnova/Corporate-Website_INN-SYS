@@ -6,21 +6,21 @@ export const ExpertiseTabRoskosmos = () => {
 
   return (
     <div className="-mx-6 lg:mx-auto">
-      <h2 className="max-w-86 mx-auto px-2 text-[18px] font-semibold text-transparent bg-title-gradient bg-clip-text text-center sm:max-w-124 sm:text-2xl lg:max-w-250 lg:text-[40px]">
+      <h2 className="max-w-86 mx-auto px-2 text-[18px] font-semibold text-transparent bg-title-gradient bg-clip-text text-center md:max-w-124 md:text-2xl lg:max-w-250 lg:text-[40px]">
         {t("info_tab_2.title")}
       </h2>
-      <div className="relative flex flex-col pt-31 pb-39.5 sm:pt-20 lg:pt-37.5">
-        <Image
+      <div className="relative flex flex-col pt-31 pb-39.5 md:pt-20 lg:pt-37.5">
+        {/* <Image
           src="/images/expertise/roskosmos-bg-mobile.svg"
           alt="roskosmos"
           fill
-          className="w-full h-auto object-cover sm:hidden"
-        />
+          className="w-full h-auto object-cover md:hidden"
+        /> */}
         <Image
-          src="/images/expertise/roskosmos-bg-tablet.svg"
+          src="/images/expertise/bank-tablet-bg.svg"
           alt="roskosmos"
           fill
-          className="hidden w-full h-auto object-contain sm:block lg:hidden"
+          className="w-full h-auto object-contain lg:hidden"
         />
         <Image
           src="/images/expertise/roskosmos-bg-desktop.svg"
@@ -30,43 +30,43 @@ export const ExpertiseTabRoskosmos = () => {
         />
         <div className="relative flex flex-col gap-2 text-white z-10 lg:flex-row lg:flex-wrap">
           <div className="flex flex-col gap-2 lg:max-w-148.5 lg:w-[41%]">
-            <div className="w-full px-8 py-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] sm:py-10 lg:px-9">
-              <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
+            <div className="w-full px-8 py-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] md:py-10 lg:px-9">
+              <h5 className="mb-4 text-[18px] font-medium md:mb-6 md:text-2xl md:font-semibold lg:mb-8 lg:text-[28px]">
                 {t("info_tab_2.item_1.title")}
               </h5>
               <div className="flex flex-col gap-2 lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_1.description_1")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_1.description_2")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_1.description_3")}
                 </p>
               </div>
             </div>
             <div className="h-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
-              <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
+              <h5 className="mb-4 text-[18px] font-medium md:mb-6 md:text-2xl md:font-semibold lg:mb-8 lg:text-[28px]">
                 {t("info_tab_2.item_3.title")}
               </h5>
               <div className="flex flex-col gap-2 font-open-sans lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%]">
+                <p className="text-sm leading-[150%] md:leading-[200%]">
                   {t("info_tab_2.item_3.description_1")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_3.description_2")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_3.description_3")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_3.description_4")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_3.description_5")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_3.description_6")}
                 </p>
               </div>
@@ -78,41 +78,41 @@ export const ExpertiseTabRoskosmos = () => {
                 {t("info_tab_2.item_2.title")}
               </h5>
               <div className="flex flex-col gap-2 font-open-sans lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_1")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_2")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_3")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_4")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_5")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_6")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_7")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_2.description_8")}
                 </p>
               </div>
             </div>
             <div className="w-full p-8 bg-[rgba(13,12,12,0.4)] rounded-3xl backdrop-blur-[32px] lg:px-9">
-              <h5 className="mb-4 text-[18px] font-medium sm:mb-6 sm:text-2xl sm:font-semibold lg:mb-8 lg:text-[28px]">
+              <h5 className="mb-4 text-[18px] font-medium md:mb-6 md:text-2xl md:font-semibold lg:mb-8 lg:text-[28px]">
                 {t("info_tab_2.item_4.title")}
               </h5>
               <div className="flex flex-col gap-2 lg:gap-4">
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_4.description_1")}
                 </p>
-                <p className="text-sm leading-[150%] sm:leading-[200%] sm:text-base">
+                <p className="text-sm leading-[150%] md:leading-[200%] md:text-base">
                   {t("info_tab_2.item_4.description_2")}
                 </p>
               </div>

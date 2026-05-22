@@ -50,6 +50,30 @@
       }
     },
     "Our_partners": "Our Partners",
+    "For_investors": {
+      "title": "For investors",
+      "gagr": "CAGR",
+      "revenue": "Revenue",
+      "gross_profit": "Gross Profit",
+      "ebitda": "EBITDA",
+      "profitability": "Profitability",
+      "fresh_cash_flow": "Free Cash Flow",
+      "reports": "Reports are updated annually following the publication of official financial statements",
+      "button_contact": "Contact",
+      "button_constitution": "Company charter",
+      "dates": {
+        "date1": {
+          "date": "2024",
+          "info1": "Report for ",
+          "info2": "IR Presentation"
+        },
+        "date2": {
+          "date": "2025",
+          "info1": "Report for ",
+          "info2": "IR Presentation"
+        }
+      }
+    },
     "career_block": {
       "title": "Career",
       "block1": {
@@ -91,6 +115,7 @@
       "address": "Kabardino-Balkarian Republic 32A Lenina Street, Nalchik",
       "email_1": "innovaticasystems@inbox.ru",
       "email_2": "systemsinnovatica@gmail.com",
+      "description_email_2": "",
       "discuss": "Discuss your project",
       "our_resources": "Our Resources",
       "map_alt": "Map"
@@ -106,8 +131,8 @@
       "phone": "Phone",
       "email": "Email",
       "message": "Enter your message",
-      "file": "Drag and drop a file here or ",
-      "attach_file": "attach one",
+      "file": "Drag and drop a file here or ",
+      "attach_file": "attach a file",
       "attached_file": "File attached",
       "privacy_policy": "I consent to Innovatica Systems LLC processing my personal data for the purpose of responding to my inquiry in accordance with the ",
       "privacy_required": "Privacy Policy",
@@ -258,7 +283,7 @@
     "phone_required": "Phone number is required",
     "cover_letter": "Cover Letter",
     "file_here": "Drag and drop your resume here or ",
-    "attach_file": "Attach File",
+    "attach_file": "attach a file",
     "privacy_policy": "I give Innovatica Systems LLC consent to process my personal data in accordance with the ",
     "privacy_confidentiality": "privacy policy",
     "privacy_required": "Consent to personal data processing is required",
@@ -288,6 +313,8 @@
     }
   },
   "Expertise": {
+    "title": "Expertise",
+    "description": "The company's practice is formed through projects related to critical infrastructure, management systems, and corporate AI environments",
     "tabs": {
       "tab_1": "The largest bank in Russia",
       "tab_2": "Roscosmos",
@@ -362,7 +389,89 @@
         "description_1": "The project established a unified system for evaluating the effectiveness of management processes.",
         "description_2": "Management received a tool for regular KPI monitoring, deviation analysis, and decision-making based on up-to-date data and analytical models."
       }
+    },
+    "info_tab_3": {
+      "title": "Integration of neural network information security system for the largest bank in the Russian Federation",
+      "item_1": {
+        "title": "Problem Statement",
+        "description_1": "The growing use of AI models in corporate infrastructure has created the need to control the interaction between neural networks, internal systems, and sensitive data",
+        "description_2": "The main goal was to reduce risks:",
+        "description_3": "leakage of confidential information",
+        "description_4": "uncontrolled data transfer to AI services",
+        "description_5": "violation of corporate information security requirements",
+        "description_6": "loss of observability when using intelligent systems"
+      },
+      "item_2": {
+        "title": "Technological Approach",
+        "description_1": "The project is based on:",
+        "description_2": "data control and filtering mechanisms",
+        "description_3": "AI process observability tools",
+        "description_4": "interaction logging and monitoring systems",
+        "description_5": "integration with the corporate information security framework"
+      },
+      "item_3": {
+        "title": "Solution",
+        "description_1": "To implement the project, the Baksan platform was integrated — a data protection system for AI and ML services"
+      },
+      "item_4": {
+        "title": "The platform provided",
+        "description_1": "control of data transfer between users and AI models",
+        "description_2": "filtering of sensitive information",
+        "description_3": "monitoring of interactions with intelligent services",
+        "description_4": "data access management and AI usage scenarios",
+        "description_5": "increased observability of processes within the AI infrastructure"
+      },
+      "item_5": {
+        "title": "Result",
+        "description_1": "The project enabled the creation of a secure AI operational architecture in an infrastructure with enhanced data protection requirements",
+        "description_2": "The use of intelligent systems has become controlled,",
+        "description_3": "observable, and compliant with corporate security requirements"
+      }
     }
+  },
+  "Contacts": {
+    "title": "Contacts",
+    "description": "Technological partnership begins with communication",
+    "contacts_logo": "Innovatika Systems logo",
+    "social": {
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "tiktok": "TikTok",
+      "vk": "VK",
+      "habr": "Habr",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "dribbble": "Dribbble",
+      "dprofile": "Dprofile",
+      "behance": "Behance"
+    }
+  },
+  "Investors": {
+    "InvestorsHero": {
+      "title": "For investors",
+      "description1": "The Big Data and AI market is moving to the stage of building a management infrastructure",
+      "description2": "Increasing system complexity shifts focus from data processing to control and interpretation",
+      "description3": "Innovatica Systems is developing as a company shaping this infrastructure",
+      "description4": "Focus — on solution architecture that ensures observability and manageability"
+    },
+    "FinancialData": {
+      "description": "The company architecture is reflected through metrics and reporting",
+      "titleReport": "Annual report",
+      "descriptionReport": "This year continues to show steady growth without sharp fluctuations",
+      "buttonReport": "Download report",
+      "presentation": "View presentation",
+      "titleRule": "Company Charter",
+      "readRuleButton": "Read",
+      "downloadButton": "Download",
+      "descriptionAfterRule1": "Control determines stability",
+      "descriptionAfterRule2": "We operate at the level where it is formed"
+    }
+  },
+
+  "Page404": {
+    "description": "We couldn't find this page",
+    "buttonToMain": "Back to homepage"
   },
   "InvestorsNumbers": {
     "cagr": "CAGR",
@@ -379,30 +488,7 @@
       "year": "y."
     }
   },
-  "For_investors": {
-    "title": "For Investors",
-    "gagr": "CAGR",
-    "revenue": "Revenue",
-    "gross_profit": "Gross Profit",
-    "ebitda": "EBITDA",
-    "profitability": "Profitability",
-    "fresh_cash_flow": "Free Cash Flow",
-    "reports": "Reports are updated annually following the publication of official financial statements",
-    "button_contact": "Contact",
-    "button_constitution": "Company charter",
-    "dates": {
-      "date1": {
-        "date": "2024",
-        "info1": "Report for ",
-        "info2": "IR Presentation"
-      },
-      "date2": {
-        "date": "2025",
-        "info1": "Report for ",
-        "info2": "IR Presentation"
-      }
-    }
-  },
+
   "Footer": {
     "Nav": {
       "about": "About",

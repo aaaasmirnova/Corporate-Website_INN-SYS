@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ExpertiseTabNornikel } from "../ExpertiseTabNornikel/ExpertiseTabNornikel";
 import { ExpertiseTabRoskosmos } from "../ExpertiseTabRoskosmos/ExpertiseTabRoskosmos";
+import { ExpertiseTabBank } from "../Expertise/ExpertiseTabBank/ExpertiseTabBank";
 
 const tabs = [
   {
@@ -38,9 +39,9 @@ export const ExpertiseTabs = () => {
           </button>
         ))}
       </div>
-      {activeTab === 1 && <ExpertiseTabNornikel />}
+      {activeTab === 1 && <ExpertiseTabBank />}
       {activeTab === 2 && <ExpertiseTabRoskosmos />}
-      {activeTab === 3 && <p>tab 3</p>}
+      {activeTab === 3 && <ExpertiseTabNornikel />}
     </section>
   );
 };

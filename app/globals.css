@@ -92,7 +92,7 @@ body {
     #f8f7f7 0%,
     #807e7e 100%
   );
-  --gradient-surface: linear-gradient(0deg, #292828 0%, #292828 100%);
+  --gradient-surface: linear-gradient(0deg, #0d0c0c 0%, #292828 100%);
   --background-image-gradient-title: radial-gradient(
     50% 50% at 50% 50%,
     #f8f7f7 0%,

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
-import ArrowDown from "@/public/icons/career/arrowDown.svg";
 
 type FormValues = {
   firstName: string;
@@ -285,7 +284,7 @@ export default function CareerForm() {
                 </p>
               ) : (
                 <p className="text-accent-6">
-                  <span className="hidden md:inline">{t("file_here")}</span>{" "}
+                  <span className="">{t("file_here")}</span>{" "}
                   <span className="text-primary-4">{t("attach_file")}</span>
                 </p>
               )}

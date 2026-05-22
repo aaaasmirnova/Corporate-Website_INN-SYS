@@ -98,7 +98,7 @@ export const Burger = () => {
             </Link>
           </li>
           <li className="px-12 py-4">
-            <Link className="uppercase" href="/contacts" onClick={toggleBurger}>
+            <Link className="uppercase" href="/contact" onClick={toggleBurger}>
               {t("header.nav.6")}
             </Link>
           </li>

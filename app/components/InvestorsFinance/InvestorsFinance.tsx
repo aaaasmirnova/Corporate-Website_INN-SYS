@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 export default function InvestorsFinance() {
-  const t = useTranslations("Investors");
+  const t = useTranslations("InvestorsNumbers");
 
   return (
     <section className="flex flex-col gap-y-24 max-w-259 w-full mx-auto pb-24 px-6 sm:flex-row sm:justify-between sm:pb-44 lg:pb-52">
