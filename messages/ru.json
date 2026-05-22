@@ -115,6 +115,30 @@
       "checkbox_required": "Необходимо согласие на обработку персональных данных",
       "submit": "Отправить",
       "submitting": "Отправка..."
+    },
+    "For_investors": {
+      "title": "Для инвесторов",
+      "gagr": "CAGR",
+      "revenue": "Выручка",
+      "gross_profit": "Валовая прибыль",
+      "ebitda": "EBITDA",
+      "profitability": "Рентабельность",
+      "fresh_cash_flow": "Свободный денежный поток",
+      "reports": "Отчёты обновляются ежегодно после публикации официальной отчётности",
+      "button_contact": "Связаться с нами",
+      "button_constitution": "Устав компании",
+      "dates": {
+        "date1": {
+          "date": "2024",
+          "info1": "Отчёт за ",
+          "info2": "IR-презентация"
+        },
+        "date2": {
+          "date": "2025",
+          "info1": "Отчёт за ",
+          "info2": "IR-презентация"
+        }
+      }
     }
   },
   "Product_ecosystem": {
@@ -138,6 +162,7 @@
       }
     }
   },
+
   "About": {
     "Substract": {
       "substract1": {
@@ -484,51 +509,5 @@
       "mln": "млн ₽",
       "year": "г."
     }
-  },
-  "For_investors": {
-    "title": "Для инвесторов",
-    "gagr": "CAGR",
-    "revenue": "Выручка",
-    "gross_profit": "Валовая прибыль",
-    "ebitda": "EBITDA",
-    "profitability": "Рентабельность",
-    "fresh_cash_flow": "Свободный денежный поток",
-    "reports": "Отчёты обновляются ежегодно после публикации официальной отчётности",
-    "button_contact": "Связаться с нами",
-    "button_constitution": "Устав компании",
-    "dates": {
-      "date1": {
-        "date": "2024",
-        "info1": "Отчёт за ",
-        "info2": "IR-презентация"
-      },
-      "date2": {
-        "date": "2025",
-        "info1": "Отчёт за ",
-        "info2": "IR-презентация"
-      }
-    }
-  },
-  "Footer": {
-    "Nav": {
-      "about": "О компании",
-      "products": "Продукты",
-      "expertise": "Экспертиза",
-      "investors": "Инвесторам",
-      "career": "Карьера",
-      "contacts": "Контакты"
-    },
-    "Logo_alt": "Логотип",
-    "Contacts": {
-      "address": "РФ, Кабардино-Балкарская Республика, г. Нальчик,ул. Ленина, 32А",
-      "email_1": "innovaticasystems@inbox.ru",
-      "email_2": "systemsinnovatica@gmail.com"
-    },
-    "Policies": {
-      "privacy": "Политика конфиденциальности",
-      "terms": "Пользовательское соглашение",
-      "data_protection": "Политика обработки и защиты персональных данных"
-    },
-    "Copyright": "© Инноватика Системс {year}"
   }
 }

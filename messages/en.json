@@ -488,30 +488,7 @@
       "year": "y."
     }
   },
-  "For_investors": {
-    "title": "For Investors",
-    "gagr": "CAGR",
-    "revenue": "Revenue",
-    "gross_profit": "Gross Profit",
-    "ebitda": "EBITDA",
-    "profitability": "Profitability",
-    "fresh_cash_flow": "Free Cash Flow",
-    "reports": "Reports are updated annually following the publication of official financial statements",
-    "button_contact": "Contact",
-    "button_constitution": "Company charter",
-    "dates": {
-      "date1": {
-        "date": "2024",
-        "info1": "Report for ",
-        "info2": "IR Presentation"
-      },
-      "date2": {
-        "date": "2025",
-        "info1": "Report for ",
-        "info2": "IR Presentation"
-      }
-    }
-  },
+
   "Footer": {
     "Nav": {
       "about": "About",

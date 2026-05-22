@@ -11,7 +11,7 @@ import { MobileReport } from "./MobileReport";
 import Download from "@/public/icons/download.svg";
 
 export const InvestorSection = () => {
-  const t = useTranslations("For_investors");
+  const t = useTranslations("Home.For_investors");
 
   const [activeYearIndex, setActiveYearIndex] = useState(0);
 
