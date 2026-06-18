@@ -12,7 +12,10 @@ export interface ContactInformationProps {
   data: ContactItem[];
 }
 
-export default function ContactInformation({ title, data }: ContactInformationProps) {
+export default function ContactInformation({
+  title,
+  data,
+}: ContactInformationProps) {
   const t = useTranslations("Contact");
 
   return (
@@ -24,14 +27,14 @@ export default function ContactInformation({ title, data }: ContactInformationPr
         {data.map((item) => (
           <div key={item.id}>
             <h4 className="text-[56px] font-extrabold leading-10 font-italic text-italic bg-clip-text bg-gradient-surface text-transparent text-center sm:text-[120px] sm:leading-34 lg:text-[150px]">
-              { item.id === 1 ? t(item.title) : item.title }
+              {item.id === 1 ? t(item.title) : item.title}
             </h4>
             <a
               href={item.link}
               className="relative flex items-center justify-center gap-2 w-64 h-12 mx-auto px-8 text-white bg-[#383737] rounded-xl hover:bg-white hover:text-[#0D0C0C] sm:-top-3"
               target="_blank"
             >
-              {item.title}
+              {item.id === 1 ? t(item.title) : item.title}
               <i className="icon-arrow-right -rotate-90"></i>
             </a>
             {item.info && (

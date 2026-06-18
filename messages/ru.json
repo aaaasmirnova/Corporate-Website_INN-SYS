@@ -309,7 +309,13 @@
     },
     "section_2": {
       "title": "Информационное присутствие"
-    }
+    },
+    "Хабр": "Хабр",
+    "GitHub": "GitHub",
+    "Dprofile": "Dprofile",
+    "Behance": "Behance",
+    "Dribbble": "Dribbble",
+    "LinkedIn": "LinkedIn"
   },
   "Contacts": {
     "title": "Контакты",

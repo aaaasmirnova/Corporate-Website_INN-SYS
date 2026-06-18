@@ -310,8 +310,16 @@
     },
     "section_2": {
       "title": "Профессиональное присутствие"
-    }
+    },
+
+    "Хабр": "Habr",
+    "GitHub": "GitHub",
+    "Dprofile": "Dprofile",
+    "Behance": "Behance",
+    "Dribbble": "Dribbble",
+    "LinkedIn": "LinkedIn"
   },
+
   "Expertise": {
     "title": "Expertise",
     "description": "The company's practice is formed through projects related to critical infrastructure, management systems, and corporate AI environments",
