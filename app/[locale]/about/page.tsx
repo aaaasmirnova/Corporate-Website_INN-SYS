@@ -1,11 +1,11 @@
-import ContactsForm from "@/app/components/ContactsForm/ContactsForm";
+import ContactsForm from "@/components/Common/ContactsForm/ContactsForm";
 import { Business } from "@/components/Business/Business";
-import { Header } from "@/components/common/Header/Header";
+import { Header } from "@/components/Common/Header/Header";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
-import { AboutHero } from "@/app/components/About/AboutHero";
-import { AboutPhilosophy } from "@/app/components/About/AboutPhilosophy";
-import { AboutSubstract } from "@/app/components/About/AboutSubtract/AboutSubstract";
-import { AboutInfo } from "@/app/components/About/AboutInfo/AboutInfo";
+import { AboutHero } from "@/components/About/AboutHero";
+import { AboutPhilosophy } from "@/components/About/AboutPhilosophy";
+import { AboutSubstract } from "@/components/About/AboutSubtract/AboutSubstract";
+import { AboutInfo } from "@/components/About/AboutInfo/AboutInfo";
 
 export default function AboutPage() {
   return (

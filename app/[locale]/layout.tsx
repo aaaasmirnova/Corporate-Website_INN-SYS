@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
 // import { Header } from "@/components/common/Header/Header";
-import { Footer } from "@/components/common/Footer";
+import { Footer } from "@/components/Common/Footer";
 import "../globals.css";
 import "../icomoon.css";
 

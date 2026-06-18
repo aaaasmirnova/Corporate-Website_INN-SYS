@@ -1,15 +1,15 @@
-import { Header } from "@/components/common/Header/Header";
-import { Footer } from "@/components/common/Footer";
-import { Career } from "@/components/home/Career/Career";
+import { Header } from "@/components/Common/Header/Header";
+import { Footer } from "@/components/Common/Footer";
+import { Career } from "@/components/Home/Career/Career";
 import { MainLayout } from "@/components/MainLayout/MainLayout";
-import { InvestorSection } from "@/components/home/InvestorSection/InvestorSection";
-import { Contacts } from "@/components/home/Contacts/Contacts";
-import { ProductEcosystem } from "@/components/home/ProductEcosystem/ProductEcosystem";
-import { Partners } from "@/components/home/Partners/Partners";
-import ContactsForm from "../components/ContactsForm/ContactsForm";
-import { AboutSection } from "@/components/home/AboutComponent/AboutSection";
-import { HeroSection } from "@/components/home/HeroComponent/HeroSection";
-import { KeyIndicatorsSection } from "@/components/home/KeyIndicatorsComponent/KeyIndicatorsSection";
+import { InvestorSection } from "@/components/Home/InvestorSection/InvestorSection";
+import { Contacts } from "@/components/Home/Contacts/Contacts";
+import { ProductEcosystem } from "@/components/Home/ProductEcosystem/ProductEcosystem";
+import { Partners } from "@/components/Home/Partners/Partners";
+import ContactsForm from "../../components/Common/ContactsForm/ContactsForm";
+import { AboutSection } from "@/components/Home/AboutComponent/AboutSection";
+import { HeroSection } from "@/components/Home/HeroComponent/HeroSection";
+import { KeyIndicatorsSection } from "@/components/Home/KeyIndicatorsComponent/KeyIndicatorsSection";
 
 export default function Home() {
   return (

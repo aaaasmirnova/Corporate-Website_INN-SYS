@@ -1,4 +1,4 @@
-import { Footer } from "../components/common/Footer";
+import { Footer } from "../components/Common/Footer";
 
 const meta = {
   title: "Layout/Footer",

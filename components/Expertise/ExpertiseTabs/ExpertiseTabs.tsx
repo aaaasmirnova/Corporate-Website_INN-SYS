@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ExpertiseTabNornikel } from "../ExpertiseTabNornikel/ExpertiseTabNornikel";
 import { ExpertiseTabRoskosmos } from "../ExpertiseTabRoskosmos/ExpertiseTabRoskosmos";
-import { ExpertiseTabBank } from "../Expertise/ExpertiseTabBank/ExpertiseTabBank";
+import { ExpertiseTabBank } from "../ExpertiseTabBank/ExpertiseTabBank";
 
 const tabs = [
   {
